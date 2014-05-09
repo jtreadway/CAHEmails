@@ -1,0 +1,151 @@
+/* Client-specific Styles */
+
+#outlook a {
+    padding: 0;
+}
+
+body {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+	font-family:Verdana;
+	font-size:14px;
+	color:#999999;
+}
+
+.ExternalClass {
+    width: 100%;
+
+    &,
+    p,
+    span,
+    font,
+    td,
+    div {
+        line-height: 100%;
+    }
+}
+
+#backgroundTable {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    line-height: 100% !important;
+}
+
+/* End reset */
+
+table {
+	position:relative;
+    border-spacing: 0;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+
+    &,
+    td {
+		position:relative;
+        border-collapse: collapse;
+		font-family:Verdana;
+		font-size:14px;
+		color:#999999;
+    }
+}
+[class="boundingTable"] {
+	line-height: 1.4em !important;	
+}
+.colLeft td,
+.colRight td {
+	padding: 0 0 1.3em 0;
+}
+
+h4 {
+	font-size:16px;
+}
+img {
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+    border: none;
+}
+
+.article-header {
+	text-decoration:none;
+	display:block;
+	padding: 0 0 .5em 0;
+}
+[class="more"],
+[class="less"] {
+	display:none;
+	color: #333 !important;
+	background-color: #eee;
+	text-decoration: none;
+	font-size:12px;
+	line-height:27px;
+	text-align: center;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+[class="more"] {
+	border-bottom: 1px #ccc solid;
+}
+[class="less"] {
+	border-top: 1px #ccc solid;
+}
+
+[class="footerTable"] td {
+	font-size:12px;
+}
+
+@media only screen and (max-width:600px) {
+	.boundingTable {
+		width:100% !important;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.navigationTable td,
+	.headerTable td {
+		display:block !important;
+		width:100%;
+	}
+	.colLeft,
+	.colRight {
+		width:100% !important;
+	}
+
+	.article-header {
+		& + .article {
+			position:relative;
+			padding: 35px 0 0 0;
+			.more,
+			.less {
+				display: block !important;
+			}
+			.article-text {
+				display: none !important;
+			}
+			&:hover {
+				.more {
+					visibility: hidden;
+				}
+				.article-text {
+					display: block !important;
+				}
+			}
+		}
+		&:hover {
+			& + .article {
+				.more {
+					visibility: hidden;
+				}
+				.article-text {
+					display: block !important;
+				}
+			}	
+		}
+	}
+}

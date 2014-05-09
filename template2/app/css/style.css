@@ -1,0 +1,303 @@
+/* variables */
+/* mixins */
+/* styles */
+/* line 57, ../scss/style.scss */
+ReadMsgBody {
+  width: 100%;
+}
+
+/* line 58, ../scss/style.scss */
+.ExternalClass {
+  width: 100%;
+}
+
+/* line 60, ../scss/style.scss */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Verdana;
+  font-size: 13px;
+  color: #2e2e2f;
+  background-color: #f1efe4;
+}
+
+/* line 71, ../scss/style.scss */
+table {
+  border-spacing: 0;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  margin: 0;
+  padding: 0;
+}
+/* line 78, ../scss/style.scss */
+table,
+table td {
+  border: 1px #999 solid;
+  color: #2e2e2f;
+  border-collapse: collapse;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+/* line 86, ../scss/style.scss */
+a {
+  color: #e41f35;
+  text-decoration: none;
+}
+/* line 89, ../scss/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 94, ../scss/style.scss */
+img {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 100, ../scss/style.scss */
+ul {
+  padding: 0;
+  margin: 0 0 1em 1.3em;
+}
+
+/* line 104, ../scss/style.scss */
+[id="backgroundTable"] {
+  width: 100%;
+  background-color: #f1efe4;
+  line-height: 100%;
+}
+
+/* line 109, ../scss/style.scss */
+[class="boundingTable"] {
+  line-height: 1.3em;
+}
+
+/* line 112, ../scss/style.scss */
+[class="webVersionTop"] {
+  padding: 0.8em 3.33333%;
+  background-color: #f1efe4;
+  font-size: .9em;
+}
+
+/* line 117, ../scss/style.scss */
+[class="webVersionBottom"] {
+  display: none !important;
+}
+
+/* line 120, ../scss/style.scss */
+[class="logoArea"] {
+  height: 60px;
+  padding: 0.8em 3.33333%;
+}
+
+/* line 124, ../scss/style.scss */
+[class="sweepArea"] {
+  background-color: #75c5b4;
+}
+
+/* line 127, ../scss/style.scss */
+[class="header1"] {
+  padding: 10px 3.33333%;
+  background-color: #681725;
+  color: white;
+  line-height: 1.3em;
+}
+
+/* line 133, ../scss/style.scss */
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* line 139, ../scss/style.scss */
+[class="header2"] {
+  padding: 5px 3.33333%;
+  background-color: #e41f35;
+  color: white;
+}
+
+/* line 144, ../scss/style.scss */
+[class="customize"] a {
+  padding: .3em 1em;
+  background-color: #75c5b4;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  text-align: center;
+  display: inline-block !important;
+}
+
+/* line 149, ../scss/style.scss */
+[class="customize"] a:hover,
+[class="back-to-top"]:hover {
+  background-color: #681725;
+  text-decoration: none;
+}
+
+/* line 154, ../scss/style.scss */
+[class="indexArea"] {
+  display: none !important;
+}
+/* line 156, ../scss/style.scss */
+[class="indexArea"] td {
+  padding: 3.33333%;
+  background-color: #f1efe4;
+}
+/* line 159, ../scss/style.scss */
+[class="indexArea"] td font {
+  font-size: 1.05em;
+}
+/* line 162, ../scss/style.scss */
+[class="indexArea"] td a {
+  display: inline-block !important;
+  padding: .5em 0 0 0;
+  color: #730505;
+  font-weight: bold;
+}
+
+/* line 170, ../scss/style.scss */
+[class="column1"] h2 {
+  margin: 0.2em 0 0.5em;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #75c5b4;
+  font-size: 1.8em;
+}
+
+/* line 175, ../scss/style.scss */
+[class="column1"] h3 {
+  margin: 0 0 .4em 0;
+  letter-spacing: .05em;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #2e2e2f;
+}
+
+/* line 179, ../scss/style.scss */
+[class="rule"] {
+  padding: .7em 0;
+  border-top: 1px #c8c8d2 solid;
+}
+
+/* line 183, ../scss/style.scss */
+[class="section-rule"] {
+  padding: 0 0 1em 0;
+  text-align: right;
+  border-top: 2px #75c5b4 solid !important;
+  display: none !important;
+}
+
+/* line 189, ../scss/style.scss */
+[class="back-to-top"] {
+  padding: .3em 1em;
+  background-color: #75c5b4;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  text-align: center;
+  display: none !important;
+}
+
+/* line 194, ../scss/style.scss */
+[class="column2"] h2 {
+  margin: 0.2em 0 0.5em;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #346170;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* line 201, ../scss/style.scss */
+[class="column2"] h3 {
+  margin: 0 0 .4em 0;
+  letter-spacing: .05em;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #346170;
+}
+
+/* line 207, ../scss/style.scss */
+[class="footerTable"] td {
+  background-color: #f1efe4;
+  font-size: .86em;
+  line-height: 1.3em;
+}
+
+/* Make width fluid if more than max width */
+@media only screen and (max-width: 600px) {
+  /* line 215, ../scss/style.scss */
+  [class="boundingTable"] {
+    width: 100%;
+  }
+}
+/* Narrow windows and devices */
+@media only screen and (max-width: 480px) {
+  /* line 222, ../scss/style.scss */
+  .webVersionTop {
+    display: none !important;
+  }
+
+  /* line 225, ../scss/style.scss */
+  .webVersionBottom {
+    display: inline !important;
+  }
+
+  /* line 228, ../scss/style.scss */
+  .date {
+    padding: 0 0 1em 0;
+  }
+
+  /* line 231, ../scss/style.scss */
+  .customize {
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  /* line 235, ../scss/style.scss */
+  .customize a {
+    width: 100% !important;
+    padding: .3em 0 !important;
+  }
+
+  /* line 239, ../scss/style.scss */
+  [class="indexArea"] {
+    display: table !important;
+  }
+
+  /* line 242, ../scss/style.scss */
+  br.indexArea {
+    display: inline !important;
+  }
+
+  /* line 248, ../scss/style.scss */
+  .columns,
+  .columns tbody,
+  .columns tr,
+  .columns td {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  /* line 252, ../scss/style.scss */
+  .section-rule {
+    display: block !important;
+  }
+
+  /* line 255, ../scss/style.scss */
+  .back-to-top {
+    display: inline-block !important;
+  }
+}
+/* Narrow devices */
