@@ -125,7 +125,7 @@ h1 {
 }
 
 /* line 144, ../scss/style.scss */
-[class="customize"] a {
+[class="headerButton"] a {
   padding: .3em 1em;
   background-color: #75c5b4;
   color: white;
@@ -136,7 +136,7 @@ h1 {
 }
 
 /* line 149, ../scss/style.scss */
-[class="customize"] a:hover,
+[class="headerButton"] a:hover,
 [class="back-to-top"]:hover {
   background-color: #681725;
   text-decoration: none;
@@ -144,26 +144,34 @@ h1 {
 
 /* line 154, ../scss/style.scss */
 [class="indexArea"] {
-  display: none !important;
-}
-/* line 156, ../scss/style.scss */
-[class="indexArea"] td {
-  padding: 3.33333%;
+  xdisplay: none;
   background-color: #f1efe4;
 }
-/* line 159, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
+[class="indexArea"] th,
+[class="indexArea"] td {
+  padding: 0 0 0.8em 3.33333%;
+}
+/* line 160, ../scss/style.scss */
+[class="indexArea"] th font,
 [class="indexArea"] td font {
   font-size: 1.05em;
 }
-/* line 162, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
+[class="indexArea"] th a,
 [class="indexArea"] td a {
   display: inline-block !important;
-  padding: .5em 0 0 0;
+  padding: 0 0 .5em 0;
   color: #730505;
   font-weight: bold;
 }
-
 /* line 170, ../scss/style.scss */
+[class="indexArea"] th {
+  padding: 1em 3.33333%;
+  font-weight: normal;
+}
+
+/* line 175, ../scss/style.scss */
 [class="column1"] h2 {
   margin: 0.2em 0 0.5em;
   letter-spacing: 0.02em;
@@ -173,7 +181,7 @@ h1 {
   font-size: 1.8em;
 }
 
-/* line 175, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 [class="column1"] h3 {
   margin: 0 0 .4em 0;
   letter-spacing: .05em;
@@ -182,13 +190,13 @@ h1 {
   color: #2e2e2f;
 }
 
-/* line 179, ../scss/style.scss */
+/* line 184, ../scss/style.scss */
 [class="rule"] {
   padding: .7em 0;
   border-top: 1px #c8c8d2 solid;
 }
 
-/* line 183, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 [class="section-rule"] {
   padding: 0 0 1em 0;
   text-align: right;
@@ -196,7 +204,7 @@ h1 {
   display: none !important;
 }
 
-/* line 189, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 [class="back-to-top"] {
   padding: .3em 1em;
   background-color: #75c5b4;
@@ -207,7 +215,7 @@ h1 {
   display: none !important;
 }
 
-/* line 194, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 [class="column2"] h2 {
   margin: 0.2em 0 0.5em;
   letter-spacing: 0.02em;
@@ -219,7 +227,7 @@ h1 {
   font-weight: normal;
 }
 
-/* line 201, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 [class="column2"] h3 {
   margin: 0 0 .4em 0;
   letter-spacing: .05em;
@@ -228,7 +236,7 @@ h1 {
   color: #346170;
 }
 
-/* line 207, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 [class="footerTable"] td {
   background-color: #f1efe4;
   font-size: .86em;
@@ -237,51 +245,45 @@ h1 {
 
 /* Make width fluid if more than max width */
 @media only screen and (max-width: 600px) {
-  /* line 215, ../scss/style.scss */
+  /* line 220, ../scss/style.scss */
   [class="boundingTable"] {
     width: 100%;
   }
 }
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
-  /* line 222, ../scss/style.scss */
+  /* line 227, ../scss/style.scss */
   .webVersionTop {
     display: none !important;
   }
 
-  /* line 225, ../scss/style.scss */
+  /* line 230, ../scss/style.scss */
   .webVersionBottom {
     display: inline !important;
   }
 
-  /* line 228, ../scss/style.scss */
+  /* line 233, ../scss/style.scss */
   .date {
     padding: 0 0 1em 0;
   }
 
-  /* line 231, ../scss/style.scss */
-  .customize {
+  /* line 236, ../scss/style.scss */
+  .headerButton {
     text-align: left !important;
     width: 100% !important;
   }
 
-  /* line 235, ../scss/style.scss */
-  .customize a {
+  /* line 240, ../scss/style.scss */
+  .headerButton a {
     width: 100% !important;
     padding: .3em 0 !important;
   }
 
-  /* line 239, ../scss/style.scss */
-  [class="indexArea"] {
-    display: table !important;
-  }
-
-  /* line 242, ../scss/style.scss */
-  br.indexArea {
-    display: inline !important;
-  }
-
-  /* line 248, ../scss/style.scss */
+  /* line 251, ../scss/style.scss */
+  .indexArea,
+  .indexArea tbody,
+  .indexArea tr,
+  .indexArea td,
   .columns,
   .columns tbody,
   .columns tr,
@@ -290,12 +292,23 @@ h1 {
     display: block !important;
   }
 
-  /* line 252, ../scss/style.scss */
+  /* line 255, ../scss/style.scss */
+  .indexArea td {
+    padding: 0 3.33333%;
+    width: 93.33333% !important;
+  }
+
+  /* line 259, ../scss/style.scss */
+  br.indexArea {
+    display: inline !important;
+  }
+
+  /* line 262, ../scss/style.scss */
   .section-rule {
     display: block !important;
   }
 
-  /* line 255, ../scss/style.scss */
+  /* line 265, ../scss/style.scss */
   .back-to-top {
     display: inline-block !important;
   }

@@ -141,30 +141,35 @@ h1 {
 	background-color: $color-sweep1;
 	color: $color-header2;
 }
-[class="customize"] a {
+[class="headerButton"] a {
 	@include button();
 	display:inline-block !important;
 }
-[class="customize"] a:hover,
+[class="headerButton"] a:hover,
 [class="back-to-top"]:hover {
 	background-color: $color-multiply;
 	text-decoration:none;
 }
 
 [class="indexArea"] {
-	display:none !important;	
+	xdisplay:none;
+	background-color: $color-body-background;
+	th,
 	td {
-		padding: $gutter;
-		background-color: $color-body-background;
+		padding: 0 0 .8em $gutter;
 		font {
 			font-size: 1.05em;
 		}
 		a {
 			display:inline-block !important;
-			padding: .5em 0 0 0;
+			padding: 0 0 .5em 0;
 			color:$color-index-text;
 			font-weight: bold;
 		}
+	}
+	th {
+		padding: 1em $gutter;
+		font-weight: normal;
 	}
 }
 [class="column1"] h2 {
@@ -228,26 +233,31 @@ h1 {
 	.date {
 		padding: 0 0 1em 0;
 	}
-	.customize {
+	.headerButton {
 		text-align: left !important;
 		width:100% !important;
 	}
-	.customize a {
+	.headerButton a {
 		width:100% !important;
 		padding: .3em 0 !important;
 	}
-	[class="indexArea"] {
-		display:table !important;
-	}
-	br.indexArea {
-		display:inline !important;
-	}
+	.indexArea,
+	.indexArea tbody,
+	.indexArea tr,
+	.indexArea td,
 	.columns,
 	.columns tbody,
 	.columns tr,
 	.columns td {
 		width:100% !important;
 		display:block !important;
+	}
+	.indexArea td {
+		padding: 0 $gutter;
+		width: 93.33333% !important;
+	}
+	br.indexArea {
+		display:inline !important;
 	}
 	.section-rule {
 		display:block !important;

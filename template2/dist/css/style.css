@@ -30,6 +30,7 @@ table {
 }
 table,
 table td {
+  xborder: 1px #999 solid;
   color: #2e2e2f;
   border-collapse: collapse;
   font-family: Verdana;
@@ -105,7 +106,7 @@ h1 {
   color: white;
 }
 
-[class="customize"] a {
+[class="headerButton"] a {
   padding: .3em 1em;
   background-color: #75c5b4;
   color: white;
@@ -115,27 +116,34 @@ h1 {
   display: inline-block !important;
 }
 
-[class="customize"] a:hover,
+[class="headerButton"] a:hover,
 [class="back-to-top"]:hover {
   background-color: #681725;
   text-decoration: none;
 }
 
 [class="indexArea"] {
-  display: none !important;
-}
-[class="indexArea"] td {
-  padding: 3.33333%;
+  xdisplay: none;
   background-color: #f1efe4;
 }
+[class="indexArea"] th,
+[class="indexArea"] td {
+  padding: 0 0 0.8em 3.33333%;
+}
+[class="indexArea"] th font,
 [class="indexArea"] td font {
   font-size: 1.05em;
 }
+[class="indexArea"] th a,
 [class="indexArea"] td a {
   display: inline-block !important;
-  padding: .5em 0 0 0;
+  padding: 0 0 .5em 0;
   color: #730505;
   font-weight: bold;
+}
+[class="indexArea"] th {
+  padding: 1em 3.33333%;
+  font-weight: normal;
 }
 
 [class="column1"] h2 {
@@ -222,30 +230,35 @@ h1 {
     padding: 0 0 1em 0;
   }
 
-  .customize {
+  .headerButton {
     text-align: left !important;
     width: 100% !important;
   }
 
-  .customize a {
+  .headerButton a {
     width: 100% !important;
     padding: .3em 0 !important;
   }
 
-  table.indexArea {
-    display: table !important;
-  }
-
-  br.indexArea {
-    display: inline !important;
-  }
-
+  .indexArea,
+  .indexArea tbody,
+  .indexArea tr,
+  .indexArea td,
   .columns,
   .columns tbody,
   .columns tr,
   .columns td {
     width: 100% !important;
     display: block !important;
+  }
+
+  .indexArea td {
+    padding: 0 3.33333%;
+    width: 93.33333% !important;
+  }
+
+  br.indexArea {
+    display: inline !important;
   }
 
   .section-rule {
