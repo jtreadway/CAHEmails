@@ -115,7 +115,7 @@ ul {
 	font-size: .9em;
 }
 [class="webVersionBottom"] {
-	display:none !important;
+	display:none;
 }
 [class="logoArea"] {
 	height: 60px;	
@@ -141,17 +141,17 @@ h1 {
 	background-color: $color-sweep1;
 	color: $color-header2;
 }
-[class="headerButton"] a {
+[class="utility"] a {
 	@include button();
-	display:inline-block !important;
+	display:inline-block;
 }
-[class="headerButton"] a:hover,
+[class="utility"] a:hover,
 [class="back-to-top"]:hover {
 	background-color: $color-multiply;
 	text-decoration:none;
 }
 
-[class="indexArea"] {
+[class="tocArea"] {
 	xdisplay:none;
 	background-color: $color-body-background;
 	th,
@@ -161,7 +161,7 @@ h1 {
 			font-size: 1.05em;
 		}
 		a {
-			display:inline-block !important;
+			display:inline-block;
 			padding: 0 0 .5em 0;
 			color:$color-index-text;
 			font-weight: bold;
@@ -188,12 +188,12 @@ h1 {
 [class="section-rule"] {
 	padding: 0 0 1em 0;
 	text-align: right;
-	border-top:2px $color-highlight solid !important;
-	display:none !important;
+	border-top:2px $color-highlight solid;
+	display:none;
 }
 [class="back-to-top"] {
 	@include button();
-	display:none !important;
+	display:none;
 }
 
 [class="column2"] h2 {
@@ -233,18 +233,18 @@ h1 {
 	.date {
 		padding: 0 0 1em 0;
 	}
-	.headerButton {
+	.utility {
 		text-align: left !important;
 		width:100% !important;
 	}
-	.headerButton a {
+	.utility a {
 		width:100% !important;
 		padding: .3em 0 !important;
 	}
-	.indexArea,
-	.indexArea tbody,
-	.indexArea tr,
-	.indexArea td,
+	.tocArea,
+	.tocArea tbody,
+	.tocArea tr,
+	.tocArea td,
 	.columns,
 	.columns tbody,
 	.columns tr,
@@ -252,11 +252,11 @@ h1 {
 		width:100% !important;
 		display:block !important;
 	}
-	.indexArea td {
+	.tocArea td {
 		padding: 0 $gutter;
 		width: 93.33333% !important;
 	}
-	br.indexArea {
+	br.tocArea {
 		display:inline !important;
 	}
 	.section-rule {

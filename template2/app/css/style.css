@@ -87,7 +87,7 @@ ul {
 
 /* line 117, ../scss/style.scss */
 [class="webVersionBottom"] {
-  display: none !important;
+  display: none;
 }
 
 /* line 120, ../scss/style.scss */
@@ -125,48 +125,48 @@ h1 {
 }
 
 /* line 144, ../scss/style.scss */
-[class="headerButton"] a {
+[class="utility"] a {
   padding: .3em 1em;
   background-color: #75c5b4;
   color: white;
   font-weight: bold;
   font-size: .9em;
   text-align: center;
-  display: inline-block !important;
+  display: inline-block;
 }
 
 /* line 149, ../scss/style.scss */
-[class="headerButton"] a:hover,
+[class="utility"] a:hover,
 [class="back-to-top"]:hover {
   background-color: #681725;
   text-decoration: none;
 }
 
 /* line 154, ../scss/style.scss */
-[class="indexArea"] {
+[class="tocArea"] {
   xdisplay: none;
   background-color: #f1efe4;
 }
 /* line 158, ../scss/style.scss */
-[class="indexArea"] th,
-[class="indexArea"] td {
+[class="tocArea"] th,
+[class="tocArea"] td {
   padding: 0 0 0.8em 3.33333%;
 }
 /* line 160, ../scss/style.scss */
-[class="indexArea"] th font,
-[class="indexArea"] td font {
+[class="tocArea"] th font,
+[class="tocArea"] td font {
   font-size: 1.05em;
 }
 /* line 163, ../scss/style.scss */
-[class="indexArea"] th a,
-[class="indexArea"] td a {
-  display: inline-block !important;
+[class="tocArea"] th a,
+[class="tocArea"] td a {
+  display: inline-block;
   padding: 0 0 .5em 0;
   color: #730505;
   font-weight: bold;
 }
 /* line 170, ../scss/style.scss */
-[class="indexArea"] th {
+[class="tocArea"] th {
   padding: 1em 3.33333%;
   font-weight: normal;
 }
@@ -200,8 +200,8 @@ h1 {
 [class="section-rule"] {
   padding: 0 0 1em 0;
   text-align: right;
-  border-top: 2px #75c5b4 solid !important;
-  display: none !important;
+  border-top: 2px #75c5b4 solid;
+  display: none;
 }
 
 /* line 194, ../scss/style.scss */
@@ -212,7 +212,7 @@ h1 {
   font-weight: bold;
   font-size: .9em;
   text-align: center;
-  display: none !important;
+  display: none;
 }
 
 /* line 199, ../scss/style.scss */
@@ -268,22 +268,22 @@ h1 {
   }
 
   /* line 236, ../scss/style.scss */
-  .headerButton {
+  .utility {
     text-align: left !important;
     width: 100% !important;
   }
 
   /* line 240, ../scss/style.scss */
-  .headerButton a {
+  .utility a {
     width: 100% !important;
     padding: .3em 0 !important;
   }
 
   /* line 251, ../scss/style.scss */
-  .indexArea,
-  .indexArea tbody,
-  .indexArea tr,
-  .indexArea td,
+  .tocArea,
+  .tocArea tbody,
+  .tocArea tr,
+  .tocArea td,
   .columns,
   .columns tbody,
   .columns tr,
@@ -293,13 +293,13 @@ h1 {
   }
 
   /* line 255, ../scss/style.scss */
-  .indexArea td {
+  .tocArea td {
     padding: 0 3.33333%;
     width: 93.33333% !important;
   }
 
   /* line 259, ../scss/style.scss */
-  br.indexArea {
+  br.tocArea {
     display: inline !important;
   }
 
