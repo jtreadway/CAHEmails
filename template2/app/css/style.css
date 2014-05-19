@@ -204,14 +204,14 @@ hr {
 [class="businessUnit"] {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: 0em;
-  font-size: .9em;
+  font-size: 1em;
   line-height: 1.3em;
   padding: 1.66667% 0;
 }
 
 /* line 222, ../scss/style.scss */
 [class="title"] {
-  padding: 0 0 .8em 0;
+  padding: 0;
   color: #2e2e2f;
   line-height: 1.3em;
   font-weight: bold;
@@ -269,30 +269,39 @@ hr {
   font-size: 1.05em;
 }
 
-/* line 261, ../scss/style.scss */
+/* line 262, ../scss/style.scss */
 [class="mainArea"] td {
   padding: 0 0 1.3em 0;
 }
-
 /* line 265, ../scss/style.scss */
+[class="mainArea"] .column1 img {
+  padding: 5px 0;
+}
+/* line 269, ../scss/style.scss */
+[class="mainArea"] .wrap td,
+[class="mainArea"] .two-column img {
+  padding: 0 0 5px 5px;
+}
+
+/* line 274, ../scss/style.scss */
 [class="column2"] h2 {
   color: #346170;
   font-size: 1.5em;
   font-style: italic;
   font-weight: normal;
 }
-/* line 271, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 [class="column2"] h3 {
   color: #346170;
 }
 
-/* line 275, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 [class="gutter"] {
   font-size: 0px;
   line-height: 0px;
 }
 
-/* line 279, ../scss/style.scss */
+/* line 288, ../scss/style.scss */
 [class="back-to-top"] {
   border-top: 2px #9bc787 solid !important;
   margin: 1.3em 0 .5em 0 !important;
@@ -301,14 +310,20 @@ hr {
   height: 0px;
   overflow: hidden;
 }
-/* line 286, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
+[class="back-to-top"] table {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+/* line 300, ../scss/style.scss */
 [class="back-to-top"] .button {
   background-color: #9bc787;
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
 }
-/* line 288, ../scss/style.scss */
+/* line 302, ../scss/style.scss */
 [class="back-to-top"] .button a {
   display: inline-block;
   width: 100%;
@@ -318,13 +333,13 @@ hr {
   text-align: center;
 }
 
-/* line 293, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 [class="footer"] {
   background-color: #f1efe4;
   font-size: .9em;
 }
 
-/* line 297, ../scss/style.scss */
+/* line 311, ../scss/style.scss */
 [class="webVersionBottom"] {
   display: none;
   height: 0px;
@@ -333,12 +348,12 @@ hr {
 
 /* Make width fluid if more than max width */
 @media only screen and (max-width: 600px) {
-  /* line 305, ../scss/style.scss */
+  /* line 319, ../scss/style.scss */
   .boundingTable {
     width: 100%;
   }
 
-  /* line 309, ../scss/style.scss */
+  /* line 323, ../scss/style.scss */
   .businessUnit,
   .mainArea .column1 {
     width: auto;
@@ -346,12 +361,12 @@ hr {
 }
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
-  /* line 317, ../scss/style.scss */
+  /* line 331, ../scss/style.scss */
   body[yahoofix] br[class="mobile"] {
     display: inline !important;
     height: auto !important;
   }
-  /* line 330, ../scss/style.scss */
+  /* line 346, ../scss/style.scss */
   body[yahoofix] .dateUtility tr,
   body[yahoofix] .dateUtility td,
   body[yahoofix] .tocArea tr,
@@ -361,125 +376,134 @@ hr {
   body[yahoofix] .mainArea .date,
   body[yahoofix] .mainArea .utility,
   body[yahoofix] .mainArea .column1,
-  body[yahoofix] .mainArea .column2 {
+  body[yahoofix] .mainArea .column2,
+  body[yahoofix] .mainArea .wrap,
+  body[yahoofix] .mainArea .two-column {
     display: block !important;
     height: auto !important;
     width: auto !important;
   }
-  /* line 335, ../scss/style.scss */
+  /* line 351, ../scss/style.scss */
+  body[yahoofix] .preHeaderTable {
+    background-color: #ffffff;
+  }
+  /* line 354, ../scss/style.scss */
   body[yahoofix] .internal {
     padding: 0;
   }
-  /* line 338, ../scss/style.scss */
+  /* line 357, ../scss/style.scss */
   body[yahoofix] .internal td {
     border-radius: 0 0 10px 10px !important;
     padding: .5em 1.3em !important;
     text-align: center !important;
   }
-  /* line 343, ../scss/style.scss */
+  /* line 362, ../scss/style.scss */
   body[yahoofix] .webVersionTop {
     display: none !important;
     height: 0px !important;
     overflow: hidden !important;
   }
-  /* line 348, ../scss/style.scss */
+  /* line 367, ../scss/style.scss */
   body[yahoofix] .webVersionBottom {
     display: inline !important;
     height: auto !important;
   }
-  /* line 352, ../scss/style.scss */
+  /* line 371, ../scss/style.scss */
   body[yahoofix] .logoArea {
     font-size: .8em !important;
     padding: 0 0 0.82em !important;
     width: 125px !important;
   }
-  /* line 356, ../scss/style.scss */
+  /* line 375, ../scss/style.scss */
   body[yahoofix] .logoArea img {
     padding: 0 0 0.4em 0 !important;
   }
-  /* line 360, ../scss/style.scss */
-  body[yahoofix] .title {
-    font-size: .8em !important;
-  }
-  /* line 362, ../scss/style.scss */
-  body[yahoofix] .title .businessUnit {
+  /* line 379, ../scss/style.scss */
+  body[yahoofix] .businessUnit {
     font-weight: normal !important;
-    font-size: 1em !important;
+    font-size: .9em !important;
   }
-  /* line 366, ../scss/style.scss */
-  body[yahoofix] .title h1 {
-    font-size: 1.9em !important;
+  /* line 383, ../scss/style.scss */
+  body[yahoofix] .title {
+    font-size: 1.7em !important;
   }
-  /* line 370, ../scss/style.scss */
+  /* line 386, ../scss/style.scss */
   body[yahoofix] .date {
     text-align: center !important;
   }
-  /* line 373, ../scss/style.scss */
+  /* line 389, ../scss/style.scss */
   body[yahoofix] .utility {
     text-align: left !important;
   }
-  /* line 375, ../scss/style.scss */
+  /* line 391, ../scss/style.scss */
   body[yahoofix] .utility a {
     padding: .3em 0 !important;
   }
-  /* line 381, ../scss/style.scss */
+  /* line 397, ../scss/style.scss */
   body[yahoofix] .tocArea th,
   body[yahoofix] .tocArea .column1,
   body[yahoofix] .tocArea .column2 {
     padding: 0 3.33333% !important;
     width: 93.33333% !important;
   }
-  /* line 385, ../scss/style.scss */
-  body[yahoofix] .mainArea .column1 {
+  /* line 405, ../scss/style.scss */
+  body[yahoofix] .mainArea .column1,
+  body[yahoofix] .mainArea .column1 img
+  .wrap td,
+  body[yahoofix] .mainArea .two-column img {
     padding: 0 !important;
   }
-  /* line 388, ../scss/style.scss */
+  /* line 408, ../scss/style.scss */
+  body[yahoofix] .mainArea .two-column img {
+    padding: 0 0 5px 0 !important;
+  }
+  /* line 413, ../scss/style.scss */
   body[yahoofix] .gutter {
     display: none !important;
     height: 0px !important;
     overflow: hidden !important;
   }
-  /* line 393, ../scss/style.scss */
+  /* line 418, ../scss/style.scss */
   body[yahoofix] .back-to-top {
     display: table !important;
     height: auto !important;
   }
-  /* line 396, ../scss/style.scss */
+  /* line 421, ../scss/style.scss */
   body[yahoofix] .back-to-top tr {
     display: table-row !important;
   }
-  /* line 399, ../scss/style.scss */
+  /* line 424, ../scss/style.scss */
   body[yahoofix] .back-to-top td {
     display: table-cell !important;
   }
 }
 /* Narrow devices */
 /* Testing/Coloring */
-/* line 414, ../scss/style.scss */
+/* line 439, ../scss/style.scss */
 xbody .column1 {
   background-color: #ffdddd;
 }
-/* line 417, ../scss/style.scss */
+/* line 442, ../scss/style.scss */
 xbody .column2 {
   background-color: #ddffdd;
 }
-/* line 420, ../scss/style.scss */
+/* line 445, ../scss/style.scss */
 xbody h1 {
   background-color: #33ffff;
 }
-/* line 423, ../scss/style.scss */
+/* line 448, ../scss/style.scss */
 xbody h2 {
   background-color: #ff33ff;
 }
-/* line 426, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 xbody h3 {
   background-color: #ffff33;
 }
-/* line 429, ../scss/style.scss */
+/* line 454, ../scss/style.scss */
 xbody hr {
   background-color: #00ffff;
 }
-/* line 432, ../scss/style.scss */
+/* line 457, ../scss/style.scss */
 xbody br {
   background-color: #ff00ff;
 }

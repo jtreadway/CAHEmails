@@ -180,13 +180,13 @@ hr {
 [class="businessUnit"] {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: 0em;
-  font-size: .9em;
+  font-size: 1em;
   line-height: 1.3em;
   padding: 1.66667% 0;
 }
 
 [class="title"] {
-  padding: 0 0 .8em 0;
+  padding: 0;
   color: #2e2e2f;
   line-height: 1.3em;
   font-weight: bold;
@@ -240,6 +240,13 @@ hr {
 [class="mainArea"] td {
   padding: 0 0 1.3em 0;
 }
+[class="mainArea"] .column1 img {
+  padding: 5px 0;
+}
+[class="mainArea"] .wrap td,
+[class="mainArea"] .two-column img {
+  padding: 0 0 5px 5px;
+}
 
 [class="column2"] h2 {
   color: #346170;
@@ -260,6 +267,11 @@ hr {
   border-top: 2px #9bc787 solid !important;
   margin: 1.3em 0 .5em 0 !important;
   height: auto !important;
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+[class="back-to-top"] table {
   display: none;
   height: 0px;
   overflow: hidden;
@@ -316,10 +328,15 @@ hr {
   body[yahoofix] .mainArea .date,
   body[yahoofix] .mainArea .utility,
   body[yahoofix] .mainArea .column1,
-  body[yahoofix] .mainArea .column2 {
+  body[yahoofix] .mainArea .column2,
+  body[yahoofix] .mainArea .wrap,
+  body[yahoofix] .mainArea .two-column {
     display: block !important;
     height: auto !important;
     width: auto !important;
+  }
+  body[yahoofix] .preHeaderTable {
+    background-color: #ffffff;
   }
   body[yahoofix] .internal {
     padding: 0;
@@ -346,15 +363,12 @@ hr {
   body[yahoofix] .logoArea img {
     padding: 0 0 0.4em 0 !important;
   }
-  body[yahoofix] .title {
-    font-size: .8em !important;
-  }
-  body[yahoofix] .title .businessUnit {
+  body[yahoofix] .businessUnit {
     font-weight: normal !important;
-    font-size: 1em !important;
+    font-size: .9em !important;
   }
-  body[yahoofix] .title h1 {
-    font-size: 1.9em !important;
+  body[yahoofix] .title {
+    font-size: 1.7em !important;
   }
   body[yahoofix] .date {
     text-align: center !important;
@@ -371,8 +385,14 @@ hr {
     padding: 0 3.33333% !important;
     width: 93.33333% !important;
   }
-  body[yahoofix] .mainArea .column1 {
+  body[yahoofix] .mainArea .column1,
+  body[yahoofix] .mainArea .column1 img
+  .wrap td,
+  body[yahoofix] .mainArea .two-column img {
     padding: 0 !important;
+  }
+  body[yahoofix] .mainArea .two-column img {
+    padding: 0 0 5px 0 !important;
   }
   body[yahoofix] .gutter {
     display: none !important;

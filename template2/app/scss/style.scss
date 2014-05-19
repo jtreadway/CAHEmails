@@ -215,12 +215,12 @@ hr {
 [class="businessUnit"] {
 	mso-margin-top-alt: 0em;
 	mso-margin-bottom-alt: 0em;
-	font-size: .9em;
+	font-size: 1em;
 	line-height: $line-height;
 	padding: $gutter/2 0;
 }
 [class="title"] {
-	padding: 0 0 .8em 0;
+	padding: 0;
 	color: $color-title;
 	line-height: $line-height;
     font-weight: bold;
@@ -258,8 +258,17 @@ hr {
 		font-size: 1.05em;
 	}
 }
-[class="mainArea"] td {
-	padding: 0 0 1.3em 0;
+[class="mainArea"] {
+	td {
+		padding: 0 0 1.3em 0;
+	}
+	.column1 img {
+		padding: 5px 0;
+	}
+	.wrap td,
+	.two-column img {
+		padding: 0 0 5px 5px;
+	}
 }
 [class="column2"] {
 	h2 {
@@ -283,6 +292,11 @@ hr {
 	display: none;
 	height: 0px;
 	overflow: hidden;
+	table {
+		display: none;
+		height: 0px;
+		overflow: hidden;
+	}
 	.button {
 		@include buttonBox();
 		a {
@@ -327,10 +341,15 @@ hr {
 		.mainArea .date,
 		.mainArea .utility,
 		.mainArea .column1,
-		.mainArea .column2 {
+		.mainArea .column2,
+		.mainArea .wrap,
+		.mainArea .two-column {
 			display: block !important;
 			height: auto !important;
 			width: auto !important;
+		}
+		.preHeaderTable {
+			background-color:#ffffff;
 		}
 		.internal {
 			padding: 0;
@@ -357,16 +376,13 @@ hr {
 			    padding: 0 0 0.4em 0 !important;
 			}
 		}
-		.title {
-			font-size: .8em !important;
-			.businessUnit {
-				font-weight: normal !important;
-				font-size: 1em !important;
-			}
-			h1 {
-				font-size: 1.9em !important;
-			}
+		.businessUnit {
+			font-weight: normal !important;
+			font-size: .9em !important;
 		}
+			.title {
+				font-size: 1.7em !important;
+			}
 		.date {
 			text-align: center !important;
 		}
@@ -382,8 +398,17 @@ hr {
 			padding: 0 $gutter !important;
 			width: 93.33333% !important;
 		}
-		.mainArea .column1 {
-			padding: 0 !important;
+		.mainArea {
+			.column1,
+			.column1 img
+			.wrap td,
+			.two-column img {
+				padding: 0 !important;
+			}
+			.two-column img {
+				padding: 0 0 5px 0 !important;
+			}
+			
 		}
 		.gutter {
 			display: none !important;
