@@ -1,316 +1,485 @@
+/*
+ET Fonts
+size="1" / 8
+size=null / 10
+size="2" / 10
+size="3" / 12
+size="4" / 14
+size="5" / 18
+size="6" / 24
+size="7" / 36
+*/
 /* variables */
 /* mixins */
-/* styles */
-/* line 57, ../scss/style.scss */
+/* Client specific styles */
+/* line 75, ../scss/style.scss */
 ReadMsgBody {
   width: 100%;
 }
 
-/* line 58, ../scss/style.scss */
+/* Hotmail background & line height fixes */
+/* Hotmail symbol fix for mobile devices */
+/* line 79, ../scss/style.scss */
 .ExternalClass {
   width: 100%;
 }
+/* line 91, ../scss/style.scss */
+.ExternalClass,
+.ExternalClass br,
+.ExternalClass p,
+.ExternalClass h1,
+.ExternalClass h2,
+.ExternalClass h3,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass th,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  mso-line-height-rule: exactly;
+}
+/* line 98, ../scss/style.scss */
+.ExternalClass img[class^=Emoji] {
+  width: 10px;
+  height: 10px;
+  display: inline;
+}
 
-/* line 60, ../scss/style.scss */
+/* Tag styles */
+/* line 108, ../scss/style.scss */
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: Verdana;
   font-size: 13px;
-  color: #2e2e2f;
-  background-color: #f1efe4;
 }
 
-/* line 71, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 table {
   border-spacing: 0;
+  border-collapse: collapse;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
   margin: 0;
   padding: 0;
 }
-/* line 78, ../scss/style.scss */
-table,
+/* line 124, ../scss/style.scss */
+table th,
 table td {
   xborder: 1px #999 solid;
   color: #2e2e2f;
-  border-collapse: collapse;
   font-family: Verdana;
   font-size: 13px;
 }
 
-/* line 86, ../scss/style.scss */
-a {
-  color: #e41f35;
+/* line 131, ../scss/style.scss */
+h1 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: 0em;
+  margin: 0;
+  font-size: 2.2em;
+  line-height: 1.2em;
+}
+
+/* line 138, ../scss/style.scss */
+h2 {
+  mso-margin-top-alt: 1.2em;
+  mso-margin-bottom-alt: .7em;
+  margin: 1.2em 0 0.7em 0;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #9bc787;
+  font-size: 1.8em;
+}
+
+/* line 143, ../scss/style.scss */
+h3 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: .5em;
+  margin: 0 0 .5em 0;
+  letter-spacing: .05em;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #2e2e2f;
+}
+
+/* line 149, ../scss/style.scss */
+a,
+#outlook a,
+.applelinks a {
+  padding: 0;
+  color: #ee0000;
   text-decoration: none;
 }
-/* line 89, ../scss/style.scss */
-a:hover {
+/* line 153, ../scss/style.scss */
+a:hover,
+#outlook a:hover,
+.applelinks a:hover {
   text-decoration: underline;
 }
 
-/* line 94, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 img {
   border: none;
   outline: none;
+  display: block;
   text-decoration: none;
   -ms-interpolation-mode: bicubic;
+  width: 100%;
+  height: auto;
 }
 
-/* line 100, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 ul {
   padding: 0;
-  margin: 0 0 1em 1.3em;
+  margin: 0 0 1em 1.4em;
 }
 
-/* line 104, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
+hr {
+  mso-margin-top-alt: .2em;
+  mso-margin-bottom-alt: .5em;
+  margin: 1em 0;
+}
+
+/* Custom styles */
+/* line 179, ../scss/style.scss */
+[class="mobile"] {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* line 184, ../scss/style.scss */
 [id="backgroundTable"] {
-  width: 100%;
   background-color: #f1efe4;
   line-height: 100%;
 }
 
-/* line 109, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 [class="boundingTable"] {
   line-height: 1.3em;
 }
 
-/* line 112, ../scss/style.scss */
-[class="webVersionTop"] {
-  padding: 0.8em 3.33333%;
-  background-color: #f1efe4;
+/* line 191, ../scss/style.scss */
+[class="webVersionTop"] a {
   font-size: .9em;
+  font-weight: normal;
+  height: 1.7em;
+  overflow: hidden;
 }
 
-/* line 117, ../scss/style.scss */
-[class="webVersionBottom"] {
-  display: none;
+/* line 197, ../scss/style.scss */
+[class="internal"] {
+  padding: .3em 0 0 0;
 }
 
-/* line 120, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
+[class="internal"] td {
+  background-color: #ee0000;
+  border-radius: 10px 10px 0 0;
+  padding: .5em 2em;
+  font-size: .86em;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 208, ../scss/style.scss */
 [class="logoArea"] {
-  height: 60px;
-  padding: 0.8em 3.33333%;
+  padding: 1.3em 0;
+}
+/* line 210, ../scss/style.scss */
+[class="logoArea"] img {
+  width: 100%;
+  height: auto;
 }
 
-/* line 124, ../scss/style.scss */
-[class="sweepArea"] {
-  background-color: #75c5b4;
-}
-
-/* line 127, ../scss/style.scss */
-[class="header1"] {
-  padding: 10px 3.33333%;
-  background-color: #681725;
-  color: white;
-  line-height: 1.3em;
-}
-
-/* line 133, ../scss/style.scss */
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-/* line 139, ../scss/style.scss */
-[class="header2"] {
-  padding: 5px 3.33333%;
-  background-color: #e41f35;
-  color: white;
-}
-
-/* line 144, ../scss/style.scss */
-[class="utility"] a {
-  padding: .3em 1em;
-  background-color: #75c5b4;
-  color: white;
-  font-weight: bold;
+/* line 215, ../scss/style.scss */
+[class="businessUnit"] {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: 0em;
   font-size: .9em;
-  text-align: center;
-  display: inline-block;
+  line-height: 1.3em;
+  padding: 1.66667% 0;
 }
 
-/* line 149, ../scss/style.scss */
-[class="utility"] a:hover,
-[class="back-to-top"]:hover {
-  background-color: #681725;
-  text-decoration: none;
+/* line 222, ../scss/style.scss */
+[class="title"] {
+  padding: 0 0 .8em 0;
+  color: #2e2e2f;
+  line-height: 1.3em;
+  font-weight: bold;
 }
 
-/* line 154, ../scss/style.scss */
-[class="tocArea"] {
-  xdisplay: none;
-  background-color: #f1efe4;
-}
-/* line 158, ../scss/style.scss */
-[class="tocArea"] th,
-[class="tocArea"] td {
-  padding: 0 0 0.8em 3.33333%;
-}
-/* line 160, ../scss/style.scss */
-[class="tocArea"] th font,
-[class="tocArea"] td font {
+/* line 228, ../scss/style.scss */
+[class="intro"] {
+  padding: 3.33333% 0 2.5% 0;
+  background-color: #900000;
+  color: white;
   font-size: 1.05em;
 }
-/* line 163, ../scss/style.scss */
-[class="tocArea"] th a,
-[class="tocArea"] td a {
+
+/* line 234, ../scss/style.scss */
+[class="utility"] {
+  background-color: #9bc787;
+  font-size: .9em;
+  text-align: center;
+  padding: .3em 1em;
+}
+
+/* line 239, ../scss/style.scss */
+[class="utility"] a,
+[class="utility"] #outlook a,
+[class="utility"] .applelinks a {
+  display: inline-block;
+  width: 100%;
+  background-color: #9bc787;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 243, ../scss/style.scss */
+[class="tocArea"] {
+  background-color: #f1efe4;
+}
+/* line 246, ../scss/style.scss */
+[class="tocArea"] .column1,
+[class="tocArea"] .column2 {
+  padding: 0 0 .7em 0;
+}
+/* line 248, ../scss/style.scss */
+[class="tocArea"] .column1 a,
+[class="tocArea"] .column2 a {
   display: inline-block;
   padding: 0 0 .5em 0;
   color: #730505;
   font-weight: bold;
 }
-/* line 170, ../scss/style.scss */
+/* line 255, ../scss/style.scss */
 [class="tocArea"] th {
-  padding: 1em 3.33333%;
+  padding: 1em 0;
   font-weight: normal;
+  font-size: 1.05em;
 }
 
-/* line 175, ../scss/style.scss */
-[class="column1"] h2 {
-  margin: 0.2em 0 0.5em;
-  letter-spacing: 0.02em;
-  line-height: 1.2em;
-  font-weight: bold;
-  color: #75c5b4;
-  font-size: 1.8em;
+/* line 261, ../scss/style.scss */
+[class="mainArea"] td {
+  padding: 0 0 1.3em 0;
 }
 
-/* line 180, ../scss/style.scss */
-[class="column1"] h3 {
-  margin: 0 0 .4em 0;
-  letter-spacing: .05em;
-  font-size: 1.15em;
-  font-weight: bold;
-  color: #2e2e2f;
-}
-
-/* line 184, ../scss/style.scss */
-[class="rule"] {
-  padding: .7em 0;
-  border-top: 1px #c8c8d2 solid;
-}
-
-/* line 188, ../scss/style.scss */
-[class="section-rule"] {
-  padding: 0 0 1em 0;
-  text-align: right;
-  border-top: 2px #75c5b4 solid;
-  display: none;
-}
-
-/* line 194, ../scss/style.scss */
-[class="back-to-top"] {
-  padding: .3em 1em;
-  background-color: #75c5b4;
-  color: white;
-  font-weight: bold;
-  font-size: .9em;
-  text-align: center;
-  display: none;
-}
-
-/* line 199, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 [class="column2"] h2 {
-  margin: 0.2em 0 0.5em;
-  letter-spacing: 0.02em;
-  line-height: 1.2em;
-  font-weight: bold;
   color: #346170;
   font-size: 1.5em;
   font-style: italic;
   font-weight: normal;
 }
-
-/* line 206, ../scss/style.scss */
+/* line 271, ../scss/style.scss */
 [class="column2"] h3 {
-  margin: 0 0 .4em 0;
-  letter-spacing: .05em;
-  font-size: 1.15em;
-  font-weight: bold;
   color: #346170;
 }
 
-/* line 212, ../scss/style.scss */
-[class="footerTable"] td {
+/* line 275, ../scss/style.scss */
+[class="gutter"] {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+/* line 279, ../scss/style.scss */
+[class="back-to-top"] {
+  border-top: 2px #9bc787 solid !important;
+  margin: 1.3em 0 .5em 0 !important;
+  height: auto !important;
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+/* line 286, ../scss/style.scss */
+[class="back-to-top"] .button {
+  background-color: #9bc787;
+  font-size: .9em;
+  text-align: center;
+  padding: .3em 1em;
+}
+/* line 288, ../scss/style.scss */
+[class="back-to-top"] .button a {
+  display: inline-block;
+  width: 100%;
+  background-color: #9bc787;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 293, ../scss/style.scss */
+[class="footer"] {
   background-color: #f1efe4;
-  font-size: .86em;
-  line-height: 1.3em;
+  font-size: .9em;
+}
+
+/* line 297, ../scss/style.scss */
+[class="webVersionBottom"] {
+  display: none;
+  height: 0px;
+  overflow: hidden;
 }
 
 /* Make width fluid if more than max width */
 @media only screen and (max-width: 600px) {
-  /* line 220, ../scss/style.scss */
-  [class="boundingTable"] {
+  /* line 305, ../scss/style.scss */
+  .boundingTable {
     width: 100%;
+  }
+
+  /* line 309, ../scss/style.scss */
+  .businessUnit,
+  .mainArea .column1 {
+    width: auto;
   }
 }
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
-  /* line 227, ../scss/style.scss */
-  .webVersionTop {
-    display: none !important;
-  }
-
-  /* line 230, ../scss/style.scss */
-  .webVersionBottom {
+  /* line 317, ../scss/style.scss */
+  body[yahoofix] br[class="mobile"] {
     display: inline !important;
+    height: auto !important;
   }
-
-  /* line 233, ../scss/style.scss */
-  .date {
-    padding: 0 0 1em 0;
+  /* line 330, ../scss/style.scss */
+  body[yahoofix] .dateUtility tr,
+  body[yahoofix] .dateUtility td,
+  body[yahoofix] .tocArea tr,
+  body[yahoofix] .tocArea th,
+  body[yahoofix] .tocArea td,
+  body[yahoofix] .mainArea tr,
+  body[yahoofix] .mainArea .date,
+  body[yahoofix] .mainArea .utility,
+  body[yahoofix] .mainArea .column1,
+  body[yahoofix] .mainArea .column2 {
+    display: block !important;
+    height: auto !important;
+    width: auto !important;
   }
-
-  /* line 236, ../scss/style.scss */
-  .utility {
+  /* line 335, ../scss/style.scss */
+  body[yahoofix] .internal {
+    padding: 0;
+  }
+  /* line 338, ../scss/style.scss */
+  body[yahoofix] .internal td {
+    border-radius: 0 0 10px 10px !important;
+    padding: .5em 1.3em !important;
+    text-align: center !important;
+  }
+  /* line 343, ../scss/style.scss */
+  body[yahoofix] .webVersionTop {
+    display: none !important;
+    height: 0px !important;
+    overflow: hidden !important;
+  }
+  /* line 348, ../scss/style.scss */
+  body[yahoofix] .webVersionBottom {
+    display: inline !important;
+    height: auto !important;
+  }
+  /* line 352, ../scss/style.scss */
+  body[yahoofix] .logoArea {
+    font-size: .8em !important;
+    padding: 0 0 0.82em !important;
+    width: 125px !important;
+  }
+  /* line 356, ../scss/style.scss */
+  body[yahoofix] .logoArea img {
+    padding: 0 0 0.4em 0 !important;
+  }
+  /* line 360, ../scss/style.scss */
+  body[yahoofix] .title {
+    font-size: .8em !important;
+  }
+  /* line 362, ../scss/style.scss */
+  body[yahoofix] .title .businessUnit {
+    font-weight: normal !important;
+    font-size: 1em !important;
+  }
+  /* line 366, ../scss/style.scss */
+  body[yahoofix] .title h1 {
+    font-size: 1.9em !important;
+  }
+  /* line 370, ../scss/style.scss */
+  body[yahoofix] .date {
+    text-align: center !important;
+  }
+  /* line 373, ../scss/style.scss */
+  body[yahoofix] .utility {
     text-align: left !important;
-    width: 100% !important;
   }
-
-  /* line 240, ../scss/style.scss */
-  .utility a {
-    width: 100% !important;
+  /* line 375, ../scss/style.scss */
+  body[yahoofix] .utility a {
     padding: .3em 0 !important;
   }
-
-  /* line 251, ../scss/style.scss */
-  .tocArea,
-  .tocArea tbody,
-  .tocArea tr,
-  .tocArea td,
-  .columns,
-  .columns tbody,
-  .columns tr,
-  .columns td {
-    width: 100% !important;
-    display: block !important;
-  }
-
-  /* line 255, ../scss/style.scss */
-  .tocArea td {
-    padding: 0 3.33333%;
+  /* line 381, ../scss/style.scss */
+  body[yahoofix] .tocArea th,
+  body[yahoofix] .tocArea .column1,
+  body[yahoofix] .tocArea .column2 {
+    padding: 0 3.33333% !important;
     width: 93.33333% !important;
   }
-
-  /* line 259, ../scss/style.scss */
-  br.tocArea {
-    display: inline !important;
+  /* line 385, ../scss/style.scss */
+  body[yahoofix] .mainArea .column1 {
+    padding: 0 !important;
   }
-
-  /* line 262, ../scss/style.scss */
-  .section-rule {
-    display: block !important;
+  /* line 388, ../scss/style.scss */
+  body[yahoofix] .gutter {
+    display: none !important;
+    height: 0px !important;
+    overflow: hidden !important;
   }
-
-  /* line 265, ../scss/style.scss */
-  .back-to-top {
-    display: inline-block !important;
+  /* line 393, ../scss/style.scss */
+  body[yahoofix] .back-to-top {
+    display: table !important;
+    height: auto !important;
+  }
+  /* line 396, ../scss/style.scss */
+  body[yahoofix] .back-to-top tr {
+    display: table-row !important;
+  }
+  /* line 399, ../scss/style.scss */
+  body[yahoofix] .back-to-top td {
+    display: table-cell !important;
   }
 }
 /* Narrow devices */
+/* Testing/Coloring */
+/* line 414, ../scss/style.scss */
+xbody .column1 {
+  background-color: #ffdddd;
+}
+/* line 417, ../scss/style.scss */
+xbody .column2 {
+  background-color: #ddffdd;
+}
+/* line 420, ../scss/style.scss */
+xbody h1 {
+  background-color: #33ffff;
+}
+/* line 423, ../scss/style.scss */
+xbody h2 {
+  background-color: #ff33ff;
+}
+/* line 426, ../scss/style.scss */
+xbody h3 {
+  background-color: #ffff33;
+}
+/* line 429, ../scss/style.scss */
+xbody hr {
+  background-color: #00ffff;
+}
+/* line 432, ../scss/style.scss */
+xbody br {
+  background-color: #ff00ff;
+}

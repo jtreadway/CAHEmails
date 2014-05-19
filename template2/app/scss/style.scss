@@ -1,23 +1,31 @@
+/*
+ET Fonts
+size="1" / 8
+size=null / 10
+size="2" / 10
+size="3" / 12
+size="4" / 14
+size="5" / 18
+size="6" / 24
+size="7" / 36
+*/
+
 /* variables */
 
-$color-text: #2E2E2F;
-$color-body-background: #F1EFE4;
-
-$color-sweep1: #E41F35;
-$color-header1: #ffffff;
-
-$color-sweep2: #75C5B4;
-$color-header2: $color-header1;
-
+$color-outer-bg: #F1EFE4;
+$color-inner-bg: #ffffff;
+$color-sweep1: #EE0000;
+$color-sweep2: #9BC787;
 $color-highlight: $color-sweep2;
-
-$color-index-text: #730505;
-
-$color-side-title: #346170;
-
-$color-rule: #C8C8D2;
-
 $color-multiply: rgb(red($color-sweep1)*red($color-sweep2)/255, green($color-sweep1)*green($color-sweep2)/255, blue($color-sweep1)*blue($color-sweep2)/255);
+
+$color-text: #2E2E2F;
+$color-text-invert: #ffffff;
+$color-toc-text: #730505;
+$color-aside-title: #346170;
+$color-rule: #C8C8D2;
+$color-title: $color-text;
+$color-intro: $color-text-invert;
 
 $gutter: 3.33333%;
 
@@ -31,242 +39,397 @@ $px: 1px;
 /* mixins */
 
 @mixin h2() {
-    margin: 0.2em 0 0.5em;
+	mso-margin-top-alt: 1.2em;
+	mso-margin-bottom-alt: .7em;
+ 	margin: 1.2em 0 0.7em 0;
     letter-spacing: 0.02em;
     line-height: 1.2em;
-    font-weight:bold;
+    font-weight: bold;
 } 
 @mixin h3() {
-	margin: 0 0 .4em 0;
+	mso-margin-top-alt: 0em;
+	mso-margin-bottom-alt: .5em;
+	margin: 0 0 .5em 0;
 	letter-spacing: .05em;
 	font-size: 1.15em;
-    font-weight:bold;
+    font-weight: bold;
 } 
-@mixin button() {
-	padding: .3em 1em;
+@mixin buttonBox() {
 	background-color: $color-highlight;
-	color: $color-header1;
-	font-weight: bold;
 	font-size: .9em;
-	text-align:center;
+	text-align: center;
+	padding: .3em 1em;
+}
+@mixin buttonLink() {
+	display: inline-block;
+	width:100%;
+	background-color: $color-highlight;
+	color: $color-text-invert;
+	font-weight: bold;
+	text-align: center;
 }
 
 
-/* styles */
+/* Client specific styles */
 
 ReadMsgBody{width: 100%;}
-.ExternalClass{width: 100%;}
+
+/* Hotmail background & line height fixes */
+/* Hotmail symbol fix for mobile devices */
+.ExternalClass {
+	width: 100%;
+	&,
+	br,
+	p,
+	h1,
+	h2,
+	h3,
+	span,
+	font,
+	th,
+	td,
+	div {
+		line-height: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		mso-line-height-rule: exactly;
+	}
+	img[class^=Emoji] {
+		width: 10px;
+		height: 10px;
+		display: inline;
+	} 
+}
+
+
+/* Tag styles */
 
 body {
-    width: 100%;
     margin: 0;
     padding: 0;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-	font-family:Verdana;
-	font-size:$font-size;
-	color:$color-text;
-	background-color: $color-body-background;
+	font-family: Verdana;
+	font-size: $font-size;
 }
 table {
     border-spacing: 0;
+    border-collapse: collapse;
     mso-table-lspace: 0pt;
     mso-table-rspace: 0pt;
     margin: 0;
     padding: 0;
-    &,
+    th,
     td {
     	xborder: 1px #999 solid;
-		color:$color-text;
-        border-collapse: collapse;
-		font-family:Verdana;
-		font-size:$font-size;
+		color: $color-text;
+		font-family: Verdana;
+		font-size: $font-size;
    }
 }
-a {
+h1 {
+	mso-margin-top-alt: 0em;
+	mso-margin-bottom-alt: 0em;
+	margin: 0;
+	font-size: 2.2em;
+	line-height: 1.2em;
+}
+h2 {
+	@include h2();
+	color: $color-sweep2;
+	font-size: 1.8em;
+}
+h3 {
+	@include h3();
+	color: $color-text;
+}
+a,
+#outlook a,
+.applelinks a {
+	padding:0;
 	color: $color-sweep1;
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
 	}
 }
-
 img {
     border: none;
     outline: none;
+    display: block;
     text-decoration: none;
     -ms-interpolation-mode: bicubic;
+    width: 100%;
+    height: auto;
 }
 ul {
-	padding:0;
-	margin: 0 0 1em 1.3em;
+	padding: 0;
+	margin: 0 0 1em 1.4em;
+}
+hr {
+	mso-margin-top-alt: .2em;
+	mso-margin-bottom-alt: .5em;
+	margin: 1em 0;
+}
+
+
+/* Custom styles */
+
+[class="mobile"] {
+	display: none;
+	height: 0px;
+	overflow: hidden;
 }
 [id="backgroundTable"] {
-	width: 100%;
-	background-color: $color-body-background;
+	background-color: $color-outer-bg;
 	line-height: 100%;
 }
 [class="boundingTable"] {
 	line-height: $line-height;
 }
-[class="webVersionTop"] {
-	padding: .8em $gutter;
-	background-color: $color-body-background;
+[class="webVersionTop"] a {
 	font-size: .9em;
+	font-weight:normal;
+	height: 1.7em;
+	overflow: hidden;
 }
-[class="webVersionBottom"] {
-	display:none;
+[class="internal"] {
+	padding: .3em 0 0 0; 
+}
+[class="internal"] td {
+	background-color: $color-sweep1;
+	border-radius: 10px 10px 0 0;
+	padding: .5em 2em;
+	font-size: .86em;
+	color: $color-text-invert;
+	font-weight:bold;
 }
 [class="logoArea"] {
-	height: 60px;	
-	padding: .8em $gutter;
+	padding: 1.3em 0;
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
-[class="sweepArea"] {
-	background-color: $color-sweep2;
-}
-[class="header1"] {
-	padding: 10px $gutter;
-	background-color: $color-multiply;
-	color: $color-header1;
+[class="businessUnit"] {
+	mso-margin-top-alt: 0em;
+	mso-margin-bottom-alt: 0em;
+	font-size: .9em;
 	line-height: $line-height;
+	padding: $gutter/2 0;
 }
-h1 {
-	margin:0;
-	color: $color-header1;
-	font-size: 1.8em;
-    font-weight:bold;
+[class="title"] {
+	padding: 0 0 .8em 0;
+	color: $color-title;
+	line-height: $line-height;
+    font-weight: bold;
 }
-[class="header2"] {
-	padding: 5px $gutter;
-	background-color: $color-sweep1;
-	color: $color-header2;
-}
-[class="utility"] a {
-	@include button();
-	display:inline-block;
-}
-[class="utility"] a:hover,
-[class="back-to-top"]:hover {
+[class="intro"] {
+	padding: $gutter 0 $gutter*.75 0;
 	background-color: $color-multiply;
-	text-decoration:none;
+	color: $color-intro;
+	font-size: 1.05em;
+}
+[class="utility"] {
+	@include buttonBox();
+}
+[class="utility"] a,
+[class="utility"] #outlook a,
+[class="utility"] .applelinks a {
+	@include buttonLink();
 }
 
 [class="tocArea"] {
-	xdisplay:none;
-	background-color: $color-body-background;
-	th,
-	td {
-		padding: 0 0 .8em $gutter;
-		font {
-			font-size: 1.05em;
-		}
+	background-color: $color-outer-bg;
+	.column1,
+	.column2 {
+		padding: 0 0 .7em 0;
 		a {
-			display:inline-block;
+			display: inline-block;
 			padding: 0 0 .5em 0;
-			color:$color-index-text;
+			color: $color-toc-text;
 			font-weight: bold;
 		}
 	}
 	th {
-		padding: 1em $gutter;
+		padding: 1em 0;
 		font-weight: normal;
+		font-size: 1.05em;
 	}
 }
-[class="column1"] h2 {
-	@include h2();
-    color: $color-sweep2;
-    font-size: 1.8em;
+[class="mainArea"] td {
+	padding: 0 0 1.3em 0;
 }
-[class="column1"] h3 {
-	@include h3();	
-	color: $color-text;
+[class="column2"] {
+	h2 {
+		color: $color-aside-title;
+		font-size: 1.5em;
+		font-style: italic;
+		font-weight: normal;
+	} 
+	h3 {
+		color: $color-aside-title;
+	} 
 }
-[class="rule"] {
-	padding: .7em 0;
-	border-top:1px $color-rule solid;
-}
-[class="section-rule"] {
-	padding: 0 0 1em 0;
-	text-align: right;
-	border-top:2px $color-highlight solid;
-	display:none;
+[class="gutter"] {
+	font-size: 0px;
+	line-height: 0px;
 }
 [class="back-to-top"] {
-	@include button();
-	display:none;
+	border-top: 2px $color-highlight solid !important;
+	margin: 1.3em 0 .5em 0 !important;
+	height: auto !important;
+	display: none;
+	height: 0px;
+	overflow: hidden;
+	.button {
+		@include buttonBox();
+		a {
+			@include buttonLink();
+		}
+	}
 }
-
-[class="column2"] h2 {
-	@include h2();
-	color: $color-side-title;
-	font-size: 1.5em;
-	font-style: italic;
-	font-weight: normal;
-} 
-[class="column2"] h3 {
-	@include h3();	
-	color: $color-side-title;
-} 
-
-
-[class="footerTable"] td {
-	background-color: $color-body-background;
-	font-size:.86em;
-	line-height: 1.3em;
+[class="footer"] {
+	background-color: $color-outer-bg;
+	font-size: .9em;
+}
+[class="webVersionBottom"] {
+	display: none;
+	height: 0px;
+	overflow: hidden;
 }
 
 /* Make width fluid if more than max width */
-@media only screen and (max-width:600px) {
-	[class="boundingTable"] {
-		width:100%;
+@media only screen and (max-width: 600px) {
+	.boundingTable {
+		width: 100%;
+	}
+	.businessUnit,
+	.mainArea .column1 {
+		width: auto;
 	}
 }
 
 /* Narrow windows and devices */
-@media only screen and (max-width:480px) {
-	.webVersionTop {
-		display:none !important;
-	}
-	.webVersionBottom {
-		display:inline !important;
-	}
-	.date {
-		padding: 0 0 1em 0;
-	}
-	.utility {
-		text-align: left !important;
-		width:100% !important;
-	}
-	.utility a {
-		width:100% !important;
-		padding: .3em 0 !important;
-	}
-	.tocArea,
-	.tocArea tbody,
-	.tocArea tr,
-	.tocArea td,
-	.columns,
-	.columns tbody,
-	.columns tr,
-	.columns td {
-		width:100% !important;
-		display:block !important;
-	}
-	.tocArea td {
-		padding: 0 $gutter;
-		width: 93.33333% !important;
-	}
-	br.tocArea {
-		display:inline !important;
-	}
-	.section-rule {
-		display:block !important;
-	}
-	.back-to-top {
-		display:inline-block !important;
+@media only screen and (max-width: 480px) {
+	body[yahoofix] {
+		br[class="mobile"] {
+			display: inline !important;
+			height: auto !important;
+		}
+		.dateUtility tr,
+		.dateUtility td,
+		.tocArea tr,
+		.tocArea th,
+		.tocArea td,
+		.mainArea tr,
+		.mainArea .date,
+		.mainArea .utility,
+		.mainArea .column1,
+		.mainArea .column2 {
+			display: block !important;
+			height: auto !important;
+			width: auto !important;
+		}
+		.internal {
+			padding: 0;
+		}
+		.internal td {
+			border-radius: 0 0 10px 10px !important;
+			padding: .5em 1.3em !important;
+			text-align: center !important;
+		}
+		.webVersionTop {
+			display: none !important;
+			height: 0px !important;
+			overflow: hidden !important;
+		}
+		.webVersionBottom {
+			display: inline !important;
+			height: auto !important;
+		}
+		.logoArea {
+			font-size: .8em !important;
+			padding: 0 0 0.82em !important;
+			width: 125px !important;
+			img {
+			    padding: 0 0 0.4em 0 !important;
+			}
+		}
+		.title {
+			font-size: .8em !important;
+			.businessUnit {
+				font-weight: normal !important;
+				font-size: 1em !important;
+			}
+			h1 {
+				font-size: 1.9em !important;
+			}
+		}
+		.date {
+			text-align: center !important;
+		}
+		.utility {
+			text-align: left !important;
+			a {
+				padding: .3em 0 !important;
+			}
+		}
+		.tocArea th,
+		.tocArea .column1,
+		.tocArea .column2 {
+			padding: 0 $gutter !important;
+			width: 93.33333% !important;
+		}
+		.mainArea .column1 {
+			padding: 0 !important;
+		}
+		.gutter {
+			display: none !important;
+			height: 0px !important;
+			overflow: hidden !important;
+		}
+		.back-to-top {
+			display: table !important;
+			height: auto !important;
+			tr {
+				display: table-row !important;
+			}
+			td {
+				display: table-cell !important;
+			}
+		}
 	}
 }
 
 /* Narrow devices */
 @media only screen and (max-device-width: 480px) {
+}
+
+
+/* Testing/Coloring */
+
+xbody {
+	.column1 {
+		background-color: #ffdddd;
+	}
+	.column2 {
+		background-color: #ddffdd;
+	}
+	h1 {
+		background-color: #33ffff;
+	}
+	h2 {
+		background-color: #ff33ff;
+	}
+	h3 {
+		background-color: #ffff33;
+	}
+	hr {
+		background-color: #00ffff;
+	}
+	br {
+		background-color: #ff00ff;
+	}
 }
