@@ -26,7 +26,10 @@ text-decoration: underline;
 text-decoration: underline;
 }
 img {
-border: none; outline: none; display: block; text-decoration: none; -ms-interpolation-mode: bicubic; width: 100%; height: auto;
+border: none; outline: none; display: block; text-decoration: none; -ms-interpolation-mode: bicubic;
+}
+#backgroundTable {
+background-color: #f1efe4; line-height: 100%;
 }
 @media only screen and (max-width: 600px) {
   .boundingTable {
@@ -38,9 +41,18 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   .mainArea .column1 {
     width: auto;
   }
+  img {
+    width: 100%; height: auto;
+  }
+  .gutter {
+    width: 3.3333%;
+  }
+  .gutter img {
+    height: 0px;
+  }
 }
 @media only screen and (max-width: 480px) {
-  body[yahoofix] br[class="mobile"] {
+  body[yahoofix] br.mobile {
     display: inline !important; height: auto !important;
   }
   body[yahoofix] .dateUtility tr {
@@ -73,10 +85,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   body[yahoofix] .mainArea .column2 {
     display: block !important; height: auto !important; width: auto !important;
   }
-  body[yahoofix] .mainArea .wrap {
-    display: block !important; height: auto !important; width: auto !important;
-  }
-  body[yahoofix] .mainArea .two-column {
+  body[yahoofix] .mainArea .imgColumn {
     display: block !important; height: auto !important; width: auto !important;
   }
   body[yahoofix] .preHeaderTable {
@@ -107,7 +116,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
     font-size: 1.7em !important;
   }
   body[yahoofix] .date {
-    text-align: center !important;
+    text-align: center !important; padding: 0 0 .9em 0;
   }
   body[yahoofix] .utility {
     text-align: left !important;
@@ -118,30 +127,29 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   body[yahoofix] .tocArea th {
     padding: 0 3.33333% !important; width: 93.33333% !important;
   }
-  body[yahoofix] .tocArea .column1 {
+  body[yahoofix] .column1 {
     padding: 0 3.33333% !important; width: 93.33333% !important;
+  }
+  body[yahoofix] .column2 {
+    padding: 0 3.33333% !important; width: 93.33333% !important;
+  }
+  body[yahoofix] .tocArea th {
+    padding: 0.9em 3.33333% !important;
   }
   body[yahoofix] .tocArea .column2 {
-    padding: 0 3.33333% !important; width: 93.33333% !important;
+    padding: 0 3.33333% 0.9em 3.33333% !important;
   }
-  body[yahoofix] .mainArea .column1 {
-    padding: 0 !important;
+  body[yahoofix] .mainArea .imgWrap {
+    padding: 0 0 .5em 0 !important;
   }
-  body[yahoofix] .mainArea .column1 img
-.wrap td {
-    padding: 0 !important;
-  }
-  body[yahoofix] .mainArea .two-column img {
-    padding: 0 !important;
-  }
-  body[yahoofix] .mainArea .two-column img {
-    padding: 0 0 5px 0 !important;
-  }
-  body[yahoofix] .gutter {
-    display: none !important; height: 0px !important; overflow: hidden !important;
+  body[yahoofix] .mainArea .imgColumn {
+    padding: 0 0 .5em 0 !important;
   }
   body[yahoofix] .back-to-top {
     display: table !important; height: auto !important;
+  }
+  body[yahoofix] .back-to-top table {
+    display: table !important;
   }
   body[yahoofix] .back-to-top tr {
     display: table-row !important;
@@ -155,28 +163,28 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 	<a name="top" style="color: #ee0000; padding: 0; text-decoration: none" id="top"></a>
 	
 	<!-- BEGIN: Background Table -->
-    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f1efe4" id="backgroundTable" style="background: #f1efe4; border-collapse: collapse; border-spacing: 0; line-height: 100%; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f1efe4" id="backgroundTable" style="background: #f1efe4; border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 100%; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
         <tr>
             <td align="center" valign="top" bgcolor="#f1efe4" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
             
 				<!-- BEGIN: Bounding Table -->
-				<table class="boundingTable" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border-spacing: 0; line-height: 1.3em; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+				<table class="boundingTable" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 					<tr>
 						<td width="100%" align="left" valign="top" colspan="3" bgcolor="#f1efe4" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
 	
 							<!-- BEGIN: Pre-header Table -->
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f1efe4" class="preHeaderTable" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f1efe4" class="preHeaderTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr>
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 
-									<td width="45%" align="left" valign="middle" class="webVersionTop" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
+									<td width="270" align="left" valign="middle" class="webVersionTop" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
 										<a href="#" target="_blank" class="" style="color: #ee0000; font-size: .9em; font-weight: normal; height: 1.7em; overflow: hidden; padding: 0; text-decoration: none">View a web version of this email</a>
 									</td>
 															
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 
-									<td width="48.33333%" align="right" valign="bottom" class="internal" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .3em 0 0; xborder: 1px #999 solid">
-										<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+									<td width="290" align="right" valign="bottom" class="internal" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .3em 0 0; xborder: 1px #999 solid">
+										<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 											<tr>
 												<td align="center" valign="middle" style="background: #ee0000; border-radius: 10px 10px 0 0; color: white; font-family: Verdana; font-size: .86em; font-weight: bold; padding: .5em 2em; xborder: 1px #999 solid" bgcolor="#ee0000">INTERNAL USE ONLY</td>
 											</tr>
@@ -192,48 +200,48 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 						<td width="100%" align="left" valign="top" colspan="3" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
 
 							<!-- BEGIN: Header Table -->
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr align="left" valign="bottom">
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
-									<td width="175" align="left" valign="bottom" class="logoArea" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 1.3em 0; xborder: 1px #999 solid"><a href="http://cardinalhealth.com" target="_blank" title="Cardinal Health" style="color: #ee0000; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CAH-logo.png" alt="Cardinal Health" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; outline: none; text-decoration: none; width: 100%" /></a></td>
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
+									<td width="175" align="left" valign="bottom" class="logoArea" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 1.3em 0; xborder: 1px #999 solid"><a href="http://cardinalhealth.com" target="_blank" title="Cardinal Health" style="color: #ee0000; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CAH-logo.png" width="177" height="58" border="0" alt="Cardinal Health" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></a></td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 									<td width="364" align="right" valign="bottom" class="businessUnit" style="color: #2e2e2f; font-family: Verdana; font-size: 1em; line-height: 1.3em; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 1.66667% 0; xborder: 1px #999 solid">
 										Business Unit Name<br /><br />
 										<h1 class="title" style="color: #2e2e2f; font-size: 2.2em; font-weight: bold; line-height: 1.3em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0">Momentum</h1>
 									</td>
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 								</tr>
 							</table>
 							<!-- END: Header Table -->
 
 							<!-- BEGIN: Intro Table -->
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr>
-									<td width="3.33333%" nowrap="nowrap" bgcolor="#900000" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
-									<td align="left" valign="middle" class="intro" bgcolor="#900000" style="background: #900000; color: white; font-family: Verdana; font-size: 1.05em; padding: 3.33333% 0 2.5%; xborder: 1px #999 solid">Your resource ... introduction introduction introduction introduction introduction introduction introduction introduction</td>
-									<td width="3.33333%" nowrap="nowrap" bgcolor="#900000" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" bgcolor="#900000" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
+									<td width="560" align="left" valign="middle" class="intro" bgcolor="#900000" style="background: #900000; color: white; font-family: Verdana; font-size: 1.05em; padding: 3.33333% 0 2.5%; xborder: 1px #999 solid">Your resource ... introduction introduction introduction introduction introduction introduction introduction introduction</td>
+									<td width="20" class="gutter" nowrap="nowrap" bgcolor="#900000" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 								</tr>
 								<tr>
-									<td align="left" valign="top" colspan="5" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/header-sweep_green.gif" border="0" alt="header-sweeps" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; outline: none; text-decoration: none; width: 100%" /></td>
+									<td align="left" valign="top" colspan="5" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/header-sweep_green.gif" width="600" height="82" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 								</tr>
 							</table>
 							<!-- END: Intro Table -->
 							
 						</td>
 					</tr>
-					
-					
+
+
 					<tr>
-						<td width="3.33333%" nowrap="nowrap" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+						<td width="20" class="gutter" nowrap="nowrap" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 						
-						<td width="93.33333%" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
+						<td width="560" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
 						
 							<!-- BEGIN: Date/Utility Area -->
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" class="dateUtility" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" class="dateUtility" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr>
-									<td width="48.215%" align="left" valign="middle" class="date" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">Monday, May 5, 2014</td>
-									<td width="3.57%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
-									<td width="48.215%" align="center" valign="middle" bgcolor="#9BC787" class="utility" style="background: #9bc787; color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em 1em; text-align: center; xborder: 1px #999 solid"><a href="#" target="_blank" style="background: #9bc787; color: white; display: inline-block; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Customize your Momentum</a></td>
+									<td width="270" align="left" valign="middle" class="date" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">Monday, May 5, 2014</td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
+									<td width="270" align="center" valign="middle" bgcolor="#9BC787" class="utility" style="background: #9bc787; color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em 1em; text-align: center; xborder: 1px #999 solid"><a href="#" target="_blank" style="background: #9bc787; color: white; display: inline-block; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Customize your Momentum</a></td>
 								</tr>
 								<tr>
 									<td colspan="3" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
@@ -242,16 +250,15 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 							<!-- END: Date/Utility Area -->
 							
 							<!-- BEGIN: Table of Contents Area -->
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" class="tocArea" bgcolor="#f1efe4" style="background: #f1efe4; border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" class="tocArea" bgcolor="#f1efe4" style="background: #f1efe4; border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr>
-									<th width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 1.05em; font-weight: normal; padding: 1em 0; xborder: 1px #999 solid"> 
-									</th><th align="left" valign="top" colspan="3" width="93.33333%" style="color: #2e2e2f; font-family: Verdana; font-size: 1.05em; font-weight: normal; padding: 1em 0; xborder: 1px #999 solid">Jump to section</th>
-									<th width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 1.05em; font-weight: normal; padding: 1em 0; xborder: 1px #999 solid"> 
-								</th></tr>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
+									<th width="250" align="left" valign="top" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: 1.05em; font-weight: normal; padding: 1em 0; xborder: 1px #999 solid">Jump to section</th>
+								</tr>
 								<tr>
-									<td width="3.33333%" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"> </td>
+									<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 
-									<td align="left" valign="top" width="45%" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .7em; xborder: 1px #999 solid">
+									<td width="250" align="left" valign="top" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1em; xborder: 1px #999 solid">
 		
 										<a href="#section-1" style="color: #730505; display: inline-block; font-weight: bold; padding: 0 0 .5em; text-decoration: none">Ambulatory Care</a><br />
 			
@@ -267,9 +274,9 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 			
 									</td>
 
-									<td width="3.33333%" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"> </td>
+									<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 
-									<td align="left" valign="top" width="45%" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .7em; xborder: 1px #999 solid">
+									<td width="250" align="left" valign="top" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1em; xborder: 1px #999 solid">
 		
 										<a href="#aside-1" style="color: #730505; display: inline-block; font-weight: bold; padding: 0 0 .5em; text-decoration: none">Index Column 2</a><br />
 			
@@ -285,27 +292,33 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 			
 									</td>
 									
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 								</tr>
 							</table>
 							<!-- END: Table of Contents Area -->
 
-							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" class="mainArea" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" class="mainArea" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr>
 
 									<!-- BEGIN: Left Column -->
-									<td align="left" valign="top" bgcolor="#ffffff" width="330" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
+									<td align="left" valign="top" bgcolor="#ffffff" width="330" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1em; xborder: 1px #999 solid">
 										
 										<!-- BEGIN: Section -->
 										<a name="section-1" style="color: #ee0000; padding: 0; text-decoration: none" id="section-1"></a>
 										
-										<h2 style="color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 1.2em 0 0.7em; mso-margin-bottom-alt: .7em; mso-margin-top-alt: 1.2em">Ambulatory Care</h2>
+										<h2 style="color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 1.2em 0 0.7em">Ambulatory Care</h2>
 										
 										
 										<!-- BEGIN: Article -->
-										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Content Section Header</h3>
+										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Content Section Header</h3>
 
-										<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image1.jpg" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; outline: none; padding: 5px 0; text-decoration: none; width: 100%" />
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="imgFull" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+											<tr>
+												<td width="100%" align="left" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em; xborder: 1px #999 solid">
+													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image1.jpg" width="330" height="251" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" />
+												</td>
+											</tr>
+										</table>
 										
 										Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 										
@@ -322,58 +335,55 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 
 
 										<!-- BEGIN: Article -->
-										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Content Section Header</h3>
+										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Content Section Header</h3>
 										
-										<table width="50%" border="0" cellpadding="0" cellspacing="0" align="right" class="wrap" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+										<table width="50%" border="0" cellpadding="0" cellspacing="0" align="right" class="imgWrap" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 											<tr>
-												<td width="50%" align="left" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 5px 5px; xborder: 1px #999 solid">
-													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; outline: none; padding: 5px 0; text-decoration: none; width: 100%" />
+												<td align="right" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: .5em; padding: .2em 0 0 .5em; xborder: 1px #999 solid">
+													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" width="160" height="120" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" />
 												</td>
 											</tr>
 										</table>
 
 										Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 
-										Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br />
+										Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 
 
 										<!-- BEGIN: Article -->
-										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Content Section Header</h3>
+										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Content Section Header</h3>
 
-										<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 											<tr>
-												<td width="50%" align="left" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
+												<td align="left" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0; xborder: 1px #999 solid">
 													Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 													
-													Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br />
+													Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 												</td>
-												<td width="50%" align="left" valign="top" class="two-column" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
-													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image1.jpg" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; outline: none; padding: 0 0 5px 5px; text-decoration: none; width: 100%" />
-													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; outline: none; padding: 0 0 5px 5px; text-decoration: none; width: 100%" />
+												<td width="50%" align="right" valign="top" class="imgColumn" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: .5em; padding: .2em 0 0 .5em; xborder: 1px #999 solid">
+													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image1.jpg" width="160" height="120" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /><br />
+													<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" width="160" height="120" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" />
 												</td>
 											</tr>
 										</table>
-
-
-
 										
 										<a href="#" target="_blank" style="color: #ee0000; padding: 0; text-decoration: none">Left Column link »</a><br />
 										<!-- END: Article -->
 
 
 										<!-- BEGIN: Back To Top -->
-										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787 !important; border-top-style: solid !important; border-top-width: 2px !important; display: none; height: 0px; margin: 1.3em 0 .5em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787 !important; border-top-style: solid !important; border-top-width: 2px !important; display: none; font-size: 13px; height: 0px; margin: 1.3em 0 .5em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
 											<tr>
-												<td align="right" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
-													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; display: none; height: 0px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
+												<td align="right" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0; xborder: 1px #999 solid">
+													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; display: none; font-size: 13px; height: 0px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
 														<tr>
 															<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="background: #9bc787; color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em 1em; text-align: center; xborder: 1px #999 solid"><a href="#top" style="background: #9bc787; color: white; display: inline-block; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 														</tr>
@@ -388,10 +398,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 										<!-- BEGIN: Section -->
 										<a name="section-2" style="color: #ee0000; padding: 0; text-decoration: none" id="section-2"></a>
-										<h2 style="color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 1.2em 0 0.7em; mso-margin-bottom-alt: .7em; mso-margin-top-alt: 1.2em">Content Group Header</h2>
+										<h2 style="color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 1.2em 0 0.7em">Content Group Header</h2>
 										
 										<!-- BEGIN: Article -->
-										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Content Section Header</h3>
+										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Content Section Header</h3>
 										
 										Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 										
@@ -399,11 +409,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 
 
 										<!-- BEGIN: Article -->
-										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Content Section Header</h3>
+										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Content Section Header</h3>
 										
 										Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 										
@@ -411,11 +421,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 
 
 										<!-- BEGIN: Article -->
-										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Content Section Header</h3>
+										<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Content Section Header</h3>
 										
 										Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text. Left Column text.<br /><br />
 										
@@ -423,10 +433,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 										<!-- BEGIN: Back To Top -->
-										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787 !important; border-top-style: solid !important; border-top-width: 2px !important; display: none; height: 0px; margin: 1.3em 0 .5em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787 !important; border-top-style: solid !important; border-top-width: 2px !important; display: none; font-size: 13px; height: 0px; margin: 1.3em 0 .5em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
 											<tr>
-												<td align="right" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
-													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; display: none; height: 0px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
+												<td align="right" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0; xborder: 1px #999 solid">
+													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; display: none; font-size: 13px; height: 0px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
 														<tr>
 															<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="background: #9bc787; color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em 1em; text-align: center; xborder: 1px #999 solid"><a href="#top" style="background: #9bc787; color: white; display: inline-block; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 														</tr>
@@ -441,16 +451,16 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 									<!-- END: Left Column -->
 									
 									
-									<td width="3.57%" nowrap="nowrap" bgcolor="#ffffff" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; padding: 0 0 1.3em; xborder: 1px #999 solid"> </td>
+									<td width="20" nowrap="nowrap" bgcolor="#ffffff" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 
 
 									<!-- BEGIN: Right Column -->
-									<td align="left" valign="top" width="210" bgcolor="#ffffff" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
+									<td align="left" valign="top" width="210" bgcolor="#ffffff" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1em; xborder: 1px #999 solid">
 									
 										<!-- BEGIN: Section -->
 										<a name="aside-1" style="color: #ee0000; padding: 0; text-decoration: none" id="aside-1"></a>
 										
-										<h2 style="color: #346170; font-size: 1.5em; font-style: italic; font-weight: normal; letter-spacing: 0.02em; line-height: 1.2em; margin: 1.2em 0 0.7em; mso-margin-bottom-alt: .7em; mso-margin-top-alt: 1.2em">Right Column Section</h2>
+										<h2 style="color: #346170; font-size: 1.5em; font-style: italic; font-weight: normal; letter-spacing: 0.02em; line-height: 1.2em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 1.2em 0 0.7em">Right Column Section</h2>
 										
 										<!-- BEGIN: Article -->										
 										Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text.<br /><br />
@@ -459,11 +469,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 
 
 										<!-- BEGIN: Article -->
-										<h3 style="color: #346170; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Right Column Title</h3>
+										<h3 style="color: #346170; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Right Column Title</h3>
 										
 										Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text.<br /><br />
 										
@@ -471,11 +481,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 
 										
 										<!-- BEGIN: Article -->
-										<h3 style="color: #346170; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Right Column Title</h3>
+										<h3 style="color: #346170; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Right Column Title</h3>
 										
 										Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text.<br /><br />
 										
@@ -483,11 +493,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										<!-- END: Article -->
 
 
-										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
+										<!-- BEGIN: Rule --><hr size="1" color="#C8C8D2" style="clear: both; margin: 1em 0; mso-margin-bottom-alt: .5em; mso-margin-top-alt: .2em" /><!-- END: Rule -->	
 										
 
 										<!-- BEGIN: Article -->
-										<h3 style="color: #346170; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0 0 .5em; mso-margin-bottom-alt: .5em; mso-margin-top-alt: 0em">Right Column Title</h3>
+										<h3 style="color: #346170; font-size: 1.15em; font-weight: bold; letter-spacing: .05em; margin: 0; mso-margin-bottom-alt: 0em; mso-margin-top-alt: 0em; padding: 0 0 .5em">Right Column Title</h3>
 										
 										Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text. Right Column text.<br /><br />
 										
@@ -496,10 +506,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 
 										<!-- BEGIN: Back To Top -->
-										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787 !important; border-top-style: solid !important; border-top-width: 2px !important; display: none; height: 0px; margin: 1.3em 0 .5em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787 !important; border-top-style: solid !important; border-top-width: 2px !important; display: none; font-size: 13px; height: 0px; margin: 1.3em 0 .5em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
 											<tr>
-												<td align="right" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; xborder: 1px #999 solid">
-													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; display: none; height: 0px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
+												<td align="right" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0; xborder: 1px #999 solid">
+													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; display: none; font-size: 13px; height: 0px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden; padding: 0">
 														<tr>
 															<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="background: #9bc787; color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em 1em; text-align: center; xborder: 1px #999 solid"><a href="#top" style="background: #9bc787; color: white; display: inline-block; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 														</tr>
@@ -509,26 +519,27 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 										</table>
 										<!-- END: Back To Top -->	
 										<!-- END: Section -->
-
+										
+										<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="210" height="20" border="0" alt="" class="columnBottom" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 20px; outline: none; text-decoration: none; width: 210px" />
+									
 									</td>
 									<!-- END: Right Column -->
 								</tr>
 							</table>
 						</td>
 						
-						<td width="3.33333%" nowrap="nowrap" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+						<td width="20" class="gutter" nowrap="nowrap" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 					</tr>
 
 					<tr>
 						<td width="100%" align="left" valign="top" colspan="3" bgcolor="#f1efe4" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid">
 						
-						
 							<!-- BEGIN: Footer Table -->
-							<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1efe4" class="footerTable" style="border-collapse: collapse; border-spacing: 0; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1efe4" class="footerTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0">
 								<tr>
-									<td width="3.33333%" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 
-									<td width="93.33333%" class="footer" style="background: #f1efe4; color: #2e2e2f; font-family: Verdana; font-size: .9em; xborder: 1px #999 solid" bgcolor="#f1efe4"><br />
+									<td width="560" class="footer" style="background: #f1efe4; color: #2e2e2f; font-family: Verdana; font-size: .9em; xborder: 1px #999 solid" bgcolor="#f1efe4"><br />
 						
 										<a href="http://facebook.com/CardinalHealthFoundation" style="color: #ee0000; padding: 0; text-decoration: none">Facebook</a>
 										|
@@ -579,7 +590,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 							
 									</td>
 
-									<td width="3.33333%" nowrap="nowrap" bgcolor="#f1efe4" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; xborder: 1px #999 solid"> </td>
+									<td width="20" class="gutter" nowrap="nowrap" bgcolor="#f1efe4" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; line-height: 0px; xborder: 1px #999 solid"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
 								</tr>					
 							</table>
 							<!-- END: Footer Table -->

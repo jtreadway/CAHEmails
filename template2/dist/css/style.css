@@ -61,6 +61,7 @@ table {
   mso-table-rspace: 0pt;
   margin: 0;
   padding: 0;
+  font-size: 13px;
 }
 table th,
 table td {
@@ -74,14 +75,16 @@ h1 {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: 0em;
   margin: 0;
+  padding: 0;
   font-size: 2.2em;
   line-height: 1.2em;
 }
 
 h2 {
-  mso-margin-top-alt: 1.2em;
-  mso-margin-bottom-alt: .7em;
-  margin: 1.2em 0 0.7em 0;
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: 0em;
+  margin: 0;
+  padding: 1.2em 0 0.7em 0;
   letter-spacing: 0.02em;
   line-height: 1.2em;
   font-weight: bold;
@@ -91,8 +94,9 @@ h2 {
 
 h3 {
   mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: .5em;
-  margin: 0 0 .5em 0;
+  mso-margin-bottom-alt: 0em;
+  margin: 0;
+  padding: 0 0 .5em 0;
   letter-spacing: .05em;
   font-size: 1.15em;
   font-weight: bold;
@@ -118,8 +122,6 @@ img {
   display: block;
   text-decoration: none;
   -ms-interpolation-mode: bicubic;
-  width: 100%;
-  height: auto;
 }
 
 ul {
@@ -131,36 +133,42 @@ hr {
   mso-margin-top-alt: .2em;
   mso-margin-bottom-alt: .5em;
   margin: 1em 0;
+  clear: both;
 }
 
 /* Custom styles */
-[class="mobile"] {
+.mobile {
   display: none;
   height: 0px;
   overflow: hidden;
 }
 
-[id="backgroundTable"] {
+.columnBottom {
+  width: 210px;
+  height: 20px;
+}
+
+#backgroundTable {
   background-color: #f1efe4;
   line-height: 100%;
 }
 
-[class="boundingTable"] {
+.boundingTable {
   line-height: 1.3em;
 }
 
-[class="webVersionTop"] a {
+.webVersionTop a {
   font-size: .9em;
   font-weight: normal;
   height: 1.7em;
   overflow: hidden;
 }
 
-[class="internal"] {
+.internal {
   padding: .3em 0 0 0;
 }
 
-[class="internal"] td {
+.internal td {
   background-color: #ee0000;
   border-radius: 10px 10px 0 0;
   padding: .5em 2em;
@@ -169,15 +177,11 @@ hr {
   font-weight: bold;
 }
 
-[class="logoArea"] {
+.logoArea {
   padding: 1.3em 0;
 }
-[class="logoArea"] img {
-  width: 100%;
-  height: auto;
-}
 
-[class="businessUnit"] {
+.businessUnit {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: 0em;
   font-size: 1em;
@@ -185,30 +189,30 @@ hr {
   padding: 1.66667% 0;
 }
 
-[class="title"] {
+.title {
   padding: 0;
   color: #2e2e2f;
   line-height: 1.3em;
   font-weight: bold;
 }
 
-[class="intro"] {
+.intro {
   padding: 3.33333% 0 2.5% 0;
   background-color: #900000;
   color: white;
   font-size: 1.05em;
 }
 
-[class="utility"] {
+.utility {
   background-color: #9bc787;
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
 }
 
-[class="utility"] a,
-[class="utility"] #outlook a,
-[class="utility"] .applelinks a {
+.utility a,
+.utility #outlook a,
+.utility .applelinks a {
   display: inline-block;
   width: 100%;
   background-color: #9bc787;
@@ -217,53 +221,54 @@ hr {
   text-align: center;
 }
 
-[class="tocArea"] {
+.tocArea {
   background-color: #f1efe4;
 }
-[class="tocArea"] .column1,
-[class="tocArea"] .column2 {
-  padding: 0 0 .7em 0;
-}
-[class="tocArea"] .column1 a,
-[class="tocArea"] .column2 a {
+.tocArea a {
   display: inline-block;
   padding: 0 0 .5em 0;
   color: #730505;
   font-weight: bold;
 }
-[class="tocArea"] th {
+.tocArea th {
   padding: 1em 0;
   font-weight: normal;
   font-size: 1.05em;
 }
 
-[class="mainArea"] td {
-  padding: 0 0 1.3em 0;
+.mainArea td td {
+  padding: 0;
 }
-[class="mainArea"] .column1 img {
-  padding: 5px 0;
+.mainArea .imgFull td {
+  padding: 0 0 .5em 0;
 }
-[class="mainArea"] .wrap td,
-[class="mainArea"] .two-column img {
-  padding: 0 0 5px 5px;
+.mainArea .imgWrap td,
+.mainArea .imgColumn {
+  padding: .2em 0 0 .5em;
+  line-height: .5em;
 }
 
-[class="column2"] h2 {
+.column1,
+.column2 {
+  padding: 0 0 1em 0;
+}
+
+.column2 h2 {
   color: #346170;
   font-size: 1.5em;
   font-style: italic;
   font-weight: normal;
 }
-[class="column2"] h3 {
+.column2 h3 {
   color: #346170;
 }
 
-[class="gutter"] {
+.gutter {
   font-size: 0px;
   line-height: 0px;
 }
 
-[class="back-to-top"] {
+.back-to-top {
   border-top: 2px #9bc787 solid !important;
   margin: 1.3em 0 .5em 0 !important;
   height: auto !important;
@@ -271,18 +276,18 @@ hr {
   height: 0px;
   overflow: hidden;
 }
-[class="back-to-top"] table {
+.back-to-top table {
   display: none;
   height: 0px;
   overflow: hidden;
 }
-[class="back-to-top"] .button {
+.back-to-top .button {
   background-color: #9bc787;
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
 }
-[class="back-to-top"] .button a {
+.back-to-top .button a {
   display: inline-block;
   width: 100%;
   background-color: #9bc787;
@@ -291,12 +296,12 @@ hr {
   text-align: center;
 }
 
-[class="footer"] {
+.footer {
   background-color: #f1efe4;
   font-size: .9em;
 }
 
-[class="webVersionBottom"] {
+.webVersionBottom {
   display: none;
   height: 0px;
   overflow: hidden;
@@ -312,10 +317,22 @@ hr {
   .mainArea .column1 {
     width: auto;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gutter {
+    width: 3.3333%;
+  }
+  .gutter img {
+    height: 0px;
+  }
 }
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
-  body[yahoofix] br[class="mobile"] {
+  body[yahoofix] br.mobile {
     display: inline !important;
     height: auto !important;
   }
@@ -329,8 +346,7 @@ hr {
   body[yahoofix] .mainArea .utility,
   body[yahoofix] .mainArea .column1,
   body[yahoofix] .mainArea .column2,
-  body[yahoofix] .mainArea .wrap,
-  body[yahoofix] .mainArea .two-column {
+  body[yahoofix] .mainArea .imgColumn {
     display: block !important;
     height: auto !important;
     width: auto !important;
@@ -372,6 +388,7 @@ hr {
   }
   body[yahoofix] .date {
     text-align: center !important;
+    padding: 0 0 .9em 0;
   }
   body[yahoofix] .utility {
     text-align: left !important;
@@ -380,28 +397,27 @@ hr {
     padding: .3em 0 !important;
   }
   body[yahoofix] .tocArea th,
-  body[yahoofix] .tocArea .column1,
-  body[yahoofix] .tocArea .column2 {
+  body[yahoofix] .column1,
+  body[yahoofix] .column2 {
     padding: 0 3.33333% !important;
     width: 93.33333% !important;
   }
-  body[yahoofix] .mainArea .column1,
-  body[yahoofix] .mainArea .column1 img
-  .wrap td,
-  body[yahoofix] .mainArea .two-column img {
-    padding: 0 !important;
+  body[yahoofix] .tocArea th {
+    padding: 0.9em 3.33333% !important;
   }
-  body[yahoofix] .mainArea .two-column img {
-    padding: 0 0 5px 0 !important;
+  body[yahoofix] .tocArea .column2 {
+    padding: 0 3.33333% 0.9em 3.33333% !important;
   }
-  body[yahoofix] .gutter {
-    display: none !important;
-    height: 0px !important;
-    overflow: hidden !important;
+  body[yahoofix] .mainArea .imgWrap,
+  body[yahoofix] .mainArea .imgColumn {
+    padding: 0 0 .5em 0 !important;
   }
   body[yahoofix] .back-to-top {
     display: table !important;
     height: auto !important;
+  }
+  body[yahoofix] .back-to-top table {
+    display: table !important;
   }
   body[yahoofix] .back-to-top tr {
     display: table-row !important;
