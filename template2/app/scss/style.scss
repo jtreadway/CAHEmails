@@ -35,17 +35,17 @@ $line-height: 1.3em;
 /* mixins */
 
 @mixin h2() {
-	mso-margin-top-alt: 0em;
-	mso-margin-bottom-alt: 0em;
+	mso-margin-top-alt: 1.5em;
+	mso-margin-bottom-alt: .5em;
  	margin: 0;
- 	padding: 1.2em 0 0.7em 0;
+ 	padding: 1em 0 .5em 0;
     letter-spacing: 0.02em;
     line-height: 1.2em;
     font-weight: bold;
-} 
+}
 @mixin h3() {
 	mso-margin-top-alt: 0em;
-	mso-margin-bottom-alt: 0em;
+	mso-margin-bottom-alt: .5em;
  	margin: 0;
 	padding: 0 0 .5em 0;
 	letter-spacing: .05em;
@@ -53,7 +53,6 @@ $line-height: 1.3em;
     font-weight: bold;
 } 
 @mixin buttonBox() {
-	background-color: $color-highlight;
 	font-size: .9em;
 	text-align: center;
 	padding: .3em 1em;
@@ -61,7 +60,6 @@ $line-height: 1.3em;
 @mixin buttonLink() {
 	display: inline-block;
 	width:100%;
-	background-color: $color-highlight;
 	color: $color-text-invert;
 	font-weight: bold;
 	text-align: center;
@@ -103,13 +101,16 @@ ReadMsgBody{width: 100%;}
 
 /* Tag styles */
 
-body {
+body,
+#backgroundTable {
     margin: 0;
     padding: 0;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 	font-family: Verdana;
 	font-size: $font-size;
+	background-color: $color-outer-bg;
+	line-height: 100%;
 }
 table {
     border-spacing: 0;
@@ -121,7 +122,6 @@ table {
 	font-size: $font-size;
     th,
     td {
-    	xborder: 1px #999 solid;
 		color: $color-text;
 		font-family: Verdana;
 		font-size: $font-size;
@@ -180,14 +180,6 @@ hr {
 	height: 0px;
 	overflow: hidden;
 }
-.columnBottom {
-    width: 210px;
-    height: 20px;
-}
-#backgroundTable {
-	background-color: $color-outer-bg;
-	line-height: 100%;
-}
 .boundingTable {
 	line-height: $line-height;
 }
@@ -201,32 +193,36 @@ hr {
 	padding: .3em 0 0 0; 
 }
 .internal td {
-	background-color: $color-sweep1;
 	border-radius: 10px 10px 0 0;
 	padding: .5em 2em;
 	font-size: .86em;
 	color: $color-text-invert;
 	font-weight:bold;
 }
-.logoArea {
-	padding: 1.3em 0;
-}
+.logoArea,
 .businessUnit {
-	mso-margin-top-alt: 0em;
-	mso-margin-bottom-alt: 0em;
-	font-size: 1em;
-	line-height: $line-height;
-	padding: $gutter/2 0;
+	table td {
+		mso-margin-top-alt: 0em;
+		mso-margin-bottom-alt: 0em;
+		padding: .5em 0 .5em 0;
+		font-size: 1em;
+		line-height: $line-height;
+		font-weight:bold;
+	}
 }
-.title {
+.logoArea {
+	table td {
+		padding: .5em 0 1.1em 0;
+	}
+}
+h1 {
 	padding: 0;
 	color: $color-title;
 	line-height: $line-height;
     font-weight: bold;
 }
 .intro {
-	padding: $gutter 0 $gutter*.75 0;
-	background-color: $color-multiply;
+	padding: 1em 0 .7em 0;
 	color: $color-intro;
 	font-size: 1.05em;
 }
@@ -257,18 +253,13 @@ hr {
 	td td {
 		padding: 0;
 	}
-	.imgFull td {
-		padding: 0 0 .5em 0;
-	}
-	.imgWrap td,
-	.imgColumn {
-		padding: .2em 0 0 .5em;
-		line-height:.5em;
-	}
 }
 .column1,
 .column2 {
-	padding: 0 0 1em 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 1em;
+	padding-left: 0;
 }
 .column2 {
 	h2 {
@@ -276,6 +267,7 @@ hr {
 		font-size: 1.5em;
 		font-style: italic;
 		font-weight: normal;
+	 	padding: 1.3em 0 .5em 0;
 	} 
 	h3 {
 		color: $color-aside-title;
@@ -284,6 +276,23 @@ hr {
 .gutter {
 	font-size: 0px;
 	line-height: 0px;
+}
+.columnBottom {
+	height: 1em !important;
+}
+.tocArea,
+.mainArea {
+	.imgFull td,
+	.imgWrap td,
+	.imgStack td {
+		padding-bottom: 1em;
+		padding-left: 1em;
+		line-height:.5em;
+		clear:both;
+	}
+	.imgFull td {
+		padding-left: 0;
+	}
 }
 .back-to-top {
 	border-top: 2px $color-highlight solid !important;
@@ -304,8 +313,7 @@ hr {
 		}
 	}
 }
-.footer {
-	background-color: $color-outer-bg;
+.footerTable td {
 	font-size: .9em;
 }
 .webVersionBottom {
@@ -337,7 +345,8 @@ hr {
 
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
-	body[yahoofix] {
+	/* wrap in [attribute] selector to prevent Yahoo from flattening media queries */
+	table[id="backgroundTable"] {
 		br.mobile {
 			display: inline !important;
 			height: auto !important;
@@ -352,7 +361,7 @@ hr {
 		.mainArea .utility,
 		.mainArea .column1,
 		.mainArea .column2,
-		.mainArea .imgColumn {
+		.mainArea .imgStack {
 			display: block !important;
 			height: auto !important;
 			width: auto !important;
@@ -378,20 +387,19 @@ hr {
 			height: auto !important;
 		}
 		.logoArea {
-			font-size: .8em !important;
-			padding: 0 0 0.82em !important;
 			width: 125px !important;
-			img {
-			    padding: 0 0 0.4em 0 !important;
+			table td {
+				font-size: .8em !important;
+				padding-bottom: .9em !important;
 			}
 		}
-		.businessUnit {
+		.businessUnit table td {
 			font-weight: normal !important;
 			font-size: .9em !important;
-		}
-			.title {
-				font-size: 1.7em !important;
+			h1 {
+				font-size: 1.5em !important;
 			}
+		}
 		.date {
 			text-align: center !important;
 			padding: 0 0 .9em 0;
@@ -402,23 +410,30 @@ hr {
 				padding: .3em 0 !important;
 			}
 		}
-		.tocArea th,
+		th,
 		.column1,
 		.column2 {
-			padding: 0 $gutter !important;
 			width: 93.33333% !important;
+			padding: 0 !important;
 		}
-		.tocArea th {
-			padding: .9em $gutter !important;			
-		}
-		.tocArea .column2 {
-			padding: 0 $gutter .9em $gutter !important;			
-		}
-		.mainArea {
-			.imgWrap,
-			.imgColumn {
-				padding: 0 0 .5em 0 !important;
+		.tocArea {
+			th {
+				padding: .9em $gutter !important;			
 			}
+			.column1 {
+				padding: 0 $gutter !important;
+			}
+			.column2 {
+				padding: 0 $gutter .5em $gutter !important;			
+			}
+		}
+		h2 {
+			mso-margin-top-alt: .5em;
+			padding-top: .5em;
+		}
+		.imgFull td,
+		.imgStack td {
+			padding-left: 0 !important;
 		}
 		.back-to-top {
 			display: table !important;

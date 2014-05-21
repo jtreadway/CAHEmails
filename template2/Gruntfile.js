@@ -154,11 +154,42 @@ module.exports = function (grunt) {
                 },
                 recipients: [
                     /*
-                    {
-                        name: 'Caitlin Steinert',
-                        email: 'csteinert@cardinalsolutions.com'
-                    },
+					{
+						name: 'Hering, Steve',
+						email: 'steve.hering@cardinalhealth.com'
+					},
+					{
+						name: 'Mandpe, Sumedha',
+						email: 'sumedha.mandpe@cardinalhealth.com'
+					},
+					{
+						name: 'Minister, Katie',
+						email: 'katie.minister@cardinalhealth.com'
+					},
+					{
+						name: 'Skowronski, Robyn',
+						email: 'robyn.skowronski@cardinalhealth.com'
+					},
+					{
+						name: 'Bruns, Phil',
+						email: 'pbruns@cardinalsolutions.com'
+					},
+					{
+						name: 'Curtis, Scott',
+						email: 'scurtis@cardinalsolutions.com'
+					},
+					{
+						name: 'Stryker, Ryan',
+						email: 'rstryker@cardinalsolutions.com'
+					},
+					{
+						name: 'Steinert, Caitlin',
+						email: 'csteinert@cardinalsolutions.com'
+					},
                     */
+
+
+
                     {
                         name: 'Litmus Test',
                         email: 'cardinalhealth2.cc94c8b.new@emailtests.com'

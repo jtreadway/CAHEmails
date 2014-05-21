@@ -45,13 +45,16 @@ ReadMsgBody {
 }
 
 /* Tag styles */
-body {
+body,
+#backgroundTable {
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: Verdana;
   font-size: 13px;
+  background-color: #f1efe4;
+  line-height: 100%;
 }
 
 table {
@@ -65,7 +68,6 @@ table {
 }
 table th,
 table td {
-  xborder: 1px #999 solid;
   color: #2e2e2f;
   font-family: Verdana;
   font-size: 13px;
@@ -81,10 +83,10 @@ h1 {
 }
 
 h2 {
-  mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 0em;
+  mso-margin-top-alt: 1.5em;
+  mso-margin-bottom-alt: .5em;
   margin: 0;
-  padding: 1.2em 0 0.7em 0;
+  padding: 1em 0 .5em 0;
   letter-spacing: 0.02em;
   line-height: 1.2em;
   font-weight: bold;
@@ -94,7 +96,7 @@ h2 {
 
 h3 {
   mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 0em;
+  mso-margin-bottom-alt: .5em;
   margin: 0;
   padding: 0 0 .5em 0;
   letter-spacing: .05em;
@@ -143,16 +145,6 @@ hr {
   overflow: hidden;
 }
 
-.columnBottom {
-  width: 210px;
-  height: 20px;
-}
-
-#backgroundTable {
-  background-color: #f1efe4;
-  line-height: 100%;
-}
-
 .boundingTable {
   line-height: 1.3em;
 }
@@ -169,7 +161,6 @@ hr {
 }
 
 .internal td {
-  background-color: #ee0000;
   border-radius: 10px 10px 0 0;
   padding: .5em 2em;
   font-size: .86em;
@@ -177,19 +168,21 @@ hr {
   font-weight: bold;
 }
 
-.logoArea {
-  padding: 1.3em 0;
-}
-
-.businessUnit {
+.logoArea table td,
+.businessUnit table td {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: 0em;
+  padding: .5em 0 .5em 0;
   font-size: 1em;
   line-height: 1.3em;
-  padding: 1.66667% 0;
+  font-weight: bold;
 }
 
-.title {
+.logoArea table td {
+  padding: .5em 0 1.1em 0;
+}
+
+h1 {
   padding: 0;
   color: #2e2e2f;
   line-height: 1.3em;
@@ -197,14 +190,12 @@ hr {
 }
 
 .intro {
-  padding: 3.33333% 0 2.5% 0;
-  background-color: #900000;
+  padding: 1em 0 .7em 0;
   color: white;
   font-size: 1.05em;
 }
 
 .utility {
-  background-color: #9bc787;
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
@@ -215,7 +206,6 @@ hr {
 .utility .applelinks a {
   display: inline-block;
   width: 100%;
-  background-color: #9bc787;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -239,18 +229,13 @@ hr {
 .mainArea td td {
   padding: 0;
 }
-.mainArea .imgFull td {
-  padding: 0 0 .5em 0;
-}
-.mainArea .imgWrap td,
-.mainArea .imgColumn {
-  padding: .2em 0 0 .5em;
-  line-height: .5em;
-}
 
 .column1,
 .column2 {
-  padding: 0 0 1em 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
 }
 
 .column2 h2 {
@@ -258,6 +243,7 @@ hr {
   font-size: 1.5em;
   font-style: italic;
   font-weight: normal;
+  padding: 1.3em 0 .5em 0;
 }
 .column2 h3 {
   color: #346170;
@@ -266,6 +252,26 @@ hr {
 .gutter {
   font-size: 0px;
   line-height: 0px;
+}
+
+.columnBottom {
+  height: 1em !important;
+}
+
+.tocArea .imgFull td,
+.tocArea .imgWrap td,
+.tocArea .imgStack td,
+.mainArea .imgFull td,
+.mainArea .imgWrap td,
+.mainArea .imgStack td {
+  padding-bottom: 1em;
+  padding-left: 1em;
+  line-height: .5em;
+  clear: both;
+}
+.tocArea .imgFull td,
+.mainArea .imgFull td {
+  padding-left: 0;
 }
 
 .back-to-top {
@@ -282,7 +288,6 @@ hr {
   overflow: hidden;
 }
 .back-to-top .button {
-  background-color: #9bc787;
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
@@ -290,14 +295,12 @@ hr {
 .back-to-top .button a {
   display: inline-block;
   width: 100%;
-  background-color: #9bc787;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
-.footer {
-  background-color: #f1efe4;
+.footerTable td {
   font-size: .9em;
 }
 
@@ -332,97 +335,104 @@ hr {
 }
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
-  body[yahoofix] br.mobile {
+  /* wrap in [attribute] selector to prevent Yahoo from flattening media queries */
+  table[id="backgroundTable"] br.mobile {
     display: inline !important;
     height: auto !important;
   }
-  body[yahoofix] .dateUtility tr,
-  body[yahoofix] .dateUtility td,
-  body[yahoofix] .tocArea tr,
-  body[yahoofix] .tocArea th,
-  body[yahoofix] .tocArea td,
-  body[yahoofix] .mainArea tr,
-  body[yahoofix] .mainArea .date,
-  body[yahoofix] .mainArea .utility,
-  body[yahoofix] .mainArea .column1,
-  body[yahoofix] .mainArea .column2,
-  body[yahoofix] .mainArea .imgColumn {
+  table[id="backgroundTable"] .dateUtility tr,
+  table[id="backgroundTable"] .dateUtility td,
+  table[id="backgroundTable"] .tocArea tr,
+  table[id="backgroundTable"] .tocArea th,
+  table[id="backgroundTable"] .tocArea td,
+  table[id="backgroundTable"] .mainArea tr,
+  table[id="backgroundTable"] .mainArea .date,
+  table[id="backgroundTable"] .mainArea .utility,
+  table[id="backgroundTable"] .mainArea .column1,
+  table[id="backgroundTable"] .mainArea .column2,
+  table[id="backgroundTable"] .mainArea .imgStack {
     display: block !important;
     height: auto !important;
     width: auto !important;
   }
-  body[yahoofix] .preHeaderTable {
+  table[id="backgroundTable"] .preHeaderTable {
     background-color: #ffffff;
   }
-  body[yahoofix] .internal {
+  table[id="backgroundTable"] .internal {
     padding: 0;
   }
-  body[yahoofix] .internal td {
+  table[id="backgroundTable"] .internal td {
     border-radius: 0 0 10px 10px !important;
     padding: .5em 1.3em !important;
     text-align: center !important;
   }
-  body[yahoofix] .webVersionTop {
+  table[id="backgroundTable"] .webVersionTop {
     display: none !important;
     height: 0px !important;
     overflow: hidden !important;
   }
-  body[yahoofix] .webVersionBottom {
+  table[id="backgroundTable"] .webVersionBottom {
     display: inline !important;
     height: auto !important;
   }
-  body[yahoofix] .logoArea {
-    font-size: .8em !important;
-    padding: 0 0 0.82em !important;
+  table[id="backgroundTable"] .logoArea {
     width: 125px !important;
   }
-  body[yahoofix] .logoArea img {
-    padding: 0 0 0.4em 0 !important;
+  table[id="backgroundTable"] .logoArea table td {
+    font-size: .8em !important;
+    padding-bottom: .9em !important;
   }
-  body[yahoofix] .businessUnit {
+  table[id="backgroundTable"] .businessUnit table td {
     font-weight: normal !important;
     font-size: .9em !important;
   }
-  body[yahoofix] .title {
-    font-size: 1.7em !important;
+  table[id="backgroundTable"] .businessUnit table td h1 {
+    font-size: 1.5em !important;
   }
-  body[yahoofix] .date {
+  table[id="backgroundTable"] .date {
     text-align: center !important;
     padding: 0 0 .9em 0;
   }
-  body[yahoofix] .utility {
+  table[id="backgroundTable"] .utility {
     text-align: left !important;
   }
-  body[yahoofix] .utility a {
+  table[id="backgroundTable"] .utility a {
     padding: .3em 0 !important;
   }
-  body[yahoofix] .tocArea th,
-  body[yahoofix] .column1,
-  body[yahoofix] .column2 {
-    padding: 0 3.33333% !important;
+  table[id="backgroundTable"] th,
+  table[id="backgroundTable"] .column1,
+  table[id="backgroundTable"] .column2 {
     width: 93.33333% !important;
+    padding: 0 !important;
   }
-  body[yahoofix] .tocArea th {
+  table[id="backgroundTable"] .tocArea th {
     padding: 0.9em 3.33333% !important;
   }
-  body[yahoofix] .tocArea .column2 {
-    padding: 0 3.33333% 0.9em 3.33333% !important;
+  table[id="backgroundTable"] .tocArea .column1 {
+    padding: 0 3.33333% !important;
   }
-  body[yahoofix] .mainArea .imgWrap,
-  body[yahoofix] .mainArea .imgColumn {
-    padding: 0 0 .5em 0 !important;
+  table[id="backgroundTable"] .tocArea .column2 {
+    padding: 0 3.33333% 0.5em 3.33333% !important;
   }
-  body[yahoofix] .back-to-top {
+  table[id="backgroundTable"] h2 {
+    mso-margin-top-alt: .5em;
+    padding-top: .5em;
+  }
+  table[id="backgroundTable"] .imgFull td,
+  table[id="backgroundTable"] .imgStack td {
+    padding-left: 0 !important;
+  }
+  table[id="backgroundTable"] .back-to-top {
     display: table !important;
     height: auto !important;
   }
-  body[yahoofix] .back-to-top table {
+  table[id="backgroundTable"] .back-to-top table {
     display: table !important;
   }
-  body[yahoofix] .back-to-top tr {
+  table[id="backgroundTable"] .back-to-top tr {
     display: table-row !important;
   }
-  body[yahoofix] .back-to-top td {
+  table[id="backgroundTable"] .back-to-top td {
     display: table-cell !important;
   }
 }
