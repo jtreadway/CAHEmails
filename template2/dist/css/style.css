@@ -54,6 +54,10 @@ body,
   font-family: Verdana;
   font-size: 13px;
   background-color: #f1efe4;
+  line-height: 0px;
+}
+
+#backgroundTable {
   line-height: 100%;
 }
 
@@ -149,10 +153,10 @@ hr {
   line-height: 1.3em;
 }
 
-.webVersionTop a {
+.webVersionTop {
   font-size: .9em;
   font-weight: normal;
-  height: 1.7em;
+  line-height: 2em;
   overflow: hidden;
 }
 
@@ -275,16 +279,10 @@ h1 {
 }
 
 .back-to-top {
-  border-top: 2px #9bc787 solid !important;
-  margin: 1.3em 0 .5em 0 !important;
-  height: auto !important;
+  border-top: 2px #9bc787 solid;
+  margin: 1.3em 0 .5em 0;
   display: none;
-  height: 0px;
-  overflow: hidden;
-}
-.back-to-top table {
-  display: none;
-  height: 0px;
+  height: 0;
   overflow: hidden;
 }
 .back-to-top .button {
@@ -340,26 +338,23 @@ h1 {
     display: inline !important;
     height: auto !important;
   }
-  table[id="backgroundTable"] .dateUtility tr,
-  table[id="backgroundTable"] .dateUtility td,
-  table[id="backgroundTable"] .tocArea tr,
-  table[id="backgroundTable"] .tocArea th,
-  table[id="backgroundTable"] .tocArea td,
-  table[id="backgroundTable"] .mainArea tr,
-  table[id="backgroundTable"] .mainArea .date,
-  table[id="backgroundTable"] .mainArea .utility,
-  table[id="backgroundTable"] .mainArea .column1,
-  table[id="backgroundTable"] .mainArea .column2,
-  table[id="backgroundTable"] .mainArea .imgStack {
+  table[id="backgroundTable"] table table tr.stack {
     display: block !important;
-    height: auto !important;
+    width: auto !important;
+  }
+  table[id="backgroundTable"] table table tr.stack .date,
+  table[id="backgroundTable"] table table tr.stack .utility,
+  table[id="backgroundTable"] table table tr.stack th,
+  table[id="backgroundTable"] table table tr.stack .column1,
+  table[id="backgroundTable"] table table tr.stack .column2 {
+    display: block !important;
     width: auto !important;
   }
   table[id="backgroundTable"] .preHeaderTable {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
   }
   table[id="backgroundTable"] .internal {
-    padding: 0;
+    padding: 0 !important;
   }
   table[id="backgroundTable"] .internal td {
     border-radius: 0 0 10px 10px !important;
@@ -391,7 +386,7 @@ h1 {
   }
   table[id="backgroundTable"] .date {
     text-align: center !important;
-    padding: 0 0 .9em 0;
+    padding: 0 0 .9em 0 !important;
   }
   table[id="backgroundTable"] .utility {
     text-align: left !important;
@@ -415,24 +410,33 @@ h1 {
     padding: 0 3.33333% 0.5em 3.33333% !important;
   }
   table[id="backgroundTable"] h2 {
-    mso-margin-top-alt: .5em;
-    padding-top: .5em;
+    mso-margin-top-alt: .5em !important;
+    padding-top: .5em !important;
+  }
+  table[id="backgroundTable"] .imgStack {
+    width: 100% !important;
   }
   table[id="backgroundTable"] .imgFull td,
   table[id="backgroundTable"] .imgStack td {
     padding-left: 0 !important;
+    width: 100% !important;
   }
-  table[id="backgroundTable"] .back-to-top {
+  table[id="backgroundTable"] .column1 .back-to-top,
+  table[id="backgroundTable"] .column2 .back-to-top {
     display: table !important;
     height: auto !important;
+    width: 100%;
   }
-  table[id="backgroundTable"] .back-to-top table {
+  table[id="backgroundTable"] .column1 .back-to-top table,
+  table[id="backgroundTable"] .column2 .back-to-top table {
     display: table !important;
   }
-  table[id="backgroundTable"] .back-to-top tr {
+  table[id="backgroundTable"] .column1 .back-to-top tr,
+  table[id="backgroundTable"] .column2 .back-to-top tr {
     display: table-row !important;
   }
-  table[id="backgroundTable"] .back-to-top td {
+  table[id="backgroundTable"] .column1 .back-to-top td,
+  table[id="backgroundTable"] .column2 .back-to-top td {
     display: table-cell !important;
   }
 }

@@ -59,10 +59,15 @@ body,
   font-family: Verdana;
   font-size: 13px;
   background-color: #f1efe4;
-  line-height: 100%;
+  line-height: 0px;
 }
 
 /* line 115, ../scss/style.scss */
+#backgroundTable {
+  line-height: 100%;
+}
+
+/* line 118, ../scss/style.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -72,7 +77,7 @@ table {
   padding: 0;
   font-size: 13px;
 }
-/* line 124, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 table th,
 table td {
   color: #2e2e2f;
@@ -80,7 +85,7 @@ table td {
   font-size: 13px;
 }
 
-/* line 130, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 h1 {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: 0em;
@@ -90,7 +95,7 @@ h1 {
   line-height: 1.2em;
 }
 
-/* line 138, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 h2 {
   mso-margin-top-alt: 1.5em;
   mso-margin-bottom-alt: .5em;
@@ -103,7 +108,7 @@ h2 {
   font-size: 1.8em;
 }
 
-/* line 143, ../scss/style.scss */
+/* line 146, ../scss/style.scss */
 h3 {
   mso-margin-top-alt: 0em;
   mso-margin-bottom-alt: .5em;
@@ -115,7 +120,7 @@ h3 {
   color: #2e2e2f;
 }
 
-/* line 149, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 a,
 #outlook a,
 .applelinks a {
@@ -123,14 +128,14 @@ a,
   color: #ee0000;
   text-decoration: none;
 }
-/* line 153, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 a:hover,
 #outlook a:hover,
 .applelinks a:hover {
   text-decoration: underline;
 }
 
-/* line 157, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 img {
   border: none;
   outline: none;
@@ -139,13 +144,13 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 164, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 ul {
   padding: 0;
   margin: 0 0 1em 1.4em;
 }
 
-/* line 168, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 hr {
   mso-margin-top-alt: .2em;
   mso-margin-bottom-alt: .5em;
@@ -154,32 +159,32 @@ hr {
 }
 
 /* Custom styles */
-/* line 178, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .mobile {
   display: none;
   height: 0px;
   overflow: hidden;
 }
 
-/* line 183, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 .boundingTable {
   line-height: 1.3em;
 }
 
-/* line 186, ../scss/style.scss */
-.webVersionTop a {
+/* line 189, ../scss/style.scss */
+.webVersionTop {
   font-size: .9em;
   font-weight: normal;
-  height: 1.7em;
+  line-height: 2em;
   overflow: hidden;
 }
 
-/* line 192, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .internal {
   padding: .3em 0 0 0;
 }
 
-/* line 195, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .internal td {
   border-radius: 10px 10px 0 0;
   padding: .5em 2em;
@@ -188,7 +193,7 @@ hr {
   font-weight: bold;
 }
 
-/* line 204, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .logoArea table td,
 .businessUnit table td {
   mso-margin-top-alt: 0em;
@@ -199,12 +204,12 @@ hr {
   font-weight: bold;
 }
 
-/* line 214, ../scss/style.scss */
+/* line 217, ../scss/style.scss */
 .logoArea table td {
   padding: .5em 0 1.1em 0;
 }
 
-/* line 218, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 h1 {
   padding: 0;
   color: #2e2e2f;
@@ -212,21 +217,21 @@ h1 {
   font-weight: bold;
 }
 
-/* line 224, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 .intro {
   padding: 1em 0 .7em 0;
   color: white;
   font-size: 1.05em;
 }
 
-/* line 229, ../scss/style.scss */
+/* line 232, ../scss/style.scss */
 .utility {
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
 }
 
-/* line 234, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .utility a,
 .utility #outlook a,
 .utility .applelinks a {
@@ -237,30 +242,30 @@ h1 {
   text-align: center;
 }
 
-/* line 238, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 .tocArea {
   background-color: #f1efe4;
 }
-/* line 240, ../scss/style.scss */
+/* line 243, ../scss/style.scss */
 .tocArea a {
   display: inline-block;
   padding: 0 0 .5em 0;
   color: #730505;
   font-weight: bold;
 }
-/* line 246, ../scss/style.scss */
+/* line 249, ../scss/style.scss */
 .tocArea th {
   padding: 1em 0;
   font-weight: normal;
   font-size: 1.05em;
 }
 
-/* line 253, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 .mainArea td td {
   padding: 0;
 }
 
-/* line 258, ../scss/style.scss */
+/* line 261, ../scss/style.scss */
 .column1,
 .column2 {
   padding-top: 0;
@@ -269,7 +274,7 @@ h1 {
   padding-left: 0;
 }
 
-/* line 265, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
 .column2 h2 {
   color: #346170;
   font-size: 1.5em;
@@ -277,23 +282,23 @@ h1 {
   font-weight: normal;
   padding: 1.3em 0 .5em 0;
 }
-/* line 272, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .column2 h3 {
   color: #346170;
 }
 
-/* line 276, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 .gutter {
   font-size: 0px;
   line-height: 0px;
 }
 
-/* line 280, ../scss/style.scss */
+/* line 283, ../scss/style.scss */
 .columnBottom {
   height: 1em !important;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
 .tocArea .imgFull td,
 .tocArea .imgWrap td,
 .tocArea .imgStack td,
@@ -305,34 +310,27 @@ h1 {
   line-height: .5em;
   clear: both;
 }
-/* line 293, ../scss/style.scss */
+/* line 296, ../scss/style.scss */
 .tocArea .imgFull td,
 .mainArea .imgFull td {
   padding-left: 0;
 }
 
-/* line 297, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 .back-to-top {
-  border-top: 2px #9bc787 solid !important;
-  margin: 1.3em 0 .5em 0 !important;
-  height: auto !important;
+  border-top: 2px #9bc787 solid;
+  margin: 1.3em 0 .5em 0;
   display: none;
-  height: 0px;
+  height: 0;
   overflow: hidden;
 }
-/* line 304, ../scss/style.scss */
-.back-to-top table {
-  display: none;
-  height: 0px;
-  overflow: hidden;
-}
-/* line 309, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .back-to-top .button {
   font-size: .9em;
   text-align: center;
   padding: .3em 1em;
 }
-/* line 311, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .back-to-top .button a {
   display: inline-block;
   width: 100%;
@@ -341,12 +339,12 @@ h1 {
   text-align: center;
 }
 
-/* line 316, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 .footerTable td {
   font-size: .9em;
 }
 
-/* line 319, ../scss/style.scss */
+/* line 316, ../scss/style.scss */
 .webVersionBottom {
   display: none;
   height: 0px;
@@ -355,28 +353,28 @@ h1 {
 
 /* Make width fluid if more than max width */
 @media only screen and (max-width: 600px) {
-  /* line 327, ../scss/style.scss */
+  /* line 324, ../scss/style.scss */
   .boundingTable {
     width: 100%;
   }
 
-  /* line 331, ../scss/style.scss */
+  /* line 328, ../scss/style.scss */
   .businessUnit,
   .mainArea .column1 {
     width: auto;
   }
 
-  /* line 334, ../scss/style.scss */
+  /* line 331, ../scss/style.scss */
   img {
     width: 100%;
     height: auto;
   }
 
-  /* line 338, ../scss/style.scss */
+  /* line 335, ../scss/style.scss */
   .gutter {
     width: 3.3333%;
   }
-  /* line 340, ../scss/style.scss */
+  /* line 337, ../scss/style.scss */
   .gutter img {
     height: 0px;
   }
@@ -384,157 +382,165 @@ h1 {
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
   /* wrap in [attribute] selector to prevent Yahoo from flattening media queries */
-  /* line 350, ../scss/style.scss */
+  /* line 347, ../scss/style.scss */
   table[id="backgroundTable"] br.mobile {
     display: inline !important;
     height: auto !important;
   }
-  /* line 364, ../scss/style.scss */
-  table[id="backgroundTable"] .dateUtility tr,
-  table[id="backgroundTable"] .dateUtility td,
-  table[id="backgroundTable"] .tocArea tr,
-  table[id="backgroundTable"] .tocArea th,
-  table[id="backgroundTable"] .tocArea td,
-  table[id="backgroundTable"] .mainArea tr,
-  table[id="backgroundTable"] .mainArea .date,
-  table[id="backgroundTable"] .mainArea .utility,
-  table[id="backgroundTable"] .mainArea .column1,
-  table[id="backgroundTable"] .mainArea .column2,
-  table[id="backgroundTable"] .mainArea .imgStack {
+  /* line 351, ../scss/style.scss */
+  table[id="backgroundTable"] table table tr.stack {
     display: block !important;
-    height: auto !important;
     width: auto !important;
   }
-  /* line 369, ../scss/style.scss */
+  /* line 358, ../scss/style.scss */
+  table[id="backgroundTable"] table table tr.stack .date,
+  table[id="backgroundTable"] table table tr.stack .utility,
+  table[id="backgroundTable"] table table tr.stack th,
+  table[id="backgroundTable"] table table tr.stack .column1,
+  table[id="backgroundTable"] table table tr.stack .column2 {
+    display: block !important;
+    width: auto !important;
+  }
+  /* line 363, ../scss/style.scss */
   table[id="backgroundTable"] .preHeaderTable {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
   }
-  /* line 372, ../scss/style.scss */
+  /* line 366, ../scss/style.scss */
   table[id="backgroundTable"] .internal {
-    padding: 0;
+    padding: 0 !important;
   }
-  /* line 375, ../scss/style.scss */
+  /* line 369, ../scss/style.scss */
   table[id="backgroundTable"] .internal td {
     border-radius: 0 0 10px 10px !important;
     padding: .5em 1.3em !important;
     text-align: center !important;
   }
-  /* line 380, ../scss/style.scss */
+  /* line 374, ../scss/style.scss */
   table[id="backgroundTable"] .webVersionTop {
     display: none !important;
     height: 0px !important;
     overflow: hidden !important;
   }
-  /* line 385, ../scss/style.scss */
+  /* line 379, ../scss/style.scss */
   table[id="backgroundTable"] .webVersionBottom {
     display: inline !important;
     height: auto !important;
   }
-  /* line 389, ../scss/style.scss */
+  /* line 383, ../scss/style.scss */
   table[id="backgroundTable"] .logoArea {
     width: 125px !important;
   }
-  /* line 391, ../scss/style.scss */
+  /* line 385, ../scss/style.scss */
   table[id="backgroundTable"] .logoArea table td {
     font-size: .8em !important;
     padding-bottom: .9em !important;
   }
-  /* line 396, ../scss/style.scss */
+  /* line 390, ../scss/style.scss */
   table[id="backgroundTable"] .businessUnit table td {
     font-weight: normal !important;
     font-size: .9em !important;
   }
-  /* line 399, ../scss/style.scss */
+  /* line 393, ../scss/style.scss */
   table[id="backgroundTable"] .businessUnit table td h1 {
     font-size: 1.5em !important;
   }
-  /* line 403, ../scss/style.scss */
+  /* line 397, ../scss/style.scss */
   table[id="backgroundTable"] .date {
     text-align: center !important;
-    padding: 0 0 .9em 0;
+    padding: 0 0 .9em 0 !important;
   }
-  /* line 407, ../scss/style.scss */
+  /* line 401, ../scss/style.scss */
   table[id="backgroundTable"] .utility {
     text-align: left !important;
   }
-  /* line 409, ../scss/style.scss */
+  /* line 403, ../scss/style.scss */
   table[id="backgroundTable"] .utility a {
     padding: .3em 0 !important;
   }
-  /* line 415, ../scss/style.scss */
+  /* line 409, ../scss/style.scss */
   table[id="backgroundTable"] th,
   table[id="backgroundTable"] .column1,
   table[id="backgroundTable"] .column2 {
     width: 93.33333% !important;
     padding: 0 !important;
   }
-  /* line 420, ../scss/style.scss */
+  /* line 414, ../scss/style.scss */
   table[id="backgroundTable"] .tocArea th {
     padding: 0.9em 3.33333% !important;
   }
-  /* line 423, ../scss/style.scss */
+  /* line 417, ../scss/style.scss */
   table[id="backgroundTable"] .tocArea .column1 {
     padding: 0 3.33333% !important;
   }
-  /* line 426, ../scss/style.scss */
+  /* line 420, ../scss/style.scss */
   table[id="backgroundTable"] .tocArea .column2 {
     padding: 0 3.33333% 0.5em 3.33333% !important;
   }
-  /* line 430, ../scss/style.scss */
+  /* line 424, ../scss/style.scss */
   table[id="backgroundTable"] h2 {
-    mso-margin-top-alt: .5em;
-    padding-top: .5em;
+    mso-margin-top-alt: .5em !important;
+    padding-top: .5em !important;
   }
-  /* line 435, ../scss/style.scss */
+  /* line 428, ../scss/style.scss */
+  table[id="backgroundTable"] .imgStack {
+    width: 100% !important;
+  }
+  /* line 432, ../scss/style.scss */
   table[id="backgroundTable"] .imgFull td,
   table[id="backgroundTable"] .imgStack td {
     padding-left: 0 !important;
+    width: 100% !important;
   }
   /* line 438, ../scss/style.scss */
-  table[id="backgroundTable"] .back-to-top {
+  table[id="backgroundTable"] .column1 .back-to-top,
+  table[id="backgroundTable"] .column2 .back-to-top {
     display: table !important;
     height: auto !important;
+    width: 100%;
   }
-  /* line 441, ../scss/style.scss */
-  table[id="backgroundTable"] .back-to-top table {
+  /* line 442, ../scss/style.scss */
+  table[id="backgroundTable"] .column1 .back-to-top table,
+  table[id="backgroundTable"] .column2 .back-to-top table {
     display: table !important;
   }
-  /* line 444, ../scss/style.scss */
-  table[id="backgroundTable"] .back-to-top tr {
+  /* line 445, ../scss/style.scss */
+  table[id="backgroundTable"] .column1 .back-to-top tr,
+  table[id="backgroundTable"] .column2 .back-to-top tr {
     display: table-row !important;
   }
-  /* line 447, ../scss/style.scss */
-  table[id="backgroundTable"] .back-to-top td {
+  /* line 448, ../scss/style.scss */
+  table[id="backgroundTable"] .column1 .back-to-top td,
+  table[id="backgroundTable"] .column2 .back-to-top td {
     display: table-cell !important;
   }
 }
 /* Narrow devices */
 /* Testing/Coloring */
-/* line 462, ../scss/style.scss */
+/* line 464, ../scss/style.scss */
 xbody .column1 {
   background-color: #ffdddd;
 }
-/* line 465, ../scss/style.scss */
+/* line 467, ../scss/style.scss */
 xbody .column2 {
   background-color: #ddffdd;
 }
-/* line 468, ../scss/style.scss */
+/* line 470, ../scss/style.scss */
 xbody h1 {
   background-color: #33ffff;
 }
-/* line 471, ../scss/style.scss */
+/* line 473, ../scss/style.scss */
 xbody h2 {
   background-color: #ff33ff;
 }
-/* line 474, ../scss/style.scss */
+/* line 476, ../scss/style.scss */
 xbody h3 {
   background-color: #ffff33;
 }
-/* line 477, ../scss/style.scss */
+/* line 479, ../scss/style.scss */
 xbody hr {
   background-color: #00ffff;
 }
-/* line 480, ../scss/style.scss */
+/* line 482, ../scss/style.scss */
 xbody br {
   background-color: #ff00ff;
 }
