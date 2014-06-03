@@ -1,0 +1,421 @@
+/*
+ET Fonts
+size="1" / 8
+size=null / 10
+size="2" / 10
+size="3" / 12
+size="4" / 14
+size="5" / 18
+size="6" / 24
+size="7" / 36
+*/
+/* variables */
+/* mixins */
+/* Client specific styles */
+/* Hotmail background & line height fixes */
+/* Hotmail symbol fix for mobile devices */
+/* line 70, ../scss/style.scss */
+.ExternalClass {
+  width: 100%;
+}
+/* line 80, ../scss/style.scss */
+.ExternalClass,
+.ExternalClass br,
+.ExternalClass p,
+.ExternalClass h1,
+.ExternalClass h2,
+.ExternalClass h3,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass div {
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  mso-line-height-rule: exactly;
+}
+/* line 87, ../scss/style.scss */
+.ExternalClass img[class^=Emoji] {
+  width: 10px;
+  height: 10px;
+  display: inline;
+}
+
+/* Baseline styles */
+/* line 98, ../scss/style.scss */
+body,
+#bodyBackground {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Verdana;
+  font-size: 13px;
+  background-color: #f1efe4;
+}
+
+/* line 107, ../scss/style.scss */
+#bodyBackground {
+  display: block;
+}
+
+/* line 110, ../scss/style.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  font-size: 13px;
+}
+/* line 117, ../scss/style.scss */
+table th,
+table td {
+  color: #2e2e2f;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+/* line 125, ../scss/style.scss */
+a,
+#outlook a,
+.applelinks a {
+  padding: 0;
+  color: #e41f35;
+  text-decoration: none;
+}
+/* line 129, ../scss/style.scss */
+a:hover,
+#outlook a:hover,
+.applelinks a:hover {
+  text-decoration: underline;
+}
+
+/* line 133, ../scss/style.scss */
+img {
+  border: none;
+  outline: none;
+  display: block;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 140, ../scss/style.scss */
+h1 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: 0em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #2e2e2f;
+}
+
+/* line 150, ../scss/style.scss */
+h2 {
+  mso-margin-top-alt: 1.5em;
+  mso-margin-bottom-alt: .5em;
+  margin: 0;
+  padding: 1em 0 .5em 0;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #9bc787;
+  font-size: 1.8em;
+  clear: both;
+}
+
+/* line 156, ../scss/style.scss */
+h3 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: .5em;
+  margin: 0;
+  padding: 0 0 .5em 0;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #2e2e2f;
+}
+
+/* line 160, ../scss/style.scss */
+ul {
+  padding: 0;
+  margin: 0 0 1em 1.4em;
+}
+
+/* line 164, ../scss/style.scss */
+hr {
+  mso-margin-top-alt: .2em;
+  mso-margin-bottom-alt: .5em;
+  margin: 1em 0;
+  xclear: both;
+}
+
+/* Content styles */
+/* line 174, ../scss/style.scss */
+.gutter {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+/* line 179, ../scss/style.scss */
+.webVersionTop {
+  font-size: .9em;
+  padding: .3em 0;
+  overflow: hidden;
+}
+
+/* line 185, ../scss/style.scss */
+.topTab {
+  padding: .3em 0 0 0;
+}
+/* line 187, ../scss/style.scss */
+.topTab td {
+  border-radius: 10px 10px 0 0;
+  padding: .5em 2em;
+  font-size: .86em;
+  color: #2e2e2f;
+  font-weight: bold;
+}
+
+/* line 197, ../scss/style.scss */
+.logoArea,
+.businessUnit {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: 0em;
+  padding: .5em 0;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+/* line 205, ../scss/style.scss */
+.logoArea td {
+  padding: .5em 0;
+}
+
+/* line 209, ../scss/style.scss */
+.intro {
+  padding: 1em 0 .7em 0;
+  color: white;
+  font-size: 1.05em;
+}
+
+/* line 214, ../scss/style.scss */
+.dateArea {
+  padding: 0 0 1em 0;
+}
+/* line 216, ../scss/style.scss */
+.dateArea .date {
+  line-height: 2em;
+}
+/* line 220, ../scss/style.scss */
+.dateArea .utility {
+  font-size: .9em;
+  text-align: center;
+  padding: .6em 1em;
+}
+/* line 225, ../scss/style.scss */
+.dateArea .utility a,
+.dateArea .utility #outlook a,
+.dateArea .utility .applelinks a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 230, ../scss/style.scss */
+.tocArea {
+  padding: 1em 0 .5em 0;
+}
+/* line 232, ../scss/style.scss */
+.tocArea h2 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: 1em;
+  padding: 0 0 1em 0 !important;
+  font-weight: normal;
+  font-size: 1.05em;
+  color: #2E2E2F;
+}
+/* line 240, ../scss/style.scss */
+.tocArea a {
+  display: inline-block;
+  padding: 0 0 .5em 0;
+  font-weight: bold;
+}
+/* line 245, ../scss/style.scss */
+.tocArea br {
+  line-height: .6em;
+}
+
+/* line 251, ../scss/style.scss */
+.content .column1 {
+  padding: 0 0 1.3em 0;
+}
+/* line 253, ../scss/style.scss */
+.content .column1 td {
+  padding: 0;
+}
+/* line 257, ../scss/style.scss */
+.content .back-to-top {
+  border-top: 2px #9bc787 solid;
+  width: 100%;
+}
+/* line 260, ../scss/style.scss */
+.content .back-to-top .button {
+  font-size: .9em;
+  text-align: center;
+  padding: .6em 1em;
+}
+/* line 262, ../scss/style.scss */
+.content .back-to-top .button a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 270, ../scss/style.scss */
+.columnBottom {
+  height: 1em !important;
+  line-height: 1em !important;
+}
+
+/* line 275, ../scss/style.scss */
+.footerArea {
+  font-size: .9em;
+}
+/* line 277, ../scss/style.scss */
+.footerArea .webVersionBottom {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* Make width fluid if more than max width */
+@media only screen and (max-width: 600px) {
+  /* line 287, ../scss/style.scss */
+  .boundingTable {
+    width: 100% !important;
+  }
+
+  /* line 291, ../scss/style.scss */
+  .businessUnit,
+  .content .column1 {
+    width: auto !important;
+  }
+
+  /* line 297, ../scss/style.scss */
+  .dateArea .column1,
+  .dateArea .column2,
+  .tocArea .column1,
+  .tocArea .column2 {
+    width: 48.33333% !important;
+  }
+
+  /* line 301, ../scss/style.scss */
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* line 305, ../scss/style.scss */
+  .gutter {
+    width: 3.33333% !important;
+  }
+  /* line 307, ../scss/style.scss */
+  .gutter img {
+    height: 0px !important;
+  }
+}
+/* Narrow windows and devices */
+@media only screen and (max-width: 480px) {
+  /* line 316, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable {
+    background-color: #ffffff !important;
+  }
+  /* line 318, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .webVersionTop {
+    display: none !important;
+    height: 0px !important;
+    overflow: hidden !important;
+  }
+  /* line 323, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .webVersionBottom {
+    display: inline !important;
+    height: auto !important;
+  }
+  /* line 327, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .topTab {
+    padding: 0 !important;
+  }
+  /* line 330, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .topTab td {
+    border-radius: 0 0 10px 10px !important;
+    padding: .5em 1.3em !important;
+    text-align: center !important;
+    background-color: #2e2e2f;
+    color: white;
+  }
+  /* line 339, ../scss/style.scss */
+  span[id="bodyBackground"] .logoArea {
+    width: 125px !important;
+  }
+  /* line 342, ../scss/style.scss */
+  span[id="bodyBackground"] .logoArea td {
+    padding-top: .25em !important;
+    padding-bottom: .25em !important;
+  }
+  /* line 346, ../scss/style.scss */
+  span[id="bodyBackground"] .businessUnit {
+    font-weight: normal !important;
+    font-size: .9em !important;
+  }
+  /* line 349, ../scss/style.scss */
+  span[id="bodyBackground"] .businessUnit h1 {
+    font-size: 1.3em !important;
+  }
+  /* line 354, ../scss/style.scss */
+  span[id="bodyBackground"] .column1,
+  span[id="bodyBackground"] .column2 {
+    width: 100% !important;
+  }
+  /* line 358, ../scss/style.scss */
+  span[id="bodyBackground"] .content .column1 {
+    width: 93.333336% !important;
+  }
+  /* line 363, ../scss/style.scss */
+  span[id="bodyBackground"] .dateArea .date {
+    text-align: center !important;
+  }
+}
+/* Narrow devices */
+/* Testing/Coloring */
+/* line 378, ../scss/style.scss */
+xbody .column1 {
+  background-color: #ffdddd;
+}
+/* line 381, ../scss/style.scss */
+xbody .column2 {
+  background-color: #ddffdd;
+}
+/* line 384, ../scss/style.scss */
+xbody h1 {
+  background-color: #33ffff;
+}
+/* line 387, ../scss/style.scss */
+xbody h2 {
+  background-color: #ff33ff;
+}
+/* line 390, ../scss/style.scss */
+xbody h3 {
+  background-color: #ffff33;
+}
+/* line 393, ../scss/style.scss */
+xbody hr {
+  background-color: #00ffff;
+}
+/* line 396, ../scss/style.scss */
+xbody br {
+  background-color: #ff00ff;
+}
