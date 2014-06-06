@@ -14,17 +14,18 @@ size="7" / 36
 /* Client specific styles */
 /* Hotmail background & line height fixes */
 /* Hotmail symbol fix for mobile devices */
-/* line 70, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 .ExternalClass {
   width: 100%;
 }
-/* line 80, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 .ExternalClass,
 .ExternalClass br,
 .ExternalClass p,
 .ExternalClass h1,
 .ExternalClass h2,
 .ExternalClass h3,
+.ExternalClass h4,
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
@@ -34,15 +35,26 @@ size="7" / 36
   border: 0;
   mso-line-height-rule: exactly;
 }
-/* line 87, ../scss/style.scss */
+/* line 70, ../scss/style.scss */
 .ExternalClass img[class^=Emoji] {
   width: 10px;
   height: 10px;
   display: inline;
 }
 
+/* line 77, ../scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: 0;
+  mso-line-height-rule: exactly;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 0;
+}
+
 /* Baseline styles */
-/* line 98, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 body,
 #bodyBackground {
   margin: 0;
@@ -54,12 +66,17 @@ body,
   background-color: #f1efe4;
 }
 
-/* line 107, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 #bodyBackground {
   display: block;
 }
 
-/* line 110, ../scss/style.scss */
+/* line 102, ../scss/style.scss */
+.boundingTable {
+  max-width: 600px;
+}
+
+/* line 105, ../scss/style.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -67,7 +84,7 @@ table {
   mso-table-rspace: 0pt;
   font-size: 13px;
 }
-/* line 117, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 table th,
 table td {
   color: #2e2e2f;
@@ -75,7 +92,7 @@ table td {
   font-size: 13px;
 }
 
-/* line 125, ../scss/style.scss */
+/* line 120, ../scss/style.scss */
 a,
 #outlook a,
 .applelinks a {
@@ -83,14 +100,14 @@ a,
   color: #e41f35;
   text-decoration: none;
 }
-/* line 129, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 a:hover,
 #outlook a:hover,
 .applelinks a:hover {
   text-decoration: underline;
 }
 
-/* line 133, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 img {
   border: none;
   outline: none;
@@ -99,50 +116,51 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 140, ../scss/style.scss */
+/* line 135, ../scss/style.scss */
 h1 {
-  mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 0em;
-  margin: 0;
-  padding: 0;
-  font-size: 1.8em;
-  font-weight: bold;
-  line-height: 1.3em;
+  font-size: 1.75em;
   color: #2e2e2f;
+  line-height: 1.3em;
+  mso-margin-bottom-alt: 7px;
 }
 
-/* line 150, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 h2 {
   mso-margin-top-alt: 1.5em;
-  mso-margin-bottom-alt: .5em;
-  margin: 0;
-  padding: 1em 0 .5em 0;
+  mso-margin-bottom-alt: .3em;
+  padding: 1.3em 0 .3em 0;
   letter-spacing: 0.02em;
   line-height: 1.2em;
-  font-weight: bold;
   color: #9bc787;
   font-size: 1.8em;
   clear: both;
 }
 
-/* line 156, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 h3 {
   mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: .5em;
-  margin: 0;
-  padding: 0 0 .5em 0;
+  mso-margin-bottom-alt: .3em;
+  padding: 0 0 .3em 0;
   font-size: 1.15em;
-  font-weight: bold;
   color: #2e2e2f;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
+h4 {
+  mso-margin-top-alt: 0.5em;
+  mso-margin-bottom-alt: .7em;
+  padding: .5em 0 .7em 0;
+  font-size: 1em;
+  color: #2e2e2f;
+}
+
+/* line 165, ../scss/style.scss */
 ul {
   padding: 0;
   margin: 0 0 1em 1.4em;
 }
 
-/* line 164, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 hr {
   mso-margin-top-alt: .2em;
   mso-margin-bottom-alt: .5em;
@@ -151,271 +169,343 @@ hr {
 }
 
 /* Content styles */
-/* line 174, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 .gutter {
   font-size: 0px;
   line-height: 0px;
+  height: 0px;
+  overflow: none;
+  width: 3.33333%;
+}
+/* line 185, ../scss/style.scss */
+.gutter img {
+  height: 0px !important;
 }
 
-/* line 179, ../scss/style.scss */
-.webVersionTop {
+/* line 190, ../scss/style.scss */
+#preHeaderTable td {
+  height: 1.5em;
+  padding: .35em 0 0 0;
+}
+/* line 194, ../scss/style.scss */
+#preHeaderTable .webVersionTop {
   font-size: .9em;
-  padding: .3em 0;
   overflow: hidden;
 }
-
-/* line 185, ../scss/style.scss */
-.topTab {
-  padding: .3em 0 0 0;
-}
-/* line 187, ../scss/style.scss */
-.topTab td {
+/* line 200, ../scss/style.scss */
+#preHeaderTable .topTab td {
   border-radius: 10px 10px 0 0;
   padding: .5em 2em;
   font-size: .86em;
-  color: #2e2e2f;
-  font-weight: bold;
-}
-
-/* line 197, ../scss/style.scss */
-.logoArea,
-.businessUnit {
-  mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 0em;
-  padding: .5em 0;
-  font-size: 1em;
-  line-height: 1.3em;
-  font-weight: bold;
-}
-
-/* line 205, ../scss/style.scss */
-.logoArea td {
-  padding: .5em 0;
+  color: white;
 }
 
 /* line 209, ../scss/style.scss */
+.logoArea,
+.businessUnit {
+  padding: 0 0 2px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 214, ../scss/style.scss */
+.logoArea td {
+  padding: 12px 0 11px 0;
+}
+
+/* line 218, ../scss/style.scss */
 .intro {
   padding: 1em 0 .7em 0;
   color: white;
   font-size: 1.05em;
 }
 
-/* line 214, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
+#introGraphic {
+  width: 100%;
+}
+/* line 225, ../scss/style.scss */
+#introGraphic td {
+  width: 100%;
+}
+/* line 228, ../scss/style.scss */
+#introGraphic img {
+  min-width: 328px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/* line 235, ../scss/style.scss */
 .dateArea {
   padding: 0 0 1em 0;
 }
-/* line 216, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
+.dateArea .column1 {
+  width: 51.8%;
+}
+/* line 240, ../scss/style.scss */
+.dateArea .column2 {
+  width: 48.2%;
+}
+/* line 243, ../scss/style.scss */
+.dateArea .gutter {
+  height: 1px;
+  width: 3.25%;
+}
+/* line 247, ../scss/style.scss */
 .dateArea .date {
   line-height: 2em;
 }
-/* line 220, ../scss/style.scss */
+/* line 250, ../scss/style.scss */
 .dateArea .utility {
   font-size: .9em;
   text-align: center;
   padding: .6em 1em;
+  width: auto;
 }
-/* line 225, ../scss/style.scss */
+/* line 255, ../scss/style.scss */
 .dateArea .utility a,
 .dateArea .utility #outlook a,
 .dateArea .utility .applelinks a {
-  width: 100%;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
-/* line 230, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .tocArea {
-  padding: 1em 0 .5em 0;
+  padding: 1em 0 .35em 0;
 }
-/* line 232, ../scss/style.scss */
+/* line 262, ../scss/style.scss */
 .tocArea h2 {
-  mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 1em;
-  padding: 0 0 1em 0 !important;
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: .65em;
+  padding: 0 0 .65em 0;
   font-weight: normal;
   font-size: 1.05em;
   color: #2E2E2F;
 }
-/* line 240, ../scss/style.scss */
-.tocArea a {
-  display: inline-block;
-  padding: 0 0 .5em 0;
-  font-weight: bold;
+/* line 271, ../scss/style.scss */
+.tocArea .column1,
+.tocArea .column2 {
+  width: 48%;
 }
-/* line 245, ../scss/style.scss */
-.tocArea br {
-  line-height: .6em;
+/* line 273, ../scss/style.scss */
+.tocArea .column1 td,
+.tocArea .column2 td {
+  padding: 0 0 .65em 0;
+}
+/* line 277, ../scss/style.scss */
+.tocArea .gutter {
+  height: 1px;
+  width: 3.25%;
+}
+/* line 281, ../scss/style.scss */
+.tocArea a {
+  font-weight: bold;
+  line-height: 1.3em;
 }
 
-/* line 251, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .content .column1 {
   padding: 0 0 1.3em 0;
 }
-/* line 253, ../scss/style.scss */
+/* line 289, ../scss/style.scss */
 .content .column1 td {
   padding: 0;
 }
-/* line 257, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 .content .back-to-top {
   border-top: 2px #9bc787 solid;
   width: 100%;
+  min-width: 298px;
 }
-/* line 260, ../scss/style.scss */
+/* line 297, ../scss/style.scss */
 .content .back-to-top .button {
   font-size: .9em;
   text-align: center;
   padding: .6em 1em;
+  width: auto;
 }
-/* line 262, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 .content .back-to-top .button a {
-  width: 100%;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
-/* line 270, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .columnBottom {
   height: 1em !important;
   line-height: 1em !important;
 }
 
-/* line 275, ../scss/style.scss */
-.footerArea {
-  font-size: .9em;
+/* line 313, ../scss/style.scss */
+#footerArea .column1,
+#footerArea .column2 {
+  padding: 2em 0 1.3em 0;
+  font-size: .86em;
 }
-/* line 277, ../scss/style.scss */
-.footerArea .webVersionBottom {
+/* line 317, ../scss/style.scss */
+#footerArea .webVersionBottom {
   display: none;
   height: 0px;
   overflow: hidden;
 }
+/* line 322, ../scss/style.scss */
+#footerArea h3 {
+  color: #2e2e2f;
+  font-size: 1.3em;
+}
+/* line 326, ../scss/style.scss */
+#footerArea img.icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+}
 
 /* Make width fluid if more than max width */
-@media only screen and (max-width: 600px) {
-  /* line 287, ../scss/style.scss */
+@media only screen and (max-width: 60px) {
+  /* line 336, ../scss/style.scss */
   .boundingTable {
     width: 100% !important;
   }
 
-  /* line 291, ../scss/style.scss */
-  .businessUnit,
-  .content .column1 {
-    width: auto !important;
-  }
-
-  /* line 297, ../scss/style.scss */
-  .dateArea .column1,
-  .dateArea .column2,
-  .tocArea .column1,
-  .tocArea .column2 {
-    width: 48.33333% !important;
-  }
-
-  /* line 301, ../scss/style.scss */
-  img {
+  /* line 339, ../scss/style.scss */
+  .boundingTable img {
     width: 100% !important;
     height: auto !important;
   }
 
-  /* line 305, ../scss/style.scss */
-  .gutter {
-    width: 3.33333% !important;
-  }
-  /* line 307, ../scss/style.scss */
-  .gutter img {
-    height: 0px !important;
+  /* line 344, ../scss/style.scss */
+  .businessUnit,
+  .content .column1 {
+    width: auto !important;
   }
 }
 /* Narrow windows and devices */
-@media only screen and (max-width: 480px) {
-  /* line 316, ../scss/style.scss */
+@media only screen and (max-width: 48px) {
+  /* line 352, ../scss/style.scss */
   span[id="bodyBackground"] #preHeaderTable {
     background-color: #ffffff !important;
   }
-  /* line 318, ../scss/style.scss */
+  /* line 354, ../scss/style.scss */
   span[id="bodyBackground"] #preHeaderTable .webVersionTop {
     display: none !important;
     height: 0px !important;
     overflow: hidden !important;
   }
-  /* line 323, ../scss/style.scss */
+  /* line 359, ../scss/style.scss */
   span[id="bodyBackground"] #preHeaderTable .webVersionBottom {
     display: inline !important;
     height: auto !important;
   }
-  /* line 327, ../scss/style.scss */
+  /* line 363, ../scss/style.scss */
   span[id="bodyBackground"] #preHeaderTable .topTab {
     padding: 0 !important;
   }
-  /* line 330, ../scss/style.scss */
+  /* line 366, ../scss/style.scss */
   span[id="bodyBackground"] #preHeaderTable .topTab td {
     border-radius: 0 0 10px 10px !important;
     padding: .5em 1.3em !important;
     text-align: center !important;
-    background-color: #2e2e2f;
-    color: white;
   }
-  /* line 339, ../scss/style.scss */
+  /* line 373, ../scss/style.scss */
   span[id="bodyBackground"] .logoArea {
     width: 125px !important;
   }
-  /* line 342, ../scss/style.scss */
+  /* line 376, ../scss/style.scss */
   span[id="bodyBackground"] .logoArea td {
-    padding-top: .25em !important;
-    padding-bottom: .25em !important;
+    padding: 0 0 8px 0 !important;
   }
-  /* line 346, ../scss/style.scss */
+  /* line 379, ../scss/style.scss */
   span[id="bodyBackground"] .businessUnit {
     font-weight: normal !important;
     font-size: .9em !important;
   }
-  /* line 349, ../scss/style.scss */
+  /* line 382, ../scss/style.scss */
   span[id="bodyBackground"] .businessUnit h1 {
-    font-size: 1.3em !important;
+    font-size: 1.35em !important;
   }
-  /* line 354, ../scss/style.scss */
+  /* line 387, ../scss/style.scss */
   span[id="bodyBackground"] .column1,
   span[id="bodyBackground"] .column2 {
     width: 100% !important;
   }
-  /* line 358, ../scss/style.scss */
-  span[id="bodyBackground"] .content .column1 {
-    width: 93.333336% !important;
+  /* line 394, ../scss/style.scss */
+  span[id="bodyBackground"] .dateArea .column1, span[id="bodyBackground"] .dateArea .column1 td, span[id="bodyBackground"] .dateArea .column1 tr,
+  span[id="bodyBackground"] .dateArea .column2,
+  span[id="bodyBackground"] .dateArea .column2 td,
+  span[id="bodyBackground"] .dateArea .column2 tr,
+  span[id="bodyBackground"] .tocArea .column1,
+  span[id="bodyBackground"] .tocArea .column1 td,
+  span[id="bodyBackground"] .tocArea .column1 tr,
+  span[id="bodyBackground"] .tocArea .column2,
+  span[id="bodyBackground"] .tocArea .column2 td,
+  span[id="bodyBackground"] .tocArea .column2 tr {
+    width: 100% !important;
   }
-  /* line 363, ../scss/style.scss */
+  /* line 399, ../scss/style.scss */
+  span[id="bodyBackground"] .content {
+    display: block !important;
+  }
+  /* line 402, ../scss/style.scss */
+  span[id="bodyBackground"] .content .column1,
+  span[id="bodyBackground"] .content .column2 {
+    width: 93.333336% !important;
+    display: block !important;
+    padding: 0 3.33333% 1.3em 3.33333% !important;
+  }
+  /* line 410, ../scss/style.scss */
   span[id="bodyBackground"] .dateArea .date {
     text-align: center !important;
+  }
+  /* line 416, ../scss/style.scss */
+  span[id="bodyBackground"] #footerArea .content {
+    display: block !important;
+  }
+  /* line 419, ../scss/style.scss */
+  span[id="bodyBackground"] #footerArea .content .column1,
+  span[id="bodyBackground"] #footerArea .content .column2 {
+    padding: 1.3em 3.33333% 0.5em 3.33333% !important;
   }
 }
 /* Narrow devices */
 /* Testing/Coloring */
-/* line 378, ../scss/style.scss */
-xbody .column1 {
+/* line 435, ../scss/style.scss */
+x#bodyBackground .column1 {
   background-color: #ffdddd;
 }
-/* line 381, ../scss/style.scss */
-xbody .column2 {
+/* line 438, ../scss/style.scss */
+x#bodyBackground .column2 {
   background-color: #ddffdd;
 }
-/* line 384, ../scss/style.scss */
-xbody h1 {
+/* line 441, ../scss/style.scss */
+x#bodyBackground .gutter {
+  background-color: #ddddff;
+}
+/* line 444, ../scss/style.scss */
+x#bodyBackground .halfgutter {
+  background-color: #ffffdd;
+}
+/* line 447, ../scss/style.scss */
+x#bodyBackground h1 {
   background-color: #33ffff;
 }
-/* line 387, ../scss/style.scss */
-xbody h2 {
+/* line 450, ../scss/style.scss */
+x#bodyBackground h2 {
   background-color: #ff33ff;
 }
-/* line 390, ../scss/style.scss */
-xbody h3 {
+/* line 453, ../scss/style.scss */
+x#bodyBackground h3 {
   background-color: #ffff33;
 }
-/* line 393, ../scss/style.scss */
-xbody hr {
+/* line 456, ../scss/style.scss */
+x#bodyBackground hr {
   background-color: #00ffff;
 }
-/* line 396, ../scss/style.scss */
-xbody br {
+/* line 459, ../scss/style.scss */
+x#bodyBackground br {
   background-color: #ff00ff;
 }
