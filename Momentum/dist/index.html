@@ -62,8 +62,23 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   img.icon {
     width: 42px !important; height: 42px !important;
   }
+  img.columnBottom {
+    height: 1em !important; line-height: 1em !important;
+  }
+  .halfgutter {
+    width: 1.66667% !important;
+  }
+  .halfgutter img {
+    height: 0px !important;
+  }
+  #promoContents table {
+    width: 33.33333% !important;
+  }
+  #promoContents table table {
+    width: auto !important;
+  }
 }
-@media only screen and (max-width: 467px) {
+@media only screen and (max-width: 480px) {
   span[id="bodyBackground"] #preHeaderTable {
     background-color: #ffffff !important;
   }
@@ -144,6 +159,24 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   }
   span[id="bodyBackground"] .dateArea .date {
     text-align: center !important;
+  }
+  span[id="bodyBackground"] img.columnBottom {
+    height: 0 !important; line-height: 0 !important; display: none;
+  }
+  span[id="bodyBackground"] .halfgutter {
+    width: 3.33333% !important;
+  }
+  span[id="bodyBackground"] #promoContents table {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] #promoContents table td {
+    padding-left: 0 !important; padding-right: 0 !important;
+  }
+  span[id="bodyBackground"] #promoContents table table {
+    width: auto !important;
+  }
+  span[id="bodyBackground"] #promoContents table table td {
+    padding: .5em 1em !important;
   }
   span[id="bodyBackground"] #footerArea .content {
     display: block !important;
@@ -262,18 +295,18 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 				<td width="560" class="dateArea" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1em">
 
 					<!-- BEGIN: Date -->
-					<table width="290" border="0" cellpadding="0" cellspacing="0" align="left" class="column1" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 51.8%">
+					<table width="287" border="0" cellpadding="0" cellspacing="0" align="left" class="column1" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 51.25%">
 						<tr>
-							<td width="270" align="left" valign="middle" class="date" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 2em">Monday, May 5, 2014</td>
-							<td width="17" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.25%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="17" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 0px !important; outline: none; text-decoration: none" /></td>
+							<td width="270" align="left" valign="middle" class="date" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .35em 0; width: 94%">Monday, May 5, 2014</td>
+							<td width="17" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 6%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="17" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 0px !important; outline: none; text-decoration: none" /></td>
 						</tr>
 					</table>
 					<!-- END: Date -->
 
 					<!-- BEGIN: Utility Button -->
-					<table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="column2" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 48.2%">
+					<table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="column2" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 48.2%">
 						<tr>
-							<td align="center" valign="middle" bgcolor="#9BC787" class="utility" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Customize your Momentum</a></td>
+							<td width="270" align="center" valign="middle" bgcolor="#9BC787" class="utility" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Customize your Momentum</a></td>
 						</tr>
 					</table>
 					<!-- END: Utility Button -->
@@ -295,7 +328,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 				<td width="520" align="left" valign="top" bgcolor="#f1efe4" class="tocArea" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 1em 0 .35em">
 
-					<h2 style="clear: both; color: #2E2E2F; font-size: 1.05em; font-weight: normal; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .65em; mso-margin-top-alt: 0; padding: 0 0 .65em">Jump to section</h2>
+					<h2 style="clear: both; color: #2E2E2F; font-size: 1.05em; font-weight: normal; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .65em; mso-margin-top-alt: 0; padding: 0 0 .65em">Jump to section</h2>
 					
 					<table width="250" border="0" cellpadding="0" cellspacing="0" align="left" class="column1" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 48%">
 						<tr>
@@ -343,6 +376,9 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 0px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 0px !important; outline: none; text-decoration: none" /></td>
 			</tr>
+			<tr>
+				<td colspan="7" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px"> </td>
+			</tr>
 		</table>
 		<!-- END: Table of Contents Area -->
 		
@@ -357,18 +393,14 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 					<!-- BEGIN: Section -->
 					<a name="section-1" style="color: #e41f35; padding: 0; text-decoration: none" id="section-1"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Ambulatory Care</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Ambulatory Care</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Full Width Image</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 
-					Image is full width with text above or below the image.<br /><br />
+					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
-					Images should be at least 450px wide for standard resolutions; or 900px wide if retina display quality resolution is desired.<br /><br />
-
-					Image is full width with text above or below the image.<br /><br />
-
-					Images should be at least 450px wide for standard resolutions; or 900px wide if retina display quality resolution is desired.<br /><br />
+					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
 					<a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">Article link »</a><br />
 					<!-- END: Article -->
@@ -378,15 +410,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Rule -->	
 
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Wraps Around Image</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 
-					Text wraps to the left then under a right aligned image.<br /><br />
+					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
-					Image should be at least 225px wide for standard resolutions; or 450px wide if retina display quality resolution is desired.<br /><br />
-
-					Text wraps to the left then under a right aligned image.<br /><br />
-
-					Image should be at least 225px wide for standard resolutions; or 450px wide if retina display quality resolution is desired.<br /><br />
+					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
 					<a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">Article link »</a><br /><br />
 					<!-- END: Article -->
@@ -394,10 +422,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -409,19 +437,15 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 					<!-- BEGIN: Section -->
 					<a name="section-2" style="color: #e41f35; padding: 0; text-decoration: none" id="section-2"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Hospital Sales and Services</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Hospital Sales and Services</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Image Stack</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 
-					Text on the left and multiple images stacked on the right. Text wraps under stacked images.<br /><br />
+					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
-					Images should be at least 450px wide for standard resolutions; or 900px wide if retina display quality resolution is desired.<br /><br />
+					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
-					Text on the left and multiple images stacked on the right. Text wraps under stacked images.<br /><br />
-
-					Images should be at least 450px wide for standard resolutions; or 900px wide if retina display quality resolution is desired.<br /><br />
-					
 					<a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">Article link »</a><br />
 					<!-- END: Article -->
 
@@ -430,7 +454,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Rule -->	
 
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -442,10 +466,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -457,10 +481,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 					<!-- BEGIN: Section -->
 					<a name="section-3" style="color: #e41f35; padding: 0; text-decoration: none" id="section-3"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Innovative Delivery Solutions</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Innovative Delivery Solutions</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -472,10 +496,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -487,10 +511,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-4" style="color: #e41f35; padding: 0; text-decoration: none" id="section-4"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Laboratory Products</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Laboratory Products</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -502,10 +526,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -517,10 +541,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-5" style="color: #e41f35; padding: 0; text-decoration: none" id="section-5"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Medical Products</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Medical Products</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -532,10 +556,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -547,10 +571,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-6" style="color: #e41f35; padding: 0; text-decoration: none" id="section-6"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Nuclear Pharmacy Services</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Nuclear Pharmacy Services</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -562,10 +586,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -577,10 +601,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-7" style="color: #e41f35; padding: 0; text-decoration: none" id="section-7"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Office of Customer Experience</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Office of Customer Experience</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -592,10 +616,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -607,10 +631,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-8" style="color: #e41f35; padding: 0; text-decoration: none" id="section-8"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Presource® Products and Services</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Presource® Products and Services</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -622,10 +646,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -637,10 +661,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-9" style="color: #e41f35; padding: 0; text-decoration: none" id="section-9"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Specialty Solutions</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Specialty Solutions</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -652,10 +676,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -667,10 +691,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-10" style="color: #e41f35; padding: 0; text-decoration: none" id="section-10"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Surgical Products</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Surgical Products</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -682,10 +706,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -697,10 +721,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					
 					<!-- BEGIN: Section -->
 					<a name="section-11" style="color: #e41f35; padding: 0; text-decoration: none" id="section-11"></a>
-					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.2em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 1.5em; padding: 1.3em 0 .3em">Title Caps Section Title</h2>
+					<h2 style="clear: both; color: #9bc787; font-size: 1.8em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: .5em; padding: .3em 0">Title Caps Section Title</h2>
 					
 					<!-- BEGIN: Article -->
-					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.15em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Article Header - Text Only</h3>
 					
 					Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping. Plain old text with no images or wrapping.<br /><br />
 
@@ -712,10 +736,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Back To Top -->
 					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
-							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
+							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 .5em">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .45em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -772,7 +796,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 0px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 0px !important; outline: none; text-decoration: none" /></td>
 
 				<td width="180" valign="top" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: .86em; padding: 2em 0 1.3em">
-					<h3 style="color: #2e2e2f; font-size: 1.3em; font-weight: bold; line-height: 100%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Connect with us</h3>
+					<h3 style="color: #2e2e2f; font-size: 1.3em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Connect with us</h3>
 					
 					<a href="http://twitter.com/cardinalhealth" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/TwitterIcon.gif" width="42" border="0" alt="Twitter" class="icon" style="-ms-interpolation-mode: bicubic; border: none; display: inline-block; height: 42px; outline: none; text-decoration: none; width: 42px" /></a>
 					

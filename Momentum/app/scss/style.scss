@@ -35,7 +35,7 @@ $line-height:1.3em;
 @mixin buttonBox() {
 	font-size:.9em;
 	text-align:center;
-	padding:.6em 1em;
+	padding:.45em 1em;
 }
 @mixin buttonLink() {
 	width:100%;
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 	mso-margin-top-alt:0;
 	mso-margin-bottom-alt:0;
 	mso-line-height-rule:exactly;
-	line-height:100%;
+	line-height:$line-height;
     font-weight:bold;
 	margin:0 0 5px 0;
 	padding:0 0 0 0;
@@ -135,15 +135,13 @@ img {
 h1 {
 	font-size:1.75em;
 	color:$color-title;
-	line-height:$line-height;
 	mso-margin-bottom-alt:7px;
 }
 h2 {
-	mso-margin-top-alt:1.5em;
+	mso-margin-top-alt:.5em;
 	mso-margin-bottom-alt:.3em;
- 	padding:1.3em 0 .3em 0;
+ 	padding:.3em 0;
     letter-spacing:0.02em;
-    line-height:1.2em;
 	color:$color-sweep2;
 	font-size:1.8em;
 	clear:both;
@@ -249,17 +247,18 @@ hr {
 .dateArea {
 	padding:0 0 1em 0;
 	.column1 {
-		width:51.8%;
+		width:51.25%;
 	}
 	.column2 {
 		width:48.2%;
 	}
 	.gutter {
 		height:1px;
-		width: 3.25%;
+		width: 6%;
 	}
 	.date {
-		line-height:2em;
+		width: 94%;
+		padding: .35em 0;
 	}
 	.utility {
 		@include buttonBox();
@@ -304,11 +303,27 @@ hr {
 			padding:0;
 		}
 	}
+	.column2 {
+		h2 {
+			mso-margin-top-alt: 1.4em;
+			mso-margin-bottom-alt: .5em;
+			color: $color-aside-title;
+			font-size: 1.5em;
+			font-weight: normal;
+			padding: .55em 0 .5em 0;
+		} 
+		h3 {
+			color: $color-aside-title;
+		} 
+	}
 	.back-to-top {
 		border-top:2px $color-highlight solid;
 		min-width: 298px;
 		max-width: 560px;
 		width:100%;
+		td {
+			padding: 0 0 .5em 0;
+		}
 		.button {
 			@include buttonBox();
 			a {
@@ -318,9 +333,37 @@ hr {
 	}
 }
 
-.columnBottom {
-	height:1em !important;
-	line-height:1em !important;
+img.columnBottom {
+	height:1em;
+	line-height:1em;
+}
+
+#promoHeader {
+	td {
+		padding-bottom: 1.3em;
+	}
+	h2 {
+		padding-top: .3em;	
+	}
+}
+#promoContents {
+	table {
+		td {
+			padding: 0 10px 1.5em 10px;
+		}
+	}
+	.button td {
+		@include buttonBox();
+		padding: .5em 1em !important;
+		width:auto !important;
+	}
+	.disclaimer {
+		font-size:.86em;
+		color: #907736;
+		margin: .3em 0 1em 0;	
+		mso-margin-top-alt: .3em;
+		mso-margin-bottom-alt: 1em;
+	}
 }
 
 #footerArea {
@@ -379,10 +422,28 @@ hr {
 		width:42px !important;
 		height:42px !important;
 	}
+	img.columnBottom {
+		height:1em !important;
+		line-height:1em !important;
+	}
+	.halfgutter {
+		width: $gutter/2 !important;
+		img {
+			height: 0px !important;
+		}
+	}
+	#promoContents {
+		table {
+			width: 33.33333% !important;
+			table {
+				width: auto !important;
+			}
+		}
+	}
 }
 
 /* Narrow windows and devices */
-@media only screen and (max-width:467px) {
+@media only screen and (max-width:480px) {
 	span[id="bodyBackground"] {
 		#preHeaderTable {
 			background-color:#ffffff !important;
@@ -444,6 +505,29 @@ hr {
 		.dateArea {
 			.date {
 				text-align:center !important;
+			}
+		}
+		img.columnBottom {
+			height:0 !important;
+			line-height:0 !important;
+			display:none;
+		}
+		.halfgutter {
+			width: $gutter !important;
+		}
+		#promoContents {
+			table {
+				width: 100% !important;
+				td {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+				table {
+					width: auto !important;
+					td {
+						padding: .5em 1em !important;
+					}
+				}
 			}
 		}
 

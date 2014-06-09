@@ -39,6 +39,16 @@ size="7" / 36
   display: inline;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: 0;
+  mso-line-height-rule: exactly;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 0;
+}
+
 /* Baseline styles */
 body,
 #bodyBackground {
@@ -53,6 +63,10 @@ body,
 
 #bodyBackground {
   display: block;
+}
+
+.boundingTable {
+  max-width: 600px;
 }
 
 table {
@@ -91,45 +105,34 @@ img {
 }
 
 h1 {
-  mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 0em;
-  margin: 0;
-  padding: 0;
-  font-size: 1.8em;
-  font-weight: bold;
-  line-height: 1.3em;
+  font-size: 1.75em;
   color: #2e2e2f;
+  mso-margin-bottom-alt: 7px;
 }
 
 h2 {
-  mso-margin-top-alt: 1.5em;
-  mso-margin-bottom-alt: .5em;
-  margin: 0;
-  padding: 1em 0 .5em 0;
+  mso-margin-top-alt: .5em;
+  mso-margin-bottom-alt: .3em;
+  padding: .3em 0;
   letter-spacing: 0.02em;
-  line-height: 1.2em;
-  font-weight: bold;
   color: #9bc787;
   font-size: 1.8em;
+  clear: both;
 }
 
 h3 {
   mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: .5em;
-  margin: 0;
-  padding: 0 0 .5em 0;
+  mso-margin-bottom-alt: .3em;
+  padding: 0 0 .3em 0;
   font-size: 1.15em;
-  font-weight: bold;
   color: #2e2e2f;
 }
 
 h4 {
   mso-margin-top-alt: 0.5em;
-  mso-margin-bottom-alt: 1em;
-  margin: 0;
-  padding: .5em 0 1em 0;
+  mso-margin-bottom-alt: .7em;
+  padding: .5em 0 .7em 0;
   font-size: 1em;
-  font-weight: bold;
   color: #2e2e2f;
 }
 
@@ -146,41 +149,54 @@ hr {
 }
 
 /* Content styles */
-.halfgutter,
 .gutter {
   font-size: 0px;
   line-height: 0px;
+  height: 0px;
+  overflow: none;
+  width: 3.33333%;
+}
+.gutter img {
+  height: 0px !important;
 }
 
-.webVersionTop {
+#preHeaderTable td {
+  height: 1.5em;
+  padding: .35em 0 0 0;
+}
+#preHeaderTable .webVersionTop {
   font-size: .9em;
-  padding: .3em 0;
   overflow: hidden;
 }
-
-.topTab {
-  padding: .3em 0 0 0;
-}
-.topTab td {
+#preHeaderTable .topTab td {
   border-radius: 10px 10px 0 0;
   padding: .5em 2em;
   font-size: .86em;
   color: white;
-  font-weight: bold;
 }
 
 .logoArea,
 .businessUnit {
-  mso-margin-top-alt: 0em;
-  mso-margin-bottom-alt: 0em;
-  padding: .5em 0;
+  padding: 0 0 2px 0;
   font-size: 1em;
-  line-height: 1.3em;
   font-weight: bold;
 }
 
+.logoArea {
+  max-width: 39%;
+}
 .logoArea td {
-  padding: 0 0 .5em 0;
+  padding: 12px 0 11px 0;
+}
+.logoArea img {
+  min-width: 125px;
+  max-width: 177px;
+  width: 100%;
+  height: auto;
+}
+
+.businessUnit {
+  min-width: 51%;
 }
 
 .intro {
@@ -189,45 +205,84 @@ hr {
   font-size: 1.05em;
 }
 
+#introGraphic {
+  max-width: 600px;
+  width: 600px;
+}
+#introGraphic td {
+  width: 100%;
+}
+#introGraphic img {
+  min-width: 100%;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.dateArea {
+  padding: 0 0 1em 0;
+}
+.dateArea .column1 {
+  width: 51.25%;
+}
+.dateArea .column2 {
+  width: 48.2%;
+}
+.dateArea .gutter {
+  height: 1px;
+  width: 6%;
+}
 .dateArea .date {
-  line-height: 2em;
+  width: 94%;
+  padding: .35em 0;
 }
 .dateArea .utility {
   font-size: .9em;
   text-align: center;
-  padding: .6em 1em;
+  padding: .45em 1em;
 }
 .dateArea .utility a,
 .dateArea .utility #outlook a,
 .dateArea .utility .applelinks a {
-  display: inline-block;
   width: 100%;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
-.content .column1,
-.content .column2 {
-  padding: 0 0 1em 0;
+.tocArea {
+  padding: 1em 0 .35em 0;
 }
-.content .column1 td,
-.content .column2 td {
+.tocArea h2 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: .65em;
+  padding: 0 0 .65em 0;
+  font-weight: normal;
+  font-size: 1.05em;
+  color: #2E2E2F;
+}
+.tocArea .column1,
+.tocArea .column2 {
+  width: 48%;
+}
+.tocArea .column1 td,
+.tocArea .column2 td {
+  padding: 0 0 .65em 0;
+}
+.tocArea .gutter {
+  height: 1px;
+  width: 3.25%;
+}
+.tocArea a {
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.content .column1 {
+  padding: 0 0 1.3em 0;
+}
+.content .column1 td {
   padding: 0;
-}
-.content .column1 .imgFull td,
-.content .column1 .imgWrap td,
-.content .column1 .imgStack td,
-.content .column2 .imgFull td,
-.content .column2 .imgWrap td,
-.content .column2 .imgStack td {
-  padding-bottom: 1em;
-  padding-left: 1em;
-  line-height: .5em;
-}
-.content .column1 .imgFull td,
-.content .column2 .imgFull td {
-  padding-left: 0;
 }
 .content .column2 h2 {
   mso-margin-top-alt: 1.4em;
@@ -235,15 +290,35 @@ hr {
   color: #346170;
   font-size: 1.5em;
   font-weight: normal;
-  padding: 1.4em 0 .5em 0;
+  padding: .55em 0 .5em 0;
 }
 .content .column2 h3 {
   color: #346170;
 }
+.content .back-to-top {
+  border-top: 2px #9bc787 solid;
+  min-width: 298px;
+  max-width: 560px;
+  width: 100%;
+}
+.content .back-to-top td {
+  padding: 0 0 .5em 0;
+}
+.content .back-to-top .button {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+}
+.content .back-to-top .button a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
 
-.columnBottom {
-  height: 1em !important;
-  line-height: 1em !important;
+img.columnBottom {
+  height: 1em;
+  line-height: 1em;
 }
 
 #promoHeader td {
@@ -256,28 +331,39 @@ hr {
 #promoContents table td {
   padding: 0 10px 1.5em 10px;
 }
-
-.button td {
+#promoContents .button td {
   font-size: .9em;
   text-align: center;
-  padding: .6em 1em;
+  padding: .45em 1em;
   padding: .5em 1em !important;
   width: auto !important;
 }
-
-.disclaimer {
+#promoContents .disclaimer {
   font-size: .86em;
-  padding: .4em 0 1em 0;
   color: #907736;
+  margin: .3em 0 1em 0;
+  mso-margin-top-alt: .3em;
+  mso-margin-bottom-alt: 1em;
 }
 
-.footerArea {
-  font-size: .9em;
+#footerArea .column1,
+#footerArea .column2 {
+  padding: 2em 0 1.3em 0;
+  font-size: .86em;
 }
-.footerArea .webVersionBottom {
+#footerArea .webVersionBottom {
   display: none;
   height: 0px;
   overflow: hidden;
+}
+#footerArea h3 {
+  color: #2e2e2f;
+  font-size: 1.3em;
+}
+#footerArea img.icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
 }
 
 /* Make width fluid if more than max width */
@@ -286,28 +372,43 @@ hr {
     width: 100% !important;
   }
 
-  .businessUnit,
-  .content .column1 {
-    width: auto !important;
-  }
-
-  .dateArea .column1,
-  .dateArea .column2,
-  .tocArea .column1,
-  .tocArea .column2 {
-    width: 48.33333% !important;
-  }
-
-  img {
+  .boundingTable img {
     width: 100% !important;
     height: auto !important;
   }
 
-  .gutter {
-    width: 3.33333% !important;
+  #introGraphic {
+    width: 100% !important;
   }
+  #introGraphic img {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .businessUnit,
+  .content .column1 {
+    width: auto !important;
+  }
+  .businessUnit .back-to-top,
+  .content .column1 .back-to-top {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  img.gutter,
   .gutter img {
-    height: 0px !important;
+    height: 1px !important;
+    width: 3.25% !important;
+  }
+
+  img.icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  img.columnBottom {
+    height: 1em !important;
+    line-height: 1em !important;
   }
 
   .halfgutter {
@@ -350,17 +451,29 @@ hr {
     width: 125px !important;
   }
   span[id="bodyBackground"] .logoArea td {
-    padding-bottom: .25em !important;
+    padding: 0 0 8px 0 !important;
   }
   span[id="bodyBackground"] .businessUnit {
     font-weight: normal !important;
     font-size: .9em !important;
   }
   span[id="bodyBackground"] .businessUnit h1 {
-    font-size: 1.3em !important;
+    font-size: 1.35em !important;
   }
   span[id="bodyBackground"] .column1,
   span[id="bodyBackground"] .column2 {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] .dateArea .column1, span[id="bodyBackground"] .dateArea .column1 td, span[id="bodyBackground"] .dateArea .column1 tr,
+  span[id="bodyBackground"] .dateArea .column2,
+  span[id="bodyBackground"] .dateArea .column2 td,
+  span[id="bodyBackground"] .dateArea .column2 tr,
+  span[id="bodyBackground"] .tocArea .column1,
+  span[id="bodyBackground"] .tocArea .column1 td,
+  span[id="bodyBackground"] .tocArea .column1 tr,
+  span[id="bodyBackground"] .tocArea .column2,
+  span[id="bodyBackground"] .tocArea .column2 td,
+  span[id="bodyBackground"] .tocArea .column2 tr {
     width: 100% !important;
   }
   span[id="bodyBackground"] .content {
@@ -370,20 +483,17 @@ hr {
   span[id="bodyBackground"] .content .column2 {
     width: 93.333336% !important;
     display: block !important;
-    padding: 0 3.33333% !important;
+    padding: 0 3.33333% 1.3em 3.33333% !important;
   }
   span[id="bodyBackground"] .dateArea .date {
     text-align: center !important;
   }
-  span[id="bodyBackground"] .imgStack {
-    width: 100% !important;
+  span[id="bodyBackground"] img.columnBottom {
+    height: 0 !important;
+    line-height: 0 !important;
+    display: none;
   }
-  span[id="bodyBackground"] .imgFull td,
-  span[id="bodyBackground"] .imgStack td {
-    padding-left: 0 !important;
-    width: 100% !important;
-  }
-  span[id="bodyBackground"] #promoContents .halfgutter {
+  span[id="bodyBackground"] .halfgutter {
     width: 3.33333% !important;
   }
   span[id="bodyBackground"] #promoContents table {
@@ -399,27 +509,40 @@ hr {
   span[id="bodyBackground"] #promoContents table table td {
     padding: .5em 1em !important;
   }
+  span[id="bodyBackground"] #footerArea .content {
+    display: block !important;
+  }
+  span[id="bodyBackground"] #footerArea .content .column1,
+  span[id="bodyBackground"] #footerArea .content .column2 {
+    padding: 1.3em 3.33333% 0.5em 3.33333% !important;
+  }
 }
 /* Narrow devices */
 /* Testing/Coloring */
-xbody .column1 {
+x#bodyBackground .column1 {
   background-color: #ffdddd;
 }
-xbody .column2 {
+x#bodyBackground .column2 {
   background-color: #ddffdd;
 }
-xbody h1 {
+x#bodyBackground .gutter {
+  background-color: #ddddff;
+}
+x#bodyBackground .halfgutter {
+  background-color: #ffffdd;
+}
+x#bodyBackground h1 {
   background-color: #33ffff;
 }
-xbody h2 {
+x#bodyBackground h2 {
   background-color: #ff33ff;
 }
-xbody h3 {
+x#bodyBackground h3 {
   background-color: #ffff33;
 }
-xbody hr {
+x#bodyBackground hr {
   background-color: #00ffff;
 }
-xbody br {
+x#bodyBackground br {
   background-color: #ff00ff;
 }
