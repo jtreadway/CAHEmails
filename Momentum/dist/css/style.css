@@ -184,8 +184,21 @@ hr {
   font-weight: bold;
 }
 
+.logoArea {
+  max-width: 39%;
+}
 .logoArea td {
   padding: 12px 0 11px 0;
+}
+.logoArea img {
+  min-width: 125px;
+  max-width: 177px;
+  width: 100%;
+  height: auto;
+}
+
+.businessUnit {
+  min-width: 51%;
 }
 
 .intro {
@@ -195,13 +208,14 @@ hr {
 }
 
 #introGraphic {
-  width: 100%;
+  max-width: 600px;
+  width: 600px;
 }
 #introGraphic td {
   width: 100%;
 }
 #introGraphic img {
-  min-width: 328px;
+  min-width: 100%;
   max-width: 600px;
   width: 100%;
   height: auto;
@@ -227,11 +241,11 @@ hr {
   font-size: .9em;
   text-align: center;
   padding: .6em 1em;
-  width: auto;
 }
 .dateArea .utility a,
 .dateArea .utility #outlook a,
 .dateArea .utility .applelinks a {
+  width: 100%;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -273,16 +287,17 @@ hr {
 }
 .content .back-to-top {
   border-top: 2px #9bc787 solid;
-  width: 100%;
   min-width: 298px;
+  max-width: 560px;
+  width: 100%;
 }
 .content .back-to-top .button {
   font-size: .9em;
   text-align: center;
   padding: .6em 1em;
-  width: auto;
 }
 .content .back-to-top .button a {
+  width: 100%;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -314,19 +329,47 @@ hr {
 }
 
 /* Make width fluid if more than max width */
-@media only screen and (max-width: 60px) {
+@media only screen and (max-width: 600px) {
+  .boundingTable {
+    width: 100% !important;
+  }
+
   .boundingTable img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #introGraphic {
+    width: 100% !important;
+  }
+  #introGraphic img {
+    min-width: 100% !important;
+    width: 100% !important;
   }
 
   .businessUnit,
   .content .column1 {
     width: auto !important;
   }
+  .businessUnit .back-to-top,
+  .content .column1 .back-to-top {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  img.gutter,
+  .gutter img {
+    height: 1px !important;
+    width: 3.25% !important;
+  }
+
+  img.icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
 }
 /* Narrow windows and devices */
-@media only screen and (max-width: 48px) {
+@media only screen and (max-width: 467px) {
   span[id="bodyBackground"] #preHeaderTable {
     background-color: #ffffff !important;
   }

@@ -35,11 +35,23 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   .boundingTable img {
     width: 100% !important; height: auto !important;
   }
+  #introGraphic {
+    width: 100% !important;
+  }
+  #introGraphic img {
+    min-width: 100% !important; width: 100% !important;
+  }
   .businessUnit {
     width: auto !important;
   }
   .content .column1 {
     width: auto !important;
+  }
+  .businessUnit .back-to-top {
+    min-width: 100% !important; max-width: 100% !important;
+  }
+  .content .column1 .back-to-top {
+    min-width: 100% !important; max-width: 100% !important;
   }
   img.gutter {
     height: 1px !important; width: 3.25% !important;
@@ -51,7 +63,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
     width: 42px !important; height: 42px !important;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 467px) {
   span[id="bodyBackground"] #preHeaderTable {
     background-color: #ffffff !important;
   }
@@ -236,7 +248,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 		<!-- BEGIN: Intro Graphic Area -->
 		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="introGraphic" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px">
 			<tr>
-				<td width="600" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; width: 100%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/header-sweep_green.gif" width="600" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; max-width: 600px; min-width: 328px; outline: none; text-decoration: none; width: 100%" /></td>
+				<td width="600" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; width: 100%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/header-sweep_green.gif" width="600" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; max-width: 600px; min-width: 100%; outline: none; text-decoration: none; width: 100%" /></td>
 			</tr>
 		</table>
 		<!-- END: Intro Graphic Area -->
@@ -252,8 +264,8 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Date -->
 					<table width="290" border="0" cellpadding="0" cellspacing="0" align="left" class="column1" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 51.8%">
 						<tr>
-							<td align="left" valign="middle" class="date" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 2em">Monday, May 5, 2014</td>
-							<td width="20" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px"> </td>
+							<td width="270" align="left" valign="middle" class="date" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 2em">Monday, May 5, 2014</td>
+							<td width="17" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.25%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="17" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 0px !important; outline: none; text-decoration: none" /></td>
 						</tr>
 					</table>
 					<!-- END: Date -->
@@ -261,7 +273,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- BEGIN: Utility Button -->
 					<table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="column2" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 48.2%">
 						<tr>
-							<td align="center" valign="middle" bgcolor="#9BC787" class="utility" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Customize your Momentum</a></td>
+							<td align="center" valign="middle" bgcolor="#9BC787" class="utility" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Customize your Momentum</a></td>
 						</tr>
 					</table>
 					<!-- END: Utility Button -->
@@ -380,12 +392,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -428,12 +440,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -458,12 +470,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -488,12 +500,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -518,12 +530,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -548,12 +560,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -578,12 +590,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -608,12 +620,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -638,12 +650,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -668,12 +680,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>
@@ -698,12 +710,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<!-- END: Article -->
 
 					<!-- BEGIN: Back To Top -->
-					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+					<table width="560" border="0" cellpadding="0" cellspacing="0" class="back-to-top" style="border-collapse: collapse; border-spacing: 0; border-top-color: #9bc787; border-top-style: solid; border-top-width: 2px; font-size: 13px; max-width: 560px; min-width: 298px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
 						<tr>
 							<td width="560" align="right" bgcolor="#ffffff" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0">
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center; width: auto"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none">Back To Top</a></td>
+										<td align="center" valign="middle" bgcolor="#9BC787" class="button" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .6em 1em; text-align: center"><a href="#top" style="color: white; font-weight: bold; padding: 0; text-align: center; text-decoration: none; width: 100%">Back To Top</a></td>
 									</tr>
 								</table>
 							</td>

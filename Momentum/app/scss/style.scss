@@ -356,16 +356,18 @@ hr {
 		height:auto !important;
 	}
 	#introGraphic {
-		width:100%;
+		width:100% !important;
 		img {
-			min-width: 100%;
+			min-width: 100% !important;
+			width:100% !important;
 		}
 	}
 	.businessUnit,
 	.content .column1 {
 		width:auto !important;
 		.back-to-top {
-			min-width: 100%;
+			min-width: 100% !important;
+			max-width: 100% !important;
 		}
 	}
 	img.gutter,
@@ -380,7 +382,7 @@ hr {
 }
 
 /* Narrow windows and devices */
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:467px) {
 	span[id="bodyBackground"] {
 		#preHeaderTable {
 			background-color:#ffffff !important;
