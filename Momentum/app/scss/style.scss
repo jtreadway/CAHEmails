@@ -36,9 +36,9 @@ $line-height:1.3em;
 	font-size:.9em;
 	text-align:center;
 	padding:.6em 1em;
-	width:auto;
 }
 @mixin buttonLink() {
+	width:100%;
 	color:$color-text-invert;
 	font-weight:bold;
 	text-align:center;
@@ -240,7 +240,7 @@ hr {
 		width:100%;
 	}
 	img {
-		min-width: 328px;
+		min-width: 100%;
 		max-width: 600px;
 		width:100%;
 		height:auto;
@@ -306,13 +306,14 @@ hr {
 	}
 	.back-to-top {
 		border-top:2px $color-highlight solid;
-		width:100%;
 		min-width: 298px;
+		max-width: 560px;
+		width:100%;
 		.button {
 			@include buttonBox();
 			a {
 				@include buttonLink();
-			}
+ 			}
 		}
 	}
 }
@@ -354,9 +355,18 @@ hr {
 		width:100% !important;
 		height:auto !important;
 	}
+	#introGraphic {
+		width:100%;
+		img {
+			min-width: 100%;
+		}
+	}
 	.businessUnit,
 	.content .column1 {
 		width:auto !important;
+		.back-to-top {
+			min-width: 100%;
+		}
 	}
 	img.gutter,
 	.gutter img {
