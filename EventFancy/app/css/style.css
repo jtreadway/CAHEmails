@@ -1,0 +1,711 @@
+/* variables */
+/* mixins */
+/* Client specific styles */
+/* Hotmail background & line height fixes */
+/* Hotmail symbol fix for mobile devices */
+/* line 39, ../scss/style.scss */
+.ExternalClass {
+  width: 100%;
+}
+/* line 50, ../scss/style.scss */
+.ExternalClass,
+.ExternalClass br,
+.ExternalClass p,
+.ExternalClass h1,
+.ExternalClass h2,
+.ExternalClass h3,
+.ExternalClass h4,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass div {
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  mso-line-height-rule: exactly;
+}
+/* line 57, ../scss/style.scss */
+.ExternalClass img[class^=Emoji] {
+  width: 10px;
+  height: 10px;
+  display: inline;
+}
+
+/* line 64, ../scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: 0;
+  mso-line-height-rule: exactly;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 0;
+}
+
+/* Baseline styles */
+/* line 77, ../scss/style.scss */
+body,
+#bodyBackground {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Verdana;
+  font-size: 13px;
+  background-color: #f1efe4;
+}
+
+/* line 86, ../scss/style.scss */
+#bodyBackground {
+  display: block;
+}
+
+/* line 89, ../scss/style.scss */
+.boundingTable {
+  max-width: 600px;
+}
+
+/* line 92, ../scss/style.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  font-size: 13px;
+}
+/* line 99, ../scss/style.scss */
+table th,
+table td {
+  color: #2e2e2f;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+/* line 107, ../scss/style.scss */
+a,
+#outlook a,
+.applelinks a {
+  padding: 0;
+  color: #e41f35;
+  text-decoration: none;
+}
+/* line 111, ../scss/style.scss */
+a:hover,
+#outlook a:hover,
+.applelinks a:hover {
+  text-decoration: underline;
+}
+
+/* line 115, ../scss/style.scss */
+h1 {
+  font-size: 1.6em;
+  color: #2e2e2f;
+  mso-margin-bottom-alt: 7px;
+}
+
+/* line 120, ../scss/style.scss */
+h2 {
+  mso-margin-top-alt: .5em;
+  mso-margin-bottom-alt: .3em;
+  padding: .3em 0;
+  letter-spacing: 0.02em;
+  color: #9bc787;
+  font-size: 1.8em;
+  clear: both;
+}
+
+/* line 129, ../scss/style.scss */
+h3 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: .3em;
+  padding: 0 0 .3em 0;
+  font-size: 1.15em;
+  color: #2e2e2f;
+}
+
+/* line 136, ../scss/style.scss */
+h4 {
+  mso-margin-top-alt: 0.5em;
+  mso-margin-bottom-alt: .7em;
+  padding: .5em 0 .7em 0;
+  font-size: 1em;
+  color: #2e2e2f;
+}
+
+/* line 143, ../scss/style.scss */
+ul {
+  padding: 0;
+  margin: 0 0 1em 1.4em;
+}
+
+/* line 147, ../scss/style.scss */
+hr {
+  mso-margin-top-alt: .2em;
+  mso-margin-bottom-alt: .5em;
+  margin: 1em 0;
+  clear: both;
+}
+
+/* line 153, ../scss/style.scss */
+img {
+  border: none;
+  outline: none;
+  display: block;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Content styles */
+/* line 163, ../scss/style.scss */
+.gutter {
+  font-size: 0px;
+  line-height: 0px;
+  height: 0px;
+  overflow: none;
+  width: 3.33333%;
+}
+/* line 169, ../scss/style.scss */
+.gutter img {
+  height: 0px !important;
+}
+
+/* line 174, ../scss/style.scss */
+#preHeaderTable td {
+  height: 1.5em;
+  padding: .35em 0 0 0;
+}
+/* line 177, ../scss/style.scss */
+#preHeaderTable td td {
+  height: auto;
+}
+/* line 181, ../scss/style.scss */
+#preHeaderTable .webVersionTop {
+  font-size: .9em;
+  overflow: hidden;
+}
+/* line 186, ../scss/style.scss */
+#preHeaderTable .topTab td {
+  border-radius: 10px 10px 0 0;
+  padding: .5em 2em;
+  font-size: .86em;
+  color: white;
+}
+
+/* line 196, ../scss/style.scss */
+.logoArea,
+.businessUnit {
+  padding: 0 0 2px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 201, ../scss/style.scss */
+.logoArea {
+  max-width: 39%;
+}
+/* line 203, ../scss/style.scss */
+.logoArea td {
+  padding: 12px 0 11px 0;
+}
+/* line 206, ../scss/style.scss */
+.logoArea img {
+  min-width: 125px;
+  max-width: 177px;
+  width: 100%;
+  height: auto;
+}
+
+/* line 213, ../scss/style.scss */
+.businessUnit {
+  min-width: 51%;
+}
+
+/* line 217, ../scss/style.scss */
+.intro {
+  padding: 1em 0 .7em 0;
+  color: white;
+  font-size: 1.05em;
+}
+
+/* line 222, ../scss/style.scss */
+.intro h2 {
+  color: #ffffff;
+  font-size: 1.35em;
+  padding: 2px 0;
+}
+
+/* line 227, ../scss/style.scss */
+#introGraphic {
+  max-width: 600px;
+  width: 600px;
+}
+/* line 230, ../scss/style.scss */
+#introGraphic td {
+  width: 100%;
+}
+/* line 233, ../scss/style.scss */
+#introGraphic img {
+  min-width: 100%;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/* line 241, ../scss/style.scss */
+.dateArea {
+  padding: 0 0 1em 0;
+}
+/* line 243, ../scss/style.scss */
+.dateArea .column1 {
+  width: 51.25%;
+}
+/* line 246, ../scss/style.scss */
+.dateArea .column2 {
+  width: 48.2%;
+}
+/* line 249, ../scss/style.scss */
+.dateArea .gutter {
+  height: 1px;
+  width: 6%;
+}
+/* line 253, ../scss/style.scss */
+.dateArea .date {
+  width: 94%;
+  padding: .35em 0;
+}
+/* line 257, ../scss/style.scss */
+.dateArea .utility {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+}
+/* line 262, ../scss/style.scss */
+.dateArea .utility a,
+.dateArea .utility #outlook a,
+.dateArea .utility .applelinks a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 267, ../scss/style.scss */
+.tocArea {
+  padding: 1em 0 .35em 0;
+}
+/* line 269, ../scss/style.scss */
+.tocArea h2 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: .65em;
+  padding: 0 0 .65em 0;
+  font-weight: normal;
+  font-size: 1.05em;
+  color: #2E2E2F;
+}
+/* line 278, ../scss/style.scss */
+.tocArea .column1,
+.tocArea .column2 {
+  width: 48%;
+}
+/* line 280, ../scss/style.scss */
+.tocArea .column1 td,
+.tocArea .column2 td {
+  padding: 0 0 .65em 0;
+}
+/* line 284, ../scss/style.scss */
+.tocArea .gutter {
+  height: 1px;
+  width: 3.25%;
+}
+/* line 288, ../scss/style.scss */
+.tocArea a {
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+/* line 295, ../scss/style.scss */
+.content .column1 {
+  padding: 0 0 1.3em 0;
+}
+/* line 297, ../scss/style.scss */
+.content .column1 td {
+  padding: 0;
+}
+/* line 301, ../scss/style.scss */
+.content .column2 {
+  padding: 0 0 1.3em 0;
+}
+/* line 303, ../scss/style.scss */
+.content .column2 h2 {
+  mso-margin-top-alt: .3em;
+  mso-margin-bottom-alt: .5em;
+  color: #346170;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: .55em 0 .5em 0;
+}
+/* line 311, ../scss/style.scss */
+.content .column2 h3 {
+  color: #346170;
+}
+/* line 318, ../scss/style.scss */
+.content .imgFull td,
+.content .imgWrap td,
+.content .imgStack td {
+  padding: .35em 0 1em 1em;
+  line-height: .5em;
+}
+/* line 322, ../scss/style.scss */
+.content .imgFull img,
+.content .imgWrap img,
+.content .imgStack img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 328, ../scss/style.scss */
+.content .imgFull td {
+  padding: 0 0 1em 0;
+}
+/* line 332, ../scss/style.scss */
+.content .back-to-top {
+  border-top: 2px #9bc787 solid;
+  min-width: 298px;
+  max-width: 560px;
+  width: 100%;
+}
+/* line 337, ../scss/style.scss */
+.content .back-to-top td {
+  padding: 0 0 .5em 0;
+}
+/* line 340, ../scss/style.scss */
+.content .back-to-top .button {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+}
+/* line 342, ../scss/style.scss */
+.content .back-to-top .button a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 349, ../scss/style.scss */
+.event h2 {
+  font-size: 1.1em;
+  padding: 0;
+}
+/* line 353, ../scss/style.scss */
+.event .inset {
+  padding: 6.66666%;
+}
+/* line 356, ../scss/style.scss */
+.event .cal {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+}
+/* line 360, ../scss/style.scss */
+.event .cal a,
+.event .cal #outlook a,
+.event .cal .applelinks a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-weight: normal;
+}
+/* line 366, ../scss/style.scss */
+.event #sponsor img {
+  max-width: 270px;
+  height: auto;
+}
+
+/* line 375, ../scss/style.scss */
+#promoHeader td {
+  padding-bottom: 1.3em;
+}
+/* line 378, ../scss/style.scss */
+#promoHeader h2 {
+  padding-top: .3em;
+}
+
+/* line 384, ../scss/style.scss */
+#promoContents table td {
+  padding: 0 10px 1.5em 10px;
+}
+/* line 388, ../scss/style.scss */
+#promoContents .button td {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+  padding: .5em 1em !important;
+  width: auto !important;
+}
+/* line 393, ../scss/style.scss */
+#promoContents .disclaimer {
+  font-size: .86em;
+  color: #907736;
+  margin: .3em 0 1em 0;
+  mso-margin-top-alt: .3em;
+  mso-margin-bottom-alt: 1em;
+}
+
+/* line 404, ../scss/style.scss */
+#footerArea .column1,
+#footerArea .column2 {
+  padding: 2em 0 1.3em 0;
+  font-size: .86em;
+}
+/* line 408, ../scss/style.scss */
+#footerArea .webVersionBottom {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+/* line 413, ../scss/style.scss */
+#footerArea h3 {
+  color: #2e2e2f;
+  font-size: 1.3em;
+}
+/* line 417, ../scss/style.scss */
+#footerArea img.icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+}
+
+/* Make width fluid if more than max width */
+@media only screen and (max-width: 600px) {
+  /* line 427, ../scss/style.scss */
+  .boundingTable {
+    width: 100% !important;
+  }
+
+  /* line 430, ../scss/style.scss */
+  .boundingTable img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* line 434, ../scss/style.scss */
+  #introGraphic {
+    width: 100% !important;
+  }
+  /* line 436, ../scss/style.scss */
+  #introGraphic img {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* line 442, ../scss/style.scss */
+  .businessUnit,
+  .content .column1 {
+    width: auto !important;
+  }
+  /* line 444, ../scss/style.scss */
+  .businessUnit .back-to-top,
+  .content .column1 .back-to-top {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* line 450, ../scss/style.scss */
+  img.gutter,
+  .gutter img {
+    height: 1px !important;
+    width: 3.25% !important;
+  }
+
+  /* line 454, ../scss/style.scss */
+  img.icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  /* line 458, ../scss/style.scss */
+  .halfgutter {
+    width: 1.66667% !important;
+  }
+  /* line 460, ../scss/style.scss */
+  .halfgutter img {
+    height: 0px !important;
+  }
+
+  /* line 465, ../scss/style.scss */
+  #promoContents table {
+    width: 33.33333% !important;
+  }
+  /* line 467, ../scss/style.scss */
+  #promoContents table table {
+    width: auto !important;
+  }
+}
+/* Narrow windows and devices */
+@media only screen and (max-width: 480px) {
+  /* line 477, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable {
+    background-color: #ffffff !important;
+  }
+  /* line 479, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .webVersionTop {
+    display: none !important;
+    height: 0px !important;
+    overflow: hidden !important;
+  }
+  /* line 484, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .webVersionBottom {
+    display: inline !important;
+    height: auto !important;
+  }
+  /* line 488, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .topTab {
+    padding: 0 !important;
+  }
+  /* line 491, ../scss/style.scss */
+  span[id="bodyBackground"] #preHeaderTable .topTab td {
+    border-radius: 0 0 10px 10px !important;
+    padding: .5em 1.3em !important;
+    text-align: center !important;
+  }
+  /* line 498, ../scss/style.scss */
+  span[id="bodyBackground"] .logoArea {
+    width: 125px !important;
+  }
+  /* line 501, ../scss/style.scss */
+  span[id="bodyBackground"] .logoArea td {
+    padding: 0 0 8px 0 !important;
+  }
+  /* line 504, ../scss/style.scss */
+  span[id="bodyBackground"] .businessUnit {
+    font-weight: normal !important;
+    font-size: .9em !important;
+  }
+  /* line 507, ../scss/style.scss */
+  span[id="bodyBackground"] .businessUnit h1 {
+    font-size: 1.35em !important;
+  }
+  /* line 512, ../scss/style.scss */
+  span[id="bodyBackground"] .column1,
+  span[id="bodyBackground"] .column2 {
+    width: 100% !important;
+  }
+  /* line 519, ../scss/style.scss */
+  span[id="bodyBackground"] .dateArea .column1, span[id="bodyBackground"] .dateArea .column1 td, span[id="bodyBackground"] .dateArea .column1 tr,
+  span[id="bodyBackground"] .dateArea .column2,
+  span[id="bodyBackground"] .dateArea .column2 td,
+  span[id="bodyBackground"] .dateArea .column2 tr,
+  span[id="bodyBackground"] .tocArea .column1,
+  span[id="bodyBackground"] .tocArea .column1 td,
+  span[id="bodyBackground"] .tocArea .column1 tr,
+  span[id="bodyBackground"] .tocArea .column2,
+  span[id="bodyBackground"] .tocArea .column2 td,
+  span[id="bodyBackground"] .tocArea .column2 tr {
+    width: 100% !important;
+  }
+  /* line 525, ../scss/style.scss */
+  span[id="bodyBackground"] .dateArea .date {
+    text-align: center !important;
+  }
+  /* line 529, ../scss/style.scss */
+  span[id="bodyBackground"] .content {
+    display: block !important;
+  }
+  /* line 532, ../scss/style.scss */
+  span[id="bodyBackground"] .content .column1,
+  span[id="bodyBackground"] .content .column2 {
+    width: 93.333336% !important;
+    display: block !important;
+    padding: 0 3.33333% 1.3em 3.33333% !important;
+  }
+  /* line 543, ../scss/style.scss */
+  span[id="bodyBackground"] .event #basics,
+  span[id="bodyBackground"] .event #details,
+  span[id="bodyBackground"] .event #speaker,
+  span[id="bodyBackground"] .event #sponsor {
+    width: 100% !important;
+  }
+  /* line 546, ../scss/style.scss */
+  span[id="bodyBackground"] .event .inset {
+    padding: 3.33333% !important;
+  }
+  /* line 550, ../scss/style.scss */
+  span[id="bodyBackground"] .imgStack {
+    width: 100% !important;
+  }
+  /* line 554, ../scss/style.scss */
+  span[id="bodyBackground"] .imgFull td,
+  span[id="bodyBackground"] .imgStack td {
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+  /* line 558, ../scss/style.scss */
+  span[id="bodyBackground"] .halfgutter {
+    width: 3.33333% !important;
+  }
+  /* line 562, ../scss/style.scss */
+  span[id="bodyBackground"] #promoContents table {
+    width: 100% !important;
+  }
+  /* line 564, ../scss/style.scss */
+  span[id="bodyBackground"] #promoContents table td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  /* line 568, ../scss/style.scss */
+  span[id="bodyBackground"] #promoContents table table {
+    width: auto !important;
+  }
+  /* line 570, ../scss/style.scss */
+  span[id="bodyBackground"] #promoContents table table td {
+    padding: .5em 1em !important;
+  }
+  /* line 578, ../scss/style.scss */
+  span[id="bodyBackground"] #footerArea .content {
+    display: block !important;
+  }
+  /* line 581, ../scss/style.scss */
+  span[id="bodyBackground"] #footerArea .content .column1,
+  span[id="bodyBackground"] #footerArea .content .column2 {
+    padding: 1.3em 3.33333% 0.5em 3.33333% !important;
+  }
+}
+/* Narrow devices */
+/* Testing/Coloring */
+/* line 597, ../scss/style.scss */
+x#bodyBackground .column1 {
+  background-color: #ffdddd;
+}
+/* line 600, ../scss/style.scss */
+x#bodyBackground .column2 {
+  background-color: #ddffdd;
+}
+/* line 603, ../scss/style.scss */
+x#bodyBackground .gutter {
+  background-color: #ddddff;
+}
+/* line 606, ../scss/style.scss */
+x#bodyBackground .halfgutter {
+  background-color: #ffffdd;
+}
+/* line 609, ../scss/style.scss */
+x#bodyBackground h1 {
+  background-color: #33ffff;
+}
+/* line 612, ../scss/style.scss */
+x#bodyBackground h2 {
+  background-color: #ff33ff;
+}
+/* line 615, ../scss/style.scss */
+x#bodyBackground h3 {
+  background-color: #ffff33;
+}
+/* line 618, ../scss/style.scss */
+x#bodyBackground hr {
+  background-color: #00ffff;
+}
+/* line 621, ../scss/style.scss */
+x#bodyBackground br {
+  background-color: #ff00ff;
+}
