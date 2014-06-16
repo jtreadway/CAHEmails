@@ -82,9 +82,11 @@ body,
 	font-family:Verdana;
 	font-size:$font-size;
 	background-color:$color-outer-bg;
+	line-height:0px;
 }
 #bodyBackground {
 	display:block;
+	line-height:100%;
 }
 .boundingTable {
 	max-width: 600px;
@@ -113,14 +115,14 @@ a,
 	}
 }
 h1 {
-	font-size:1.6em;
+	font-size:1.55em;
 	color:$color-title;
-	mso-margin-bottom-alt:7px;
+	mso-margin-bottom-alt:5px;
 }
 h2 {
 	mso-margin-top-alt:.5em;
 	mso-margin-bottom-alt:.3em;
- 	padding:.3em 0;
+ 	padding:z0;
     letter-spacing:0.02em;
 	color:$color-sweep2;
 	font-size:1.8em;
@@ -172,8 +174,7 @@ img {
 }
 #preHeaderTable {
 	td {
-		height: 1.5em;
-		padding:.35em 0 0 0;
+		padding:.35em 0;
 		td {
 			height: auto;
 		}
@@ -194,14 +195,14 @@ img {
 
 .logoArea,
 .businessUnit {
-	padding:0 0 2px 0;
+	padding:5px 0;
 	font-size:1em;
 	font-weight:bold;
 }
 .logoArea {
 	max-width: 39%;
 	td {
-		padding:12px 0 11px 0;
+		padding:9px 0;
 	}
 	img {
 		min-width: 125px;
@@ -212,6 +213,11 @@ img {
 }
 .businessUnit {
 	min-width: 51%;
+	span {
+		font-size: .52em;
+		line-height:1.3em;
+		color:#4d4d4d;
+	}
 }
 
 .intro {
@@ -223,6 +229,7 @@ img {
 	color:#ffffff;
 	font-size:1.35em;
 	padding:2px 0;
+	mso-margin-top-alt: 0; 
 }
 #introGraphic {
 	max-width: 600px;
@@ -349,22 +356,46 @@ img {
 	h2 {
 		font-size: 1.1em;
 		padding:0;
+		mso-margin-top-alt: 0;
+	}
+	h3 {
+		mso-margin-top-alt: 10px;
+		mso-margin-bottom-alt: 10px;
+		padding: 10px 0 5px 0;
 	}
 	.inset {
-		padding: 2*$gutter;
+		padding: 1.3em 0;
 	}
-	.cal {
-		@include buttonBox();
-		a,
-		#outlook a,
-		.applelinks a {
-			@include buttonLink();
-			font-weight:normal;
+	.calendarButton {
+		td {
+			padding:.3em .5em;
+		}
+		table td {
+			@include buttonBox();
+			text-align:left;
+			padding:.3em .5em;
+			img {
+				width:25px;
+				height:29px;
+			}
+			a,
+			#outlook a,
+			.applelinks a {
+				@include buttonLink();
+			}
 		}
 	}
+	#description {
+		clear: both;
+		width:100%;
+	}
 	#sponsor {
+		td {
+			width:100%;
+		}
 		img {
-			max-width:270px;
+			max-width:210px;
+			width:initial;
 			height:auto;
 		}
 	}
@@ -455,6 +486,32 @@ img {
 		width:42px !important;
 		height:42px !important;
 	}
+	.event {
+		#basics,
+		#details,
+		#speaker,
+		#sponsor {
+			width:48.2% !important;
+		}
+		.calendarButton {
+			width:100% !important;
+			table td {
+				img {
+					width:25px !important;
+					height:29px !important;
+				}
+			}
+		}
+		#sponsor {
+			td {
+				width:100% !important;
+			}
+			img {
+				width:initial !important;
+				height:auto !important;
+			}
+		}
+	}
 	.halfgutter {
 		width: $gutter/2 !important;
 		img {
@@ -504,6 +561,10 @@ img {
 		.businessUnit {
 			font-weight:normal !important;
 			font-size:.9em !important;
+			span {
+				font-size: .7em !important;
+				font-weight:normal !important;
+			}
 			h1 {
 				font-size:1.35em !important;
 			}
@@ -542,9 +603,6 @@ img {
 			#speaker,
 			#sponsor {
 				width:100% !important;
-			}
-			.inset {
-				padding:$gutter !important;
 			}
 		}
 		.imgStack {
@@ -599,6 +657,12 @@ x#bodyBackground {
 	}
 	.column2 {
 		background-color:#ddffdd;
+	}
+	.content {
+		background-color:#99ffff;		
+	}
+	.event {
+		background-color:#ff99ff;		
 	}
 	.gutter {
 		background-color:#ddddff;
