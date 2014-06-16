@@ -94,9 +94,11 @@ body,
 	font-family:Verdana;
 	font-size:$font-size;
 	background-color:$color-outer-bg;
+	line-height:0px;
 }
 #bodyBackground {
-	display:block;
+	display:block;x
+	line-height:100%;
 }
 .boundingTable {
 	max-width: 600px;
