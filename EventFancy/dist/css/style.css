@@ -16,7 +16,7 @@
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 100%;
+  line-height: 1.3em;
   margin: 0;
   padding: 0;
   border: 0;
@@ -48,6 +48,7 @@ body,
   font-family: Verdana;
   font-size: 13px;
   background-color: #f1efe4;
+  line-height: 0px;
 }
 
 #bodyBackground {
@@ -56,6 +57,7 @@ body,
 
 .boundingTable {
   max-width: 600px;
+  line-height: 1.3em;
 }
 
 table {
@@ -350,23 +352,28 @@ img {
 .event .inset {
   padding: 1.3em 0;
 }
-.event .calendarButton td {
+.event #details table.calendarButton {
+  width: 100%;
+}
+.event #details table.calendarButton td.calendarButton {
+  width: 100%;
   padding: .3em .5em;
 }
-.event .calendarButton table td {
+.event #details table.calendarButton td.calendarButton table td {
   font-size: .9em;
   text-align: center;
   padding: .45em 1em;
   text-align: left;
   padding: .3em .5em;
+  width: auto;
 }
-.event .calendarButton table td img {
+.event #details table.calendarButton td.calendarButton table td img {
   width: 25px;
   height: 29px;
 }
-.event .calendarButton table td a,
-.event .calendarButton table td #outlook a,
-.event .calendarButton table td .applelinks a {
+.event #details table.calendarButton td.calendarButton table td a,
+.event #details table.calendarButton td.calendarButton table td #outlook a,
+.event #details table.calendarButton td.calendarButton table td .applelinks a {
   width: 100%;
   color: white;
   font-weight: bold;
@@ -376,13 +383,13 @@ img {
   clear: both;
   width: 100%;
 }
-.event #sponsor td {
-  width: 100%;
+.event #sponsor {
+  min-width: 48.2%;
+  max-width: 100%;
+  width: auto;
 }
 .event #sponsor img {
-  max-width: 210px;
-  width: initial;
-  height: auto;
+  display: inline;
 }
 
 #promoHeader td {
@@ -436,11 +443,6 @@ img {
     width: 100% !important;
   }
 
-  .boundingTable img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
   #introGraphic {
     width: 100% !important;
   }
@@ -472,23 +474,23 @@ img {
 
   .event #basics,
   .event #details,
-  .event #speaker,
-  .event #sponsor {
+  .event #description,
+  .event #speaker {
     width: 48.2% !important;
   }
-  .event .calendarButton {
+  .event #basics img,
+  .event #details img,
+  .event #description img,
+  .event #speaker img {
     width: 100% !important;
+    height: auto !important;
   }
-  .event .calendarButton table td img {
+  .event #details .calendarButton img {
     width: 25px !important;
     height: 29px !important;
   }
-  .event #sponsor td {
-    width: 100% !important;
-  }
-  .event #sponsor img {
-    width: initial !important;
-    height: auto !important;
+  .event #sponsor {
+    width: 48.2% !important;
   }
 
   .halfgutter {
@@ -623,6 +625,9 @@ x#bodyBackground .content {
 }
 x#bodyBackground .event {
   background-color: #ff99ff;
+}
+x#bodyBackground #sponsor {
+  background-color: #ffff99;
 }
 x#bodyBackground .gutter {
   background-color: #ddddff;

@@ -48,7 +48,7 @@ $line-height:1.3em;
 	span,
 	font,
 	div {
-		line-height:100%;
+		line-height:$line-height;
 		margin:0;
 		padding:0;
 		border:0;
@@ -86,10 +86,10 @@ body,
 }
 #bodyBackground {
 	display:block;
-	line-height:100%;
 }
 .boundingTable {
 	max-width: 600px;
+	line-height:$line-height;
 }
 table {
     border-spacing:0;
@@ -366,22 +366,25 @@ img {
 	.inset {
 		padding: 1.3em 0;
 	}
-	.calendarButton {
-		td {
+	#details table.calendarButton {
+		width:100%;
+		td.calendarButton {
+			width:100%;
 			padding:.3em .5em;
-		}
-		table td {
-			@include buttonBox();
-			text-align:left;
-			padding:.3em .5em;
-			img {
-				width:25px;
-				height:29px;
-			}
-			a,
-			#outlook a,
-			.applelinks a {
-				@include buttonLink();
+			table td {
+				@include buttonBox();
+				text-align:left;
+				padding:.3em .5em;
+				width:auto;
+				img {
+					width:25px;
+					height:29px;
+				}
+				a,
+				#outlook a,
+				.applelinks a {
+					@include buttonLink();
+				}
 			}
 		}
 	}
@@ -390,17 +393,14 @@ img {
 		width:100%;
 	}
 	#sponsor {
-		td {
-			width:100%;
-		}
+		min-width:48.2%;
+		max-width:100%;
+		width:auto;
 		img {
-			max-width:210px;
-			width:initial;
-			height:auto;
+			display: inline;
 		}
 	}
 }
-
 
 #promoHeader {
 	td {
@@ -458,10 +458,6 @@ img {
 	.boundingTable {
 		width: 100% !important;
 	}
-	.boundingTable img {
-		width:100% !important;
-		height:auto !important;
-	}
 	#introGraphic {
 		width:100% !important;
 		img {
@@ -489,27 +485,22 @@ img {
 	.event {
 		#basics,
 		#details,
-		#speaker,
-		#sponsor {
+		#description,
+		#speaker {
 			width:48.2% !important;
-		}
-		.calendarButton {
-			width:100% !important;
-			table td {
-				img {
-					width:25px !important;
-					height:29px !important;
-				}
-			}
-		}
-		#sponsor {
-			td {
-				width:100% !important;
-			}
 			img {
-				width:initial !important;
+				width:100% !important;
 				height:auto !important;
 			}
+		}
+		#details {
+			.calendarButton img {
+				width:25px !important;
+				height:29px !important;
+			}
+		}
+		#sponsor {
+			width:48.2% !important;
 		}
 	}
 	.halfgutter {
@@ -663,6 +654,9 @@ x#bodyBackground {
 	}
 	.event {
 		background-color:#ff99ff;		
+	}
+	#sponsor {
+		background-color:#ffff99;		
 	}
 	.gutter {
 		background-color:#ddddff;
