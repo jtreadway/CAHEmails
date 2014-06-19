@@ -1,56 +1,564 @@
 /*
-Syntax error: Invalid CSS after "	line-height:": expected pseudoclass or pseudoelement, was "100%;"
-        on line 101 of /Users/jtreadway/Projects/github/jtreadway/CAHEmails/EssentialInfo/app/scss/style.scss
-
-Backtrace:
-/Users/jtreadway/Projects/github/jtreadway/CAHEmails/EssentialInfo/app/scss/style.scss:101
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1067:in `expr!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:794:in `pseudo'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:678:in `simple_selector_sequence'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:646:in `_selector'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:619:in `selector'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:603:in `selector_sequence'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:528:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:138:in `block in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:137:in `compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:101:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/commands/update_project.rb:45:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/bin/compass:30:in `block in <top (required)>'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/bin/compass:44:in `call'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
+ET Fonts
+size="1" / 8
+size=null / 10
+size="2" / 10
+size="3" / 12
+size="4" / 14
+size="5" / 18
+size="6" / 24
+size="7" / 36
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	line-height:\": expected pseudoclass or pseudoelement, was \"100%;\"\A         on line 101 of /Users/jtreadway/Projects/github/jtreadway/CAHEmails/EssentialInfo/app/scss/style.scss"; }
+/* variables */
+/* mixins */
+/* Client specific styles */
+/* Hotmail background & line height fixes */
+/* Hotmail symbol fix for mobile devices */
+.ExternalClass {
+  width: 100%;
+}
+.ExternalClass,
+.ExternalClass br,
+.ExternalClass p,
+.ExternalClass h1,
+.ExternalClass h2,
+.ExternalClass h3,
+.ExternalClass h4,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass div {
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  mso-line-height-rule: exactly;
+}
+.ExternalClass img[class^=Emoji] {
+  width: 10px;
+  height: 10px;
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: 0;
+  mso-line-height-rule: exactly;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 0;
+}
+
+/* Baseline styles */
+body,
+#bodyBackground {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Verdana;
+  font-size: 13px;
+  background-color: #f1efe4;
+  line-height: 0px;
+}
+
+#bodyBackground {
+  display: block;
+  line-height: 1.3em;
+}
+
+.boundingTable {
+  max-width: 600px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  font-size: 13px;
+}
+table th,
+table td {
+  color: #2e2e2f;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+a,
+#outlook a,
+.applelinks a {
+  padding: 0;
+  color: #e41f35;
+  text-decoration: none;
+}
+a:hover,
+#outlook a:hover,
+.applelinks a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.75em;
+  color: #2e2e2f;
+  mso-margin-bottom-alt: 7px;
+}
+
+h2 {
+  mso-margin-top-alt: .5em;
+  mso-margin-bottom-alt: .3em;
+  padding: .3em 0;
+  letter-spacing: 0.02em;
+  color: #9bc787;
+  font-size: 1.8em;
+  clear: both;
+}
+
+h3 {
+  mso-margin-top-alt: 0em;
+  mso-margin-bottom-alt: .3em;
+  padding: 0 0 .3em 0;
+  font-size: 1.15em;
+  color: #2e2e2f;
+}
+
+h4 {
+  mso-margin-top-alt: 0.5em;
+  mso-margin-bottom-alt: .7em;
+  padding: .5em 0 .7em 0;
+  font-size: 1em;
+  color: #2e2e2f;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 1em 1.4em;
+}
+
+hr {
+  mso-margin-top-alt: .2em;
+  mso-margin-bottom-alt: .5em;
+  margin: 1em 0;
+  clear: both;
+}
+
+img {
+  border: none;
+  outline: none;
+  display: block;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Content styles */
+.gutter {
+  font-size: 0px;
+  line-height: 0px;
+  height: 0px;
+  overflow: none;
+  width: 3.33333%;
+}
+.gutter img {
+  height: 0px !important;
+}
+
+#preHeaderTable td {
+  height: 1.5em;
+  padding: .35em 0 0 0;
+}
+#preHeaderTable td td {
+  height: auto;
+}
+#preHeaderTable .webVersionTop {
+  font-size: .9em;
+  overflow: hidden;
+}
+#preHeaderTable .topTab td {
+  border-radius: 10px 10px 0 0;
+  padding: .5em 2em;
+  font-size: .86em;
+  color: white;
+}
+
+.logoArea,
+.businessUnit {
+  padding: 0 0 2px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.logoArea {
+  max-width: 39%;
+}
+.logoArea td {
+  padding: 12px 0 11px 0;
+}
+.logoArea img {
+  min-width: 125px;
+  max-width: 177px;
+  width: 100%;
+  height: auto;
+}
+
+.businessUnit {
+  min-width: 51%;
+}
+
+.intro {
+  padding: 1em 0 .7em 0;
+  color: white;
+  font-size: 1.05em;
+}
+
+#introGraphic {
+  max-width: 600px;
+  width: 600px;
+}
+#introGraphic td {
+  width: 100%;
+}
+#introGraphic img {
+  min-width: 100%;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.dateArea {
+  padding: 0 0 1em 0;
+}
+.dateArea .column1 {
+  width: 51.25%;
+}
+.dateArea .column2 {
+  width: 48.2%;
+}
+.dateArea .gutter {
+  height: 1px;
+  width: 6%;
+}
+.dateArea .date {
+  width: 94%;
+  padding: .35em 0;
+}
+.dateArea .utility {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+}
+.dateArea .utility a,
+.dateArea .utility #outlook a,
+.dateArea .utility .applelinks a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tocArea {
+  padding: 1em 0 .35em 0;
+}
+.tocArea h2 {
+  mso-margin-top-alt: 0;
+  mso-margin-bottom-alt: .65em;
+  padding: 0 0 .65em 0;
+  font-weight: normal;
+  font-size: 1.05em;
+  color: #2E2E2F;
+}
+.tocArea .column1,
+.tocArea .column2 {
+  width: 48%;
+}
+.tocArea .column1 td,
+.tocArea .column2 td {
+  padding: 0 0 .65em 0;
+}
+.tocArea .gutter {
+  height: 1px;
+  width: 3.25%;
+}
+.tocArea a {
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.content .column1 {
+  padding: 0 0 1.3em 0;
+}
+.content .column1 td {
+  padding: 0;
+}
+.content .column2 {
+  padding: 0 0 1.3em 0;
+}
+.content .column2 h2 {
+  mso-margin-top-alt: .3em;
+  mso-margin-bottom-alt: .5em;
+  color: #346170;
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: .55em 0 .5em 0;
+}
+.content .column2 h3 {
+  color: #346170;
+}
+.content .imgFull td,
+.content .imgWrap td,
+.content .imgStack td {
+  padding: 0 0 1em 1em;
+  line-height: .5em;
+}
+.content .imgFull img,
+.content .imgWrap img,
+.content .imgStack img {
+  max-width: 100%;
+  height: auto;
+}
+.content .imgFull td {
+  padding: 0 0 1em 0;
+}
+.content .back-to-top {
+  border-top: 2px #9bc787 solid;
+  min-width: 298px;
+  max-width: 560px;
+  width: 100%;
+}
+.content .back-to-top td {
+  padding: 0 0 .5em 0;
+}
+.content .back-to-top .button {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+}
+.content .back-to-top .button a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#promoHeader td {
+  padding-bottom: 1.3em;
+}
+#promoHeader h2 {
+  padding-top: .3em;
+}
+
+#promoContents table td {
+  padding: 0 10px 1.5em 10px;
+}
+#promoContents .button td {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
+  padding: .5em 1em !important;
+  width: auto !important;
+}
+#promoContents .disclaimer {
+  font-size: .86em;
+  color: #907736;
+  margin: .3em 0 1em 0;
+  mso-margin-top-alt: .3em;
+  mso-margin-bottom-alt: 1em;
+}
+
+#footerArea .column1,
+#footerArea .column2 {
+  padding: 2em 0 1.3em 0;
+  font-size: .86em;
+}
+#footerArea .webVersionBottom {
+  display: none;
+  height: 0px;
+  overflow: hidden;
+}
+#footerArea h3 {
+  color: #2e2e2f;
+  font-size: 1.3em;
+}
+#footerArea img.icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+}
+
+/* Make width fluid if more than max width */
+@media only screen and (max-width: 600px) {
+  .boundingTable {
+    width: 100% !important;
+  }
+
+  .boundingTable img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #introGraphic {
+    width: 100% !important;
+  }
+  #introGraphic img {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .businessUnit,
+  .content .column1 {
+    width: auto !important;
+  }
+  .businessUnit .back-to-top,
+  .content .column1 .back-to-top {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  img.gutter,
+  .gutter img {
+    height: 1px !important;
+    width: 3.25% !important;
+  }
+
+  img.icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .halfgutter {
+    width: 1.66667% !important;
+  }
+  .halfgutter img {
+    height: 0px !important;
+  }
+
+  #promoContents table {
+    width: 33.33333% !important;
+  }
+  #promoContents table table {
+    width: auto !important;
+  }
+}
+/* Narrow windows and devices */
+@media only screen and (max-width: 480px) {
+  span[id="bodyBackground"] #preHeaderTable {
+    background-color: #ffffff !important;
+  }
+  span[id="bodyBackground"] #preHeaderTable .webVersionTop {
+    display: none !important;
+    height: 0px !important;
+    overflow: hidden !important;
+  }
+  span[id="bodyBackground"] #preHeaderTable .webVersionBottom {
+    display: inline !important;
+    height: auto !important;
+  }
+  span[id="bodyBackground"] #preHeaderTable .topTab {
+    padding: 0 !important;
+  }
+  span[id="bodyBackground"] #preHeaderTable .topTab td {
+    border-radius: 0 0 10px 10px !important;
+    padding: .5em 1.3em !important;
+    text-align: center !important;
+  }
+  span[id="bodyBackground"] .logoArea {
+    width: 125px !important;
+  }
+  span[id="bodyBackground"] .logoArea td {
+    padding: 0 0 8px 0 !important;
+  }
+  span[id="bodyBackground"] .businessUnit {
+    font-weight: normal !important;
+    font-size: .9em !important;
+  }
+  span[id="bodyBackground"] .businessUnit h1 {
+    font-size: 1.35em !important;
+  }
+  span[id="bodyBackground"] .column1,
+  span[id="bodyBackground"] .column2 {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] .dateArea .column1, span[id="bodyBackground"] .dateArea .column1 td, span[id="bodyBackground"] .dateArea .column1 tr,
+  span[id="bodyBackground"] .dateArea .column2,
+  span[id="bodyBackground"] .dateArea .column2 td,
+  span[id="bodyBackground"] .dateArea .column2 tr,
+  span[id="bodyBackground"] .tocArea .column1,
+  span[id="bodyBackground"] .tocArea .column1 td,
+  span[id="bodyBackground"] .tocArea .column1 tr,
+  span[id="bodyBackground"] .tocArea .column2,
+  span[id="bodyBackground"] .tocArea .column2 td,
+  span[id="bodyBackground"] .tocArea .column2 tr {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] .content {
+    display: block !important;
+  }
+  span[id="bodyBackground"] .content .column1,
+  span[id="bodyBackground"] .content .column2 {
+    width: 93.333336% !important;
+    display: block !important;
+    padding: 0 3.33333% 1.3em 3.33333% !important;
+  }
+  span[id="bodyBackground"] .dateArea .date {
+    text-align: center !important;
+  }
+  span[id="bodyBackground"] .imgStack {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] .imgFull td,
+  span[id="bodyBackground"] .imgStack td {
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] .halfgutter {
+    width: 3.33333% !important;
+  }
+  span[id="bodyBackground"] #promoContents table {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] #promoContents table td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  span[id="bodyBackground"] #promoContents table table {
+    width: auto !important;
+  }
+  span[id="bodyBackground"] #promoContents table table td {
+    padding: .5em 1em !important;
+  }
+  span[id="bodyBackground"] #footerArea .content {
+    display: block !important;
+  }
+  span[id="bodyBackground"] #footerArea .content .column1,
+  span[id="bodyBackground"] #footerArea .content .column2 {
+    padding: 1.3em 3.33333% 0.5em 3.33333% !important;
+  }
+}
+/* Narrow devices */
+/* Testing/Coloring */
+x#bodyBackground .column1 {
+  background-color: #ffdddd;
+}
+x#bodyBackground .column2 {
+  background-color: #ddffdd;
+}
+x#bodyBackground .gutter {
+  background-color: #ddddff;
+}
+x#bodyBackground .halfgutter {
+  background-color: #ffffdd;
+}
+x#bodyBackground h1 {
+  background-color: #33ffff;
+}
+x#bodyBackground h2 {
+  background-color: #ff33ff;
+}
+x#bodyBackground h3 {
+  background-color: #ffff33;
+}
+x#bodyBackground hr {
+  background-color: #00ffff;
+}
+x#bodyBackground br {
+  background-color: #ff00ff;
+}

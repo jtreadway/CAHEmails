@@ -60,7 +60,7 @@ $line-height:1.3em;
 	span,
 	font,
 	div {
-		line-height:100%;
+		line-height:$line-height;
 		margin:0;
 		padding:0;
 		border:0;
@@ -97,8 +97,8 @@ body,
 	line-height:0px;
 }
 #bodyBackground {
-	display:block;x
-	line-height:100%;
+	display:block;
+	line-height:$line-height;
 }
 .boundingTable {
 	max-width: 600px;

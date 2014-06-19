@@ -27,7 +27,7 @@ size="7" / 36
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 100%;
+  line-height: 1.3em;
   margin: 0;
   padding: 0;
   border: 0;
@@ -64,6 +64,7 @@ body,
 
 #bodyBackground {
   display: block;
+  line-height: 1.3em;
 }
 
 .boundingTable {
