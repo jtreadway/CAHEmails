@@ -17,7 +17,7 @@ $color-intro:$color-text-invert;
 $gutter:3.33333%;
 
 $font-size:13px;
-$line-height:130%;
+$line-height:1.3em;
 
 /* mixins */
 @mixin buttonBox() {
@@ -89,10 +89,7 @@ body,
 }
 .boundingTable {
 	max-width: 600px;
-	th,
-	td {
-		line-height:$line-height;
-	}
+	line-height:$line-height;
 }
 table {
     border-spacing:0;
@@ -106,9 +103,6 @@ table {
 		font-family:Verdana;
 		font-size:$font-size;
    }
-}
-br {
-	line-height:$line-height;
 }
 a,
 #outlook a,
@@ -172,13 +166,6 @@ img {
 	font-size:0px;
 	line-height:0px;
 	overflow:none;
-	min-width: $gutter;
-	max-width: $gutter;
-	width: $gutter;
-	height:1px;
-	img {
-		height:1px;
-	}
 }
 #preHeaderTable {
 	td {
@@ -225,7 +212,7 @@ img {
 	max-width: 363px;
 	span {
 		font-size: .52em;
-		line-height:$line-height;
+		line-height:1.3em;
 		color:#4d4d4d;
 	}
 }
@@ -304,15 +291,11 @@ img {
 	}
 	a {
 		font-weight:bold;
-		line-height:$line-height;
+		line-height:1.3em;
 	}
 }
 
 .event {
-	.column1,
-	.column2 {
-		width:48.2%;
-	}
 	h2 {
 		font-size: 1.15em;
 		padding:0;
@@ -326,57 +309,49 @@ img {
 	#description td,
 	#speaker,
 	#social,
-	#postBasics,
-	#details,
-	#sponsor {
+	#postbasics,
+	#sponsor,
+	#details {
+		min-width:100%;
+		max-width:100%;
+		width:100%;
 		padding: 0 0 1.3em 0;
 	}
 	.inset {
-		min-width:85.2%;
-		max-width:85.2%;
-		width:268px;
 		padding: 1.3em 0;
+		min-width:87%;
+		width:87%;
 		strong {
 			font-size: 1.15em;
 		}
 		.datetime {
-			min-width:100%;
-			max-width:100%;
+			min-width:173px;
+			max-width:400px;
+			width:100%;
 			th {
-				padding: 0 0 .5em 6.66666%;
+				padding: 0 0 .5em 1em;
 				font-size: 1.15em;
 			}
 			td {
-				padding: .5em 0 .5em 6.66666%;
+				padding: .5em 0 .5em 1em;
 				border-bottom:1px #C8C8D2 solid;
 			}
 			.cell1 {
 				padding-left: 0;			
 			}
-			.forceWidth {
-				min-width:100%;
-				max-width:100%;
-				width:230px;
-				padding:0;
-				border:0;
-			}
 		}
 	}
 	#details {
-		width:100%;
 		table.calendarButton {
-			min-width: 100%;
-			max-width: 100%;
+			width:100%;
 			td.calendarButton {
-				min-width: 100%;
-				max-width: 100%;
-				width:308px;
+				width:100%;
 				padding:.3em .5em;
 				table td {
 					font-size:.9em;
 					text-align:left;
 					padding:.3em .5em;
-					img {
+					img.icon {
 						width:25px;
 						height:29px;
 					}
@@ -396,45 +371,40 @@ img {
 			padding: 0 .5em .3em 0;
 		}
 	}
-	#description td {
-		clear: both;
-		width:93.33333%;
-		center img {
-			max-width:400px;
+	#description {
+		clear:both;
+		td {
+			width:93.33333%;
+			img {
+				max-width:400px;
+			}
 		}
 	}
 	#sponsor {
-		min-width:100%;
-		max-width:100%;
-		width:308px;
 		img {
 			display: inline;
 		}
 	}
-	table.gutter {
-		width:3.57%;
-	}
 	table .gutter {
-		max-width:7.4%;
-		min-width:7.4%;
-		width:20px;
+		width:6.5%;
 	}
-}
-.imgFull,
-.imgWrap,
-.imgStack {
-	td {
-		padding: .35em 0 1em 1em;
-		line-height:.5em;
+
+	.imgFull,
+	.imgWrap,
+	.imgStack {
+		td {
+			padding: .35em 0 1em 1em;
+			line-height:.5em;
+		}
+		img {
+			max-width:100%;
+			height:auto;
+		}
 	}
-	img {
-		max-width:100%;
-		height:auto;
-	}
-}
-.imgFull {
-	td {
-		padding: 0 0 1em 0;
+	.imgFull {
+		td {
+			padding: 0 0 1em 0;
+		}
 	}
 }
 #footerArea {
@@ -466,11 +436,11 @@ img {
 		width: 100% !important;
 	}
 	.gutter {
-		height:1px !important;
-		width:$gutter !important;
+		width:$gutter;
+		height:1px;
 		img {
-			height:1px !important;
-			width:1px !important;
+			height:1px;
+			width:1px;
 		}
 	}
 	#introGraphic {
@@ -493,15 +463,9 @@ img {
 		.column2 {
 			width:48.2% !important;
 			.gutter {
-				width:7.4% !important;
+				width:6.5%;
 			}
 		}
-		.inset {
-			.datetime {
-				width:100%;
-			}
-		}
-		#details,
 		#speaker {
 			width:100% !important;
 			img {
@@ -518,14 +482,13 @@ img {
 			}		
 		}
 		#details {
-			.calendarButton img {
+			width:100% !important;
+			.calendarButton img.icon {
 				width:25px !important;
 				height:29px !important;
 			}
 		}
 		#sponsor {
-			min-width:100% !important;
-			max-width:100% !important;
 			width:48.2% !important;
 		}
 	}
@@ -605,13 +568,6 @@ img {
 					width:3.25% !important;
 				}
 			}
-			#basics {
-				width:93.5% !important;
-			}
-			table .gutter {
-				max-width:3.57%;
-				min-width:3.57%;
-			}
 		}
 		.imgStack {
 			width:100% !important;
@@ -645,7 +601,7 @@ img {
 
 /* Testing/Coloring */
 
-x#bodyBackground {
+#bodyBackground {
 	.column1 {
 		background-color:#ffdddd;
 	}

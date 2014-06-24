@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event</title>
+    <title>Event - Confirmation</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body bgcolor="#f1efe4">
@@ -66,7 +66,7 @@
 					<!-- BEGIN: Title, Category, Business Unit -->
 					<h1>
 						<span>Business Unit Name<br /><br /></span>
-						Upcoming Event
+						Registration Confirmation
 					</h1>
 					<!-- END: Title, Category, Business Unit -->
 
@@ -106,82 +106,53 @@
 		<!-- END: Date/Utility Area -->
 
 
-		<!-- BEGIN: Event Area -->
+		<!-- BEGIN: Content Area -->
 		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable">
-			<tr class="event">
+			<tr class="content">
 				<td width="20" nowrap="nowrap" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
 				
-				<td width="560" align="left" valign="top">
-
-					<!-- BEGIN: Event Message -->
+				<td width="560" align="left" valign="top" class="event">
 					<h3>You have successfully registered for this event.</h3>
-					<!-- END: Event Message -->
 
-
-					<!-- BEGIN: Event Column 1 -->
-					<table border="0" cellpadding="0" cellspacing="0" align="left" class="column1">
+					<!-- BEGIN: Basic Info Area -->
+					<table width="270" border="0" cellpadding="0" cellspacing="0" align="left" id="basics">
 						<tr>
-
-							<!-- BEGIN: Basic Info Area -->
 							<td width="20" nowrap="nowrap" bgcolor="#FEFAEF" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
-							
-							<td align="left" valign="top" bgcolor="#FEFAEF" class="inset" id="basics">							
 
-								<table order="0" cellpadding="0" cellspacing="0" class="datetime">
-									<tr>
-										<th align="left" class="cell1">Date</th>
-										<th align="left">Time</th>
-									</tr>
-									<tr>
-										<td align="left" class="cell1">May 28, 2014</td>
-										<td align="left">2:00 PM EST</td>
-									</tr>
-									<tr>
-										<td align="left" class="cell1">June 4, 2014</td>
-										<td align="left">2:00 PM EST</td>
-									</tr>
-									<tr>
-										<td align="left" class="cell1">June 11, 2014</td>
-										<td align="left">2:00 PM EST</td>
-									</tr>
-									<tr>
-										<td colspan="2" class="forceWidth"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="1" border="0" alt="" /></td>
-									</tr>
-								</table><br />
-
-								<strong>Call In</strong><br />
-								(555) 555-5555<br /><br />
+							<td width="230" align="left" valign="top" bgcolor="#FEFAEF" class="inset">							
+								<strong>Registration Number:</strong><br />
+								0123456789<br /><br />
 								
-								<strong>Conference ID</strong><br />
-								0123456789
+								<strong>Location:</strong><br />
+								Hilton Hotel<br />
+								555 Fifth Street<br />
+								Columbus, Ohio 55555<br /><br />
+								
+								<strong>Date:</strong><br />
+								May 28 - May 29, 2014
 							</td>
 							
 							<td width="20" nowrap="nowrap" bgcolor="#FEFAEF" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
-							<!-- END: Basic Info Area -->
-
 						</tr>
 						<tr>
-							<td colspan="3">&nbsp;</td>
+							<td>&nbsp;</td>
 						</tr>
 					</table>
-					<!-- END: Event Column 1 -->
+					<!-- END: Basic Info Area -->
 
-
-					<!-- BEGIN: Event Column 2 -->
-					<table border="0" cellpadding="0" cellspacing="0" align="right" class="column2">
+					<!-- BEGIN: Details Area -->
+					<table width="270" border="0" cellpadding="0" cellspacing="0" align="right" id="details">
 						<tr>
-
-							<!-- BEGIN: Details Area -->
-							<td colspan="3" align="left" valign="top" id="details">
+							<td width="270" align="left" valign="top">
 							
 								<!-- BEGIN: Calendar Button -->
-								<table border="0" cellpadding="0" cellspacing="0" class="calendarButton">
+								<table width="270" border="0" cellpadding="0" cellspacing="0" class="calendarButton">
 									<tr>
-										<td align="center" valign="top" bgcolor="#9BC787" class="calendarButton">
+										<td width="270" align="center" valign="top" bgcolor="#9BC787" class="calendarButton">
 											<table border="0" cellpadding="0" cellspacing="0">
 												<tr>
-													<td align="right" valign="middle" class="icon"><a href="#top" target="_blank"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CalendarIcon.gif" width="25" border="0" alt="" align="left" /></a></td>
-													<td align="left" valign="middle" class="text"><a href="#top" target="_blank">Add event to calendar (.ics)</a></td>
+													<td align="right" valign="middle"><a href="#top" target="_blank"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CalendarIcon.gif" width="25" border="0" alt="" align="left" /></a></td>
+													<td align="left" valign="middle"><a href="#top" target="_blank">Add event to calendar (.ics)</a></td>
 												</tr>
 											</table>
 										</td>
@@ -193,11 +164,27 @@
 
 								Miscellaneous event details not otherwise covered. Miscellaneous event details not otherwise covered. Miscellaneous event details not otherwise covered. Miscellaneous event details not otherwise covered.
 							</td>
-							<!-- END: Details Area -->
-
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
 						</tr>
 					</table>
-					<!-- END: Event Column 2 -->
+					<!-- END: Details Area -->
+				</td>
+
+				<td width="20" nowrap="nowrap" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
+			</tr>
+
+
+			<tr class="content">
+				<td width="20" nowrap="nowrap" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
+				
+				<td width="560" align="left" valign="top" class="event" id="description">
+	
+					<!-- BEGIN: Description Area -->
+					<h2>Event Description</h2>
+					Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description.<br /><br />
+					<!-- END: Description Area -->
 
 				</td>
 
@@ -205,30 +192,15 @@
 			</tr>
 
 
-
-			<tr class="event">
+			<tr class="content">
 				<td width="20" nowrap="nowrap" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
 				
-				<td width="560" align="left" valign="top">
+				<td width="560" align="left" valign="top" class="event">
 				
-					<!-- BEGIN: Description Area -->
-					<table border="0" cellpadding="0" cellspacing="0" id="description">
+					<!-- BEGIN: Speaker Area -->
+					<table width="270" border="0" cellpadding="0" cellspacing="0" align="left" id="speaker">
 						<tr>
 							<td align="left" valign="top">
-								<h2>Event Description</h2>
-								Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description.
-							</td>
-						</tr>
-					</table>
-					<!-- END: Description Area -->
-
-
-					<!-- BEGIN: Event Column 1 -->
-					<table border="0" cellpadding="0" cellspacing="0" align="left" class="column1">
-						<tr>
-						
-							<!-- BEGIN: Speaker Area -->
-							<td align="left" valign="top" id="speaker">
 								<h2>Speaker's Name</h2>
 								<strong>Speaker or Talk Title</strong><br />
 								
@@ -240,41 +212,41 @@
 									</tr>
 								</table>
 								
-								Information about the speaker and the talk. Information about the speaker and the talk. Information about the speaker and the talk. Information about the speaker and the talk. Information about the speaker and the talk. Information about the speaker and the talk. Information about the speaker and the talk. Information about the speaker and the talk. 
+								Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker. Information about the speaker.
 							</td>
-							<!-- END: Speaker Area -->
-
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
 						</tr>
 					</table>
-					<!-- END: Event Column 1 -->
+					<!-- END: Speaker Area -->
 
-
-					<!-- BEGIN: Event Column 2 -->
-					<table border="0" cellpadding="0" cellspacing="0" align="right" class="column2">
+					<!-- BEGIN: Sponsor Area -->
+					<table width="270" border="0" cellpadding="0" cellspacing="0" align="right" id="sponsor">
 						<tr>
-
-							<!-- BEGIN: Sponsor Area -->
-							<td align="left" valign="top" id="sponsor">
+							<td align="left" valign="top" width="270">
 								<h2>Sponsored by</h2>
 								<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image1.jpg" width="210" border="0" alt="logo 1" /><br /><br />
 								
-								<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" width="140" border="0" alt="logo 2" />
+								<img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" width="140" border="0" alt="logo 2" /><br /><br />
+								
 							</td>
-							<!-- END: Sponsor Area -->
-							
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
 						</tr>
 					</table>
-					<!-- END: Event Column 2 -->
+					<!-- END: Sponsor Area -->
 
 				</td>
 
 				<td width="20" nowrap="nowrap" class="gutter"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" /></td>
 			</tr>
 		</table>
-		<!-- END: Event Area -->
+		<!-- END: Content Area -->
 		
 
-		<!-- BEGIN: Promo Area -->
+		<!-- Begin: Promo Area -->
 		<!-- END: Promo Area -->
 
 
