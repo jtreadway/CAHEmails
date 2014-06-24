@@ -107,9 +107,6 @@ table {
 		font-size:$font-size;
    }
 }
-br {
-	line-height:$line-height;
-}
 a,
 #outlook a,
 .applelinks a {
@@ -331,9 +328,7 @@ img {
 		padding: 0 0 1.3em 0;
 	}
 	.inset {
-		min-width:85.2%;
-		max-width:85.2%;
-		width:268px;
+		width:85.2%;
 		padding: 1.3em 0;
 		strong {
 			font-size: 1.15em;
@@ -342,22 +337,23 @@ img {
 			min-width:100%;
 			max-width:100%;
 			th {
-				padding: 0 0 .5em 6.66666%;
+				padding: 0 0 .5em 1em;
 				font-size: 1.15em;
 			}
 			td {
-				padding: .5em 0 .5em 6.66666%;
+				padding: .5em 0 .5em 1em;
 				border-bottom:1px #C8C8D2 solid;
 			}
 			.cell1 {
 				padding-left: 0;			
 			}
-			.forceWidth {
+			th.forceWidth {
 				min-width:100%;
 				max-width:100%;
 				width:268px;
 				padding:0;
-				border:0;
+				height:1px;
+				line-height:1px;
 			}
 		}
 	}

@@ -77,10 +77,6 @@ table td {
   font-size: 13px;
 }
 
-br {
-  line-height: 130%;
-}
-
 a,
 #outlook a,
 .applelinks a {
@@ -316,9 +312,7 @@ img {
   padding: 0 0 1.3em 0;
 }
 .event .inset {
-  min-width: 85.2%;
-  max-width: 85.2%;
-  width: 268px;
+  width: 85.2%;
   padding: 1.3em 0;
 }
 .event .inset strong {
@@ -329,22 +323,23 @@ img {
   max-width: 100%;
 }
 .event .inset .datetime th {
-  padding: 0 0 .5em 6.66666%;
+  padding: 0 0 .5em 1em;
   font-size: 1.15em;
 }
 .event .inset .datetime td {
-  padding: .5em 0 .5em 6.66666%;
+  padding: .5em 0 .5em 1em;
   border-bottom: 1px #C8C8D2 solid;
 }
 .event .inset .datetime .cell1 {
   padding-left: 0;
 }
-.event .inset .datetime .forceWidth {
+.event .inset .datetime th.forceWidth {
   min-width: 100%;
   max-width: 100%;
   width: 268px;
   padding: 0;
-  border: 0;
+  height: 1px;
+  line-height: 1px;
 }
 .event #details {
   width: 100%;
