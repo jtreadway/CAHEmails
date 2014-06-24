@@ -172,12 +172,11 @@ img {
 	font-size:0px;
 	line-height:0px;
 	overflow:none;
-	min-width: $gutter;
-	max-width: $gutter;
 	width: $gutter;
 	height:1px;
 	img {
 		height:1px;
+		max-width:100%;
 	}
 }
 #preHeaderTable {
@@ -356,7 +355,7 @@ img {
 			.forceWidth {
 				min-width:100%;
 				max-width:100%;
-				width:230px;
+				width:268px;
 				padding:0;
 				border:0;
 			}

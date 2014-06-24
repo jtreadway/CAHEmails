@@ -151,13 +151,12 @@ img {
   font-size: 0px;
   line-height: 0px;
   overflow: none;
-  min-width: 3.33333%;
-  max-width: 3.33333%;
   width: 3.33333%;
   height: 1px;
 }
 .gutter img {
   height: 1px;
+  max-width: 100%;
 }
 
 #preHeaderTable td {
@@ -343,7 +342,7 @@ img {
 .event .inset .datetime .forceWidth {
   min-width: 100%;
   max-width: 100%;
-  width: 230px;
+  width: 268px;
   padding: 0;
   border: 0;
 }
