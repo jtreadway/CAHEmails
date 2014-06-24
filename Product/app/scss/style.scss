@@ -3,21 +3,21 @@
 $color-outer-bg:#F1EFE4;
 $color-inner-bg:#ffffff;
 $color-sweep1:#E41F35;
-$color-sweep2:#9BC787;
-$color-highlight:$color-sweep2;
+$color-sweep2:#75C5B4;
+$color-highlight:#346170;
 $color-multiply:rgb(red($color-sweep1)*red($color-sweep2)/255, green($color-sweep1)*green($color-sweep2)/255, blue($color-sweep1)*blue($color-sweep2)/255);
 
 $color-text:#2E2E2F;
 $color-text-invert:#ffffff;
 $color-aside-title:#346170;
-$color-rule:#C8C8D2;
+$color-rule:#eeeeee;
 $color-title:$color-text;
 $color-intro:$color-text-invert;
 
 $gutter:3.33333%;
 
 $font-size:13px;
-$line-height:130%;
+$line-height:120%;
 
 /* mixins */
 @mixin buttonBox() {
@@ -118,7 +118,7 @@ a,
 	}
 }
 h1 {
-	font-size:1.55em;
+	font-size:1.4em;
 	color:$color-title;
 	mso-margin-bottom-alt:5px;
 }
@@ -127,7 +127,7 @@ h2 {
 	mso-margin-bottom-alt:.3em;
  	padding:0;
     letter-spacing:0.02em;
-	color:$color-sweep2;
+	color:$color-text;
 	font-size:1.8em;
 	clear:both;
 }
@@ -207,7 +207,7 @@ img {
 	min-width: 125px;
 	max-width: 177px;
 	td {
-		padding:9px 0;
+		padding:8px 0;
 	}
 	img {
 		min-width: 125px;
@@ -220,31 +220,29 @@ img {
 	min-width: 160px;
 	max-width: 363px;
 	span {
-		font-size: .52em;
+		font-size: .58em;
 		line-height:$line-height;
 		color:#4d4d4d;
 	}
 }
-
 .intro {
-	padding:20px 5% 0 5%;
+	padding:1.75em $gutter 0 $gutter;
 	color:$color-sweep2;
-	font-size:1.15em;
-}
-.intro h2 {
-	color:$color-sweep2;
-	font-size:1.9em;
-	line-height:120%;
-	padding: 0;
-	mso-margin-top-alt: 0; 
+	border-right: 1px $color-rule solid;
+	h2 {
+		color:$color-highlight;
+		font-size:2.2em;
+		line-height:120%;
+		padding: 0m;
+		mso-margin-top-alt: 0; 
+	}
 }
 .intro2 {
-	padding:2% 5%;
+	padding:.5em $gutter 1.5em $gutter;
 	color:$color-sweep2;
-	font-size:1.15em;
-	border-left: 1px #666666 solid;
-	border-bottom: 1px #666666 solid;
-	border-right: 1px #666666 solid;
+	font-size:1.05em;
+	border-right: 1px $color-rule solid;
+	border-bottom: 1px $color-rule solid;
 }
 
 .dateArea {
@@ -300,7 +298,7 @@ img {
 	}
 }
 
-.event {
+.main {
 	.column1,
 	.column2 {
 		width:48.2%;
@@ -310,82 +308,19 @@ img {
 		padding:0;
 		mso-margin-top-alt: 0;
 	}
-	h3 {
-		mso-margin-top-alt: 10px;
-		mso-margin-bottom-alt: 10px;
-		padding: 10px 0 5px 0;
-	}
 	#description td,
-	#speaker,
-	#social,
-	#postBasics,
-	#details,
-	#sponsor {
+	#specials {
 		padding: 0 0 1.3em 0;
 	}
 	.inset {
 		width:85.2%;
 		padding: 1.3em 0;
-		strong {
-			font-size: 1.15em;
-		}
-		.datetime {
-			min-width:100%;
-			max-width:100%;
-			th {
-				padding: 0 0 .5em 1em;
-				font-size: 1.15em;
-			}
-			td {
-				padding: .5em 0 .5em 1em;
-				border-bottom:1px #C8C8D2 solid;
-			}
-			.cell1 {
-				padding-left: 0;			
-			}
-			th.forceWidth {
-				min-width:100%;
-				max-width:100%;
-				width:268px;
-				padding:0;
-				height:1px;
-				line-height:1px;
-			}
-		}
 	}
-	#details {
+	#order {
 		width:100%;
-		table.calendarButton {
-			min-width: 100%;
-			max-width: 100%;
-			td.calendarButton {
-				min-width: 100%;
-				max-width: 100%;
-				width:308px;
-				padding:.3em .5em;
-				table td {
-					font-size:.9em;
-					text-align:left;
-					padding:.3em .5em;
-					img {
-						width:25px;
-						height:29px;
-					}
-					a,
-					#outlook a,
-					.applelinks a {
-						color:$color-text-invert;
-						font-weight:bold;
-						text-align:left;
-					}
-				}
-			}
-		}
 	}
-	#social {
-		table td {
-			padding: 0 .5em .3em 0;
-		}
+	#postOrder {
+		border-top: 1px $color-sweep2 solid;
 	}
 	#description td {
 		clear: both;
@@ -394,12 +329,23 @@ img {
 			max-width:400px;
 		}
 	}
-	#sponsor {
-		min-width:100%;
-		max-width:100%;
-		width:308px;
-		img {
-			display: inline;
+	#download {
+		width:100%;
+	}
+	table.button {
+		min-width: 100%;
+		max-width: 100%;
+		td.button {
+			@include buttonBox();
+			min-width: 100%;
+			max-width: 100%;
+			width:308px;
+			padding:1em .5em;
+			a,
+			#outlook a,
+			.applelinks a {
+				@include buttonLink();
+			}
 		}
 	}
 	table.gutter {
@@ -479,7 +425,7 @@ img {
 		width:42px !important;
 		height:42px !important;
 	}
-	.event {
+	.main {
 		.column1,
 		.column2 {
 			width:48.2% !important;
@@ -487,13 +433,9 @@ img {
 				width:7.4% !important;
 			}
 		}
-		.inset {
-			.datetime {
-				width:100%;
-			}
-		}
-		#details,
-		#speaker {
+		#productImage,
+		#specials,
+		#download {
 			width:100% !important;
 			img {
 				width:100% !important;
@@ -508,13 +450,7 @@ img {
 				height:auto !important;
 			}		
 		}
-		#details {
-			.calendarButton img {
-				width:25px !important;
-				height:29px !important;
-			}
-		}
-		#sponsor {
+		#download {
 			min-width:100% !important;
 			max-width:100% !important;
 			width:48.2% !important;
@@ -569,6 +505,26 @@ img {
 				font-size:1.35em !important;
 			}
 		}
+
+		.introTop {
+			img {
+				height: 20px !important;
+			}
+		}
+ 		.introSides {
+ 			width:10% !important;
+ 			img {
+	 			width:100% !important;
+ 			}
+ 		}
+ 		.intro {
+ 			h2 {
+ 				font-size: 1.3em;
+ 			}
+ 		}
+ 		.intro2 {
+ 			font-size: .9em;
+ 		}
 		.column1,
 		.column2 {
 			width:100% !important;
@@ -587,7 +543,7 @@ img {
 				text-align:center !important;
 			}
 		}
-		.event {
+		.main {
 			.column1,
 			.column2 {
 				width:100% !important;
@@ -596,8 +552,10 @@ img {
 					width:3.25% !important;
 				}
 			}
-			#basics {
+			#order {
 				width:93.5% !important;
+
+
 			}
 			table .gutter {
 				max-width:3.57%;
@@ -646,10 +604,10 @@ x#bodyBackground {
 	.content {
 		background-color:#99ffff;		
 	}
-	.event {
+	.main {
 		background-color:#ff99ff;		
 	}
-	#sponsor {
+	#download {
 		background-color:#ffff99;		
 	}
 	.gutter {

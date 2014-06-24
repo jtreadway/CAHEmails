@@ -16,7 +16,7 @@
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 130%;
+  line-height: 120%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   mso-margin-top-alt: 0;
   mso-margin-bottom-alt: 0;
   mso-line-height-rule: exactly;
-  line-height: 130%;
+  line-height: 120%;
   font-weight: bold;
   margin: 0 0 5px 0;
   padding: 0 0 0 0;
@@ -60,7 +60,7 @@ body,
 }
 .boundingTable th,
 .boundingTable td {
-  line-height: 130%;
+  line-height: 120%;
 }
 
 table {
@@ -91,7 +91,7 @@ a:hover,
 }
 
 h1 {
-  font-size: 1.55em;
+  font-size: 1.4em;
   color: #2e2e2f;
   mso-margin-bottom-alt: 5px;
 }
@@ -101,7 +101,7 @@ h2 {
   mso-margin-bottom-alt: .3em;
   padding: 0;
   letter-spacing: 0.02em;
-  color: #9bc787;
+  color: #2e2e2f;
   font-size: 1.8em;
   clear: both;
 }
@@ -184,7 +184,7 @@ img {
   max-width: 177px;
 }
 .logoArea td {
-  padding: 9px 0;
+  padding: 8px 0;
 }
 .logoArea img {
   min-width: 125px;
@@ -198,36 +198,30 @@ img {
   max-width: 363px;
 }
 .businessUnit span {
-  font-size: .52em;
-  line-height: 130%;
+  font-size: .58em;
+  line-height: 120%;
   color: #4d4d4d;
 }
 
 .intro {
-  padding: 1em 0 .7em 0;
-  color: white;
-  font-size: 1.05em;
+  padding: 1.75em 3.33333% 0 3.33333%;
+  color: #75c5b4;
+  border-right: 1px #eeeeee solid;
 }
-
 .intro h2 {
-  color: #ffffff;
-  font-size: 1.15em;
-  padding: 2px 0;
+  color: #346170;
+  font-size: 2.2em;
+  line-height: 120%;
+  padding: 0m;
   mso-margin-top-alt: 0;
 }
 
-#introGraphic {
-  max-width: 600px;
-  width: 600px;
-}
-#introGraphic td {
-  width: 100%;
-}
-#introGraphic img {
-  min-width: 100%;
-  max-width: 600px;
-  width: 100%;
-  height: auto;
+.intro2 {
+  padding: 0.5em 3.33333% 1.5em 3.33333%;
+  color: #75c5b4;
+  font-size: 1.05em;
+  border-right: 1px #eeeeee solid;
+  border-bottom: 1px #eeeeee solid;
 }
 
 .dateArea {
@@ -286,112 +280,67 @@ img {
 }
 .tocArea a {
   font-weight: bold;
-  line-height: 130%;
+  line-height: 120%;
 }
 
-.event .column1,
-.event .column2 {
+.main .column1,
+.main .column2 {
   width: 48.2%;
 }
-.event h2 {
+.main h2 {
   font-size: 1.15em;
   padding: 0;
   mso-margin-top-alt: 0;
 }
-.event h3 {
-  mso-margin-top-alt: 10px;
-  mso-margin-bottom-alt: 10px;
-  padding: 10px 0 5px 0;
-}
-.event #description td,
-.event #speaker,
-.event #social,
-.event #postBasics,
-.event #details,
-.event #sponsor {
+.main #description td,
+.main #specials {
   padding: 0 0 1.3em 0;
 }
-.event .inset {
+.main .inset {
   width: 85.2%;
   padding: 1.3em 0;
 }
-.event .inset strong {
-  font-size: 1.15em;
-}
-.event .inset .datetime {
-  min-width: 100%;
-  max-width: 100%;
-}
-.event .inset .datetime th {
-  padding: 0 0 .5em 1em;
-  font-size: 1.15em;
-}
-.event .inset .datetime td {
-  padding: .5em 0 .5em 1em;
-  border-bottom: 1px #C8C8D2 solid;
-}
-.event .inset .datetime .cell1 {
-  padding-left: 0;
-}
-.event .inset .datetime th.forceWidth {
-  min-width: 100%;
-  max-width: 100%;
-  width: 268px;
-  padding: 0;
-  height: 1px;
-  line-height: 1px;
-}
-.event #details {
+.main #order {
   width: 100%;
 }
-.event #details table.calendarButton {
-  min-width: 100%;
-  max-width: 100%;
+.main #postOrder {
+  border-top: 1px #75c5b4 solid;
 }
-.event #details table.calendarButton td.calendarButton {
-  min-width: 100%;
-  max-width: 100%;
-  width: 308px;
-  padding: .3em .5em;
-}
-.event #details table.calendarButton td.calendarButton table td {
-  font-size: .9em;
-  text-align: left;
-  padding: .3em .5em;
-}
-.event #details table.calendarButton td.calendarButton table td img {
-  width: 25px;
-  height: 29px;
-}
-.event #details table.calendarButton td.calendarButton table td a,
-.event #details table.calendarButton td.calendarButton table td #outlook a,
-.event #details table.calendarButton td.calendarButton table td .applelinks a {
-  color: white;
-  font-weight: bold;
-  text-align: left;
-}
-.event #social table td {
-  padding: 0 .5em .3em 0;
-}
-.event #description td {
+.main #description td {
   clear: both;
   width: 93.33333%;
 }
-.event #description td center img {
+.main #description td center img {
   max-width: 400px;
 }
-.event #sponsor {
+.main #download {
+  width: 100%;
+}
+.main table.button {
+  min-width: 100%;
+  max-width: 100%;
+}
+.main table.button td.button {
+  font-size: .9em;
+  text-align: center;
+  padding: .45em 1em;
   min-width: 100%;
   max-width: 100%;
   width: 308px;
+  padding: 1em .5em;
 }
-.event #sponsor img {
-  display: inline;
+.main table.button td.button a,
+.main table.button td.button #outlook a,
+.main table.button td.button .applelinks a {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
-.event table.gutter {
+.main table.gutter {
   width: 3.57%;
 }
-.event table .gutter {
+.main table .gutter {
   max-width: 7.4%;
   min-width: 7.4%;
   width: 20px;
@@ -467,39 +416,34 @@ img {
     height: 42px !important;
   }
 
-  .event .column1,
-  .event .column2 {
+  .main .column1,
+  .main .column2 {
     width: 48.2% !important;
   }
-  .event .column1 .gutter,
-  .event .column2 .gutter {
+  .main .column1 .gutter,
+  .main .column2 .gutter {
     width: 7.4% !important;
   }
-  .event .inset .datetime {
-    width: 100%;
-  }
-  .event #details,
-  .event #speaker {
+  .main #productImage,
+  .main #specials,
+  .main #download {
     width: 100% !important;
   }
-  .event #details img,
-  .event #speaker img {
+  .main #productImage img,
+  .main #specials img,
+  .main #download img {
     width: 100% !important;
     height: auto !important;
   }
-  .event #description td {
+  .main #description td {
     width: 93.33333% !important;
   }
-  .event #description td img {
+  .main #description td img {
     max-width: 400px !important;
     width: 100% !important;
     height: auto !important;
   }
-  .event #details .calendarButton img {
-    width: 25px !important;
-    height: 29px !important;
-  }
-  .event #sponsor {
+  .main #download {
     min-width: 100% !important;
     max-width: 100% !important;
     width: 48.2% !important;
@@ -551,6 +495,21 @@ img {
   span[id="bodyBackground"] .businessUnit h1 {
     font-size: 1.35em !important;
   }
+  span[id="bodyBackground"] .introTop img {
+    height: 20px !important;
+  }
+  span[id="bodyBackground"] .introSides {
+    width: 10% !important;
+  }
+  span[id="bodyBackground"] .introSides img {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] .intro h2 {
+    font-size: 1.3em;
+  }
+  span[id="bodyBackground"] .intro2 {
+    font-size: .9em;
+  }
   span[id="bodyBackground"] .column1,
   span[id="bodyBackground"] .column2 {
     width: 100% !important;
@@ -570,19 +529,19 @@ img {
   span[id="bodyBackground"] .dateArea .date {
     text-align: center !important;
   }
-  span[id="bodyBackground"] .event .column1,
-  span[id="bodyBackground"] .event .column2 {
+  span[id="bodyBackground"] .main .column1,
+  span[id="bodyBackground"] .main .column2 {
     width: 100% !important;
     padding: 0 0 1.3em 0 !important;
   }
-  span[id="bodyBackground"] .event .column1 .gutter,
-  span[id="bodyBackground"] .event .column2 .gutter {
+  span[id="bodyBackground"] .main .column1 .gutter,
+  span[id="bodyBackground"] .main .column2 .gutter {
     width: 3.25% !important;
   }
-  span[id="bodyBackground"] .event #basics {
+  span[id="bodyBackground"] .main #order {
     width: 93.5% !important;
   }
-  span[id="bodyBackground"] .event table .gutter {
+  span[id="bodyBackground"] .main table .gutter {
     max-width: 3.57%;
     min-width: 3.57%;
   }
@@ -618,10 +577,10 @@ x#bodyBackground .column2 {
 x#bodyBackground .content {
   background-color: #99ffff;
 }
-x#bodyBackground .event {
+x#bodyBackground .main {
   background-color: #ff99ff;
 }
-x#bodyBackground #sponsor {
+x#bodyBackground #download {
   background-color: #ffff99;
 }
 x#bodyBackground .gutter {
