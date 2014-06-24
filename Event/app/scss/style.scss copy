@@ -17,7 +17,7 @@ $color-intro:$color-text-invert;
 $gutter:3.33333%;
 
 $font-size:13px;
-$line-height:130%;
+$line-height:1.3em;
 
 /* mixins */
 @mixin buttonBox() {
@@ -89,10 +89,7 @@ body,
 }
 .boundingTable {
 	max-width: 600px;
-	th,
-	td {
-		line-height:$line-height;
-	}
+	line-height:$line-height;
 }
 table {
     border-spacing:0;
@@ -168,12 +165,12 @@ img {
 .gutter {
 	font-size:0px;
 	line-height:0px;
-	overflow:none;
-	width: $gutter;
 	height:1px;
+	overflow:none;
+	width:$gutter;
 	img {
 		height:1px;
-		max-width:100%;
+		width:1px;
 	}
 }
 #preHeaderTable {
@@ -221,7 +218,7 @@ img {
 	max-width: 363px;
 	span {
 		font-size: .52em;
-		line-height:$line-height;
+		line-height:1.3em;
 		color:#4d4d4d;
 	}
 }
@@ -300,15 +297,11 @@ img {
 	}
 	a {
 		font-weight:bold;
-		line-height:$line-height;
+		line-height:1.3em;
 	}
 }
 
 .event {
-	.column1,
-	.column2 {
-		width:48.2%;
-	}
 	h2 {
 		font-size: 1.15em;
 		padding:0;
@@ -322,50 +315,38 @@ img {
 	#description td,
 	#speaker,
 	#social,
-	#postBasics,
-	#details,
-	#sponsor {
+	#postbasics,
+	#details {
 		padding: 0 0 1.3em 0;
 	}
-	.inset {
-		width:85.2%;
-		padding: 1.3em 0;
-		strong {
-			font-size: 1.15em;
-		}
-		.datetime {
-			min-width:100%;
-			max-width:100%;
-			th {
-				padding: 0 0 .5em 1em;
+		.inset {
+			padding: 1.3em 0;
+			width:87%;
+			strong {
 				font-size: 1.15em;
 			}
-			td {
-				padding: .5em 0 .5em 1em;
-				border-bottom:1px #C8C8D2 solid;
-			}
-			.cell1 {
-				padding-left: 0;			
-			}
-			th.forceWidth {
-				min-width:100%;
-				max-width:100%;
-				width:268px;
-				padding:0;
-				height:1px;
-				line-height:1px;
+			.datetime {
+				min-width:173px;
+				max-width:400px;
+				width:100%;
+				th {
+					padding: 0 0 .5em 1em;
+					font-size: 1.15em;
+				}
+				td {
+					padding: .5em 0 .5em 1em;
+					border-bottom:1px #C8C8D2 solid;
+				}
+				.cell1 {
+					padding-left: 0;			
+				}
 			}
 		}
-	}
 	#details {
-		width:100%;
 		table.calendarButton {
-			min-width: 100%;
-			max-width: 100%;
+			width:100%;
 			td.calendarButton {
-				min-width: 100%;
-				max-width: 100%;
-				width:308px;
+				width:100%;
 				padding:.3em .5em;
 				table td {
 					font-size:.9em;
@@ -399,37 +380,33 @@ img {
 		}
 	}
 	#sponsor {
-		min-width:100%;
+		min-width:48.2%;
 		max-width:100%;
-		width:308px;
+		width:auto;
 		img {
 			display: inline;
 		}
 	}
-	table.gutter {
-		width:3.57%;
-	}
 	table .gutter {
-		max-width:7.4%;
-		min-width:7.4%;
-		width:20px;
+		width:6.5%;
 	}
-}
-.imgFull,
-.imgWrap,
-.imgStack {
-	td {
-		padding: .35em 0 1em 1em;
-		line-height:.5em;
+
+	.imgFull,
+	.imgWrap,
+	.imgStack {
+		td {
+			padding: .35em 0 1em 1em;
+			line-height:.5em;
+		}
+		img {
+			max-width:100%;
+			height:auto;
+		}
 	}
-	img {
-		max-width:100%;
-		height:auto;
-	}
-}
-.imgFull {
-	td {
-		padding: 0 0 1em 0;
+	.imgFull {
+		td {
+			padding: 0 0 1em 0;
+		}
 	}
 }
 #footerArea {
@@ -460,14 +437,6 @@ img {
 	.boundingTable {
 		width: 100% !important;
 	}
-	.gutter {
-		height:1px !important;
-		width:$gutter !important;
-		img {
-			height:1px !important;
-			width:1px !important;
-		}
-	}
 	#introGraphic {
 		width:100% !important;
 		img {
@@ -488,12 +457,7 @@ img {
 		.column2 {
 			width:48.2% !important;
 			.gutter {
-				width:7.4% !important;
-			}
-		}
-		.inset {
-			.datetime {
-				width:100%;
+				width:6.5%;
 			}
 		}
 		#details,
@@ -519,8 +483,6 @@ img {
 			}
 		}
 		#sponsor {
-			min-width:100% !important;
-			max-width:100% !important;
 			width:48.2% !important;
 		}
 	}
@@ -602,10 +564,6 @@ img {
 			}
 			#basics {
 				width:93.5% !important;
-			}
-			table .gutter {
-				max-width:3.57%;
-				min-width:3.57%;
 			}
 		}
 		.imgStack {

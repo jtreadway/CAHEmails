@@ -11,7 +11,7 @@
 width: 100%;
 }
 .ExternalClass {
-line-height: 1.3em; margin: 0; padding: 0; border: 0; mso-line-height-rule: exactly;
+line-height: 130%; margin: 0; padding: 0; border: 0; mso-line-height-rule: exactly;
 }
 body {
 margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Verdana; font-size: 13px; background-color: #f1efe4; line-height: 0px;
@@ -31,6 +31,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 @media only screen and (max-width: 600px) {
   .boundingTable {
     width: 100% !important;
+  }
+  .gutter {
+    height: 1px !important; width: 3.33333% !important;
+  }
+  .gutter img {
+    height: 1px !important; width: 1px !important;
   }
   #introGraphic {
     width: 100% !important;
@@ -54,10 +60,13 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
     width: 48.2% !important;
   }
   .event .column1 .gutter {
-    width: 6.5%;
+    width: 7.4% !important;
   }
   .event .column2 .gutter {
-    width: 6.5%;
+    width: 7.4% !important;
+  }
+  .event .inset .datetime {
+    width: 100%;
   }
   .event #details {
     width: 100% !important;
@@ -81,7 +90,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
     width: 25px !important; height: 29px !important;
   }
   .event #sponsor {
-    width: 48.2% !important;
+    min-width: 100% !important; max-width: 100% !important; width: 48.2% !important;
   }
   .halfgutter {
     width: 1.66667% !important;
@@ -181,6 +190,9 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
   span[id="bodyBackground"] .event #basics {
     width: 93.5% !important;
   }
+  span[id="bodyBackground"] .event table .gutter {
+    max-width: 3.57%; min-width: 3.57%;
+  }
   span[id="bodyBackground"] .imgStack {
     width: 100% !important;
   }
@@ -211,11 +223,11 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 
 		<!-- BEGIN: Web Version and Top Tab Area -->
-		<table width="600" bgcolor="#f1efe4" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="preHeaderTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+		<table width="600" bgcolor="#f1efe4" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="preHeaderTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 			<tr>
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; padding: .35em 0; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; padding: .35em 0; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 					
-				<td align="left" valign="middle" class="webVersionTop" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; overflow: hidden; padding: .35em 0">
+				<td align="left" valign="middle" class="webVersionTop" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; line-height: 130%; overflow: hidden; padding: .35em 0">
 				
 					<!-- BEGIN: Top Web Version -->
 					<a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">View a web version of this email</a>
@@ -223,9 +235,9 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 				</td>
 				
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; padding: .35em 0; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; padding: .35em 0; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 
-				<td align="right" valign="bottom" class="topTab" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .35em 0">
+				<td align="right" valign="bottom" class="topTab" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .35em 0">
 
 					<!-- BEGIN: Top Tab -->
 					<!-- END: Top Tab -->
@@ -237,14 +249,14 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 		
 
 		<!-- BEGIN: Logo and Title Area -->
-		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="logoTitleTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="logoTitleTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 			<tr>
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 					
-				<td width="175" align="left" valign="bottom" class="logoArea" style="color: #2e2e2f; font-family: Verdana; font-size: 1em; font-weight: bold; max-width: 177px; min-width: 125px; padding: 5px 0">
+				<td width="175" align="left" valign="bottom" class="logoArea" style="color: #2e2e2f; font-family: Verdana; font-size: 1em; font-weight: bold; line-height: 130%; max-width: 177px; min-width: 125px; padding: 5px 0">
 					<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 					<tr>
-						<td width="100%" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 9px 0">
+						<td width="100%" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 9px 0">
 
 							<!-- BEGIN: Top Logo -->
 							<a href="http://cardinalhealth.com" target="_blank" title="Cardinal Health" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CAH-logo.gif" width="177" border="0" alt="Cardinal Health" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; max-width: 177px; min-width: 125px; outline: none; text-decoration: none; width: 100%" /></a>
@@ -255,44 +267,44 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 				</table></td>
 
 				
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 
-				<td width="365" align="right" valign="bottom" class="businessUnit" style="color: #2e2e2f; font-family: Verdana; font-size: 1em; font-weight: bold; max-width: 363px; min-width: 160px; padding: 5px 0">
+				<td width="365" align="right" valign="bottom" class="businessUnit" style="color: #2e2e2f; font-family: Verdana; font-size: 1em; font-weight: bold; line-height: 130%; max-width: 363px; min-width: 160px; padding: 5px 0">
 
 					<!-- BEGIN: Title, Category, Business Unit -->
-					<h1 style="color: #2e2e2f; font-size: 1.55em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: 5px; mso-margin-top-alt: 0; padding: 0">
-						<span style="color: #4d4d4d; font-size: .52em; line-height: 1.3em">Business Unit Name<br /><br /></span>
+					<h1 style="color: #2e2e2f; font-size: 1.55em; font-weight: bold; line-height: 130%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: 5px; mso-margin-top-alt: 0; padding: 0">
+						<span style="color: #4d4d4d; font-size: .52em; line-height: 130%">Business Unit Name<br /><br /></span>
 						Upcoming Event
 					</h1>
 					<!-- END: Title, Category, Business Unit -->
 
 				</td>
 
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 			</tr>
 		</table>
 		<!-- END: Logo and Title Area -->
 		
 
 		<!-- BEGIN: Intro text -->
-		<table width="600" bgcolor="#9BC787" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+		<table width="600" bgcolor="#9BC787" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 			<tr>
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 
-				<td width="560" align="left" valign="middle" class="intro" style="color: white; font-family: Verdana; font-size: 1.05em; padding: 1em 0 .7em">
-					<h2 style="clear: both; color: #ffffff; font-size: 1.15em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0; padding: 2px 0">Webinar or Conference Name with City</h2>
+				<td width="560" align="left" valign="middle" class="intro" style="color: white; font-family: Verdana; font-size: 1.05em; line-height: 130%; padding: 1em 0 .7em">
+					<h2 style="clear: both; color: #ffffff; font-size: 1.15em; font-weight: bold; letter-spacing: 0.02em; line-height: 130%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0; padding: 2px 0">Webinar or Conference Name with City</h2>
 				</td>
 
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 			</tr>
 		</table>
 		<!-- END: Intro text -->
 		
 		
 		<!-- BEGIN: Intro Graphic Area -->
-		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="introGraphic" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px">
+		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="introGraphic" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px">
 			<tr>
-				<td width="600" valign="top" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; width: 100%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/sweep-dark-green.gif" width="600" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; max-width: 600px; min-width: 100%; outline: none; text-decoration: none; width: 100%" /></td>
+				<td width="600" valign="top" nowrap="nowrap" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; width: 100%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/sweep-dark-green.gif" width="600" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: auto; max-width: 600px; min-width: 100%; outline: none; text-decoration: none; width: 100%" /></td>
 			</tr>
 		</table>
 		<!-- END: Intro Graphic Area -->
@@ -303,21 +315,21 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 
 		<!-- BEGIN: Event Area -->
-		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+		<table width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 			<tr class="event">
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 				
-				<td width="560" align="left" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px">
-				
+				<td width="560" align="left" valign="top" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%">
+
 					<!-- BEGIN: Description Area -->
-					<table width="100%" border="0" cellpadding="0" cellspacing="0" id="description" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+					<table border="0" cellpadding="0" cellspacing="0" id="description" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 						<tr>
-							<td width="100%" align="left" valign="top" style="clear: both; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; width: 93.33333%">
+							<td width="100%" align="left" valign="top" style="clear: both; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 0 1.3em; width: 93.33333%">
 								Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description. Event description.
 							</td>
 						</tr>
 						<tr>
-							<td width="100%" align="center" valign="top" style="clear: both; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em; width: 93.33333%">
+							<td width="100%" align="center" valign="top" style="clear: both; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 0 1.3em; width: 93.33333%">
 								<a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/image2.jpg" width="400" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></a>
 							</td>
 						</tr>
@@ -326,12 +338,12 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 
 					<!-- BEGIN: Event Column 1 -->
-					<table width="270" border="0" cellpadding="0" cellspacing="0" align="left" class="column1" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+					<table border="0" cellpadding="0" cellspacing="0" align="left" class="column1" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 48.2%">
 						<tr>
-						
+
 							<!-- BEGIN: Speaker Area -->
-							<td align="left" valign="top" id="speaker" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em">
-								<h2 style="clear: both; color: #9bc787; font-size: 1.15em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0; padding: 0">Speaker's Name</h2>
+							<td align="left" valign="top" id="speaker" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 0 1.3em">
+								<h2 style="clear: both; color: #9bc787; font-size: 1.15em; font-weight: bold; letter-spacing: 0.02em; line-height: 130%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0; padding: 0">Speaker's Name</h2>
 								<strong>Speaker or Talk Title</strong><br />
 								
 								<table width="50%" border="0" cellpadding="0" cellspacing="0" align="right" class="imgWrap" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
@@ -351,57 +363,60 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 						<tr>
 
 							<!-- BEGIN: Event Social Area -->
-							<td align="left" valign="top" id="social" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em">
-								<h2 style="clear: both; color: #9bc787; font-size: 1.15em; font-weight: bold; letter-spacing: 0.02em; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0; padding: 0">Social Media Information</h2>
+							<td align="left" valign="top" id="social" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 0 1.3em">
+								<h2 style="clear: both; color: #9bc787; font-size: 1.15em; font-weight: bold; letter-spacing: 0.02em; line-height: 130%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0; padding: 0">Social Media Information</h2>
 								Follow and join the conversation using <strong>#Event</strong> on the following platforms:<br /><br />
 
 								<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/TwitterIcon.gif" width="42" border="0" alt="Twitter" class="icon" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></a></td>
-										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">twitter.com/#Event</a></td>
+										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/TwitterIcon.gif" width="42" border="0" alt="Twitter" class="icon" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></a></td>
+										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">twitter.com/#Event</a></td>
 									</tr>
 									<tr>
-										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/FacebookIcon.gif" width="42" border="0" alt="Facebook" class="icon" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></a></td>
-										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">"Very Long Event Name Spelled Out" on Facebook</a></td>
+										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/FacebookIcon.gif" width="42" border="0" alt="Facebook" class="icon" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></a></td>
+										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">"Very Long Event Name Spelled Out" on Facebook</a></td>
 									</tr>
 									<tr>
-										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 .5em .3em 0"> </td>
-										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">Some other social network with no icon</a></td>
+										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 .5em .3em 0"> </td>
+										<td align="left" valign="middle" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 .5em .3em 0"><a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">Some other social network with no icon</a></td>
 									</tr>
 								</table>							
 							</td>
 							<!-- END: Event Social Area -->
-							
+
 						</tr>
 					</table>
 					<!-- END: Event Column 1 -->
 
 
 					<!-- BEGIN: Event Column 2 -->
-					<table width="270" border="0" cellpadding="0" cellspacing="0" align="right" class="column2" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+					<table border="0" cellpadding="0" cellspacing="0" align="right" class="column2" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 48.2%">
 						<tr>
 
 							<!-- BEGIN: Basic Info Area -->
-							<td width="20" nowrap="nowrap" bgcolor="#FEFAEF" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 6.5%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+							<td width="20" nowrap="nowrap" bgcolor="#FEFAEF" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; max-width: 7.4%; min-width: 7.4%; overflow: none; width: 20px"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 							
-							<td width="230" align="left" valign="top" bgcolor="#FEFAEF" class="inset" id="basics" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 1.3em 0; width: 87%">							
+							<td align="left" valign="top" bgcolor="#FEFAEF" class="inset" id="basics" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 1.3em 0; width: 85.2%">							
 
-								<table width="100%" border="0" cellpadding="0" cellspacing="0" class="datetime" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 400px; min-width: 173px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+								<table order="0" cellpadding="0" cellspacing="0" class="datetime" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 100%; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<th align="left" class="cell1" style="color: #2e2e2f; font-family: Verdana; font-size: 1.15em; padding: 0 0 .5em">Date</th>
-										<th align="left" style="color: #2e2e2f; font-family: Verdana; font-size: 1.15em; padding: 0 0 .5em 1em">Time</th>
+										<th align="left" class="cell1" style="color: #2e2e2f; font-family: Verdana; font-size: 1.15em; line-height: 130%; padding: 0 0 .5em">Date</th>
+										<th align="left" style="color: #2e2e2f; font-family: Verdana; font-size: 1.15em; line-height: 130%; padding: 0 0 .5em 1em">Time</th>
 									</tr>
 									<tr>
-										<td align="left" class="cell1" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .5em 0">May 28, 2014</td>
-										<td align="left" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .5em 0 .5em 1em">2:00 PM EST</td>
+										<td align="left" class="cell1" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .5em 0">May 28, 2014</td>
+										<td align="left" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .5em 0 .5em 1em">2:00 PM EST</td>
 									</tr>
 									<tr>
-										<td align="left" class="cell1" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .5em 0">June 4, 2014</td>
-										<td align="left" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .5em 0 .5em 1em">2:00 PM EST</td>
+										<td align="left" class="cell1" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .5em 0">June 4, 2014</td>
+										<td align="left" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .5em 0 .5em 1em">2:00 PM EST</td>
 									</tr>
 									<tr>
-										<td align="left" class="cell1" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .5em 0">June 11, 2014</td>
-										<td align="left" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .5em 0 .5em 1em">2:00 PM EST</td>
+										<td align="left" class="cell1" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .5em 0">June 11, 2014</td>
+										<td align="left" style="border-bottom-color: #C8C8D2; border-bottom-style: solid; border-bottom-width: 1px; color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: .5em 0 .5em 1em">2:00 PM EST</td>
+									</tr>
+									<tr>
+										<th colspan="2" class="forceWidth" style="color: #2e2e2f; font-family: Verdana; font-size: 1.15em; height: 1px; line-height: 1px; max-width: 100%; min-width: 100%; padding: 0; width: 268px"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="1" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></th>
 									</tr>
 								</table><br />
 
@@ -412,28 +427,27 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 								0123456789
 							</td>
 							
-							<td width="20" nowrap="nowrap" bgcolor="#FEFAEF" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 6.5%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+							<td width="20" nowrap="nowrap" bgcolor="#FEFAEF" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; max-width: 7.4%; min-width: 7.4%; overflow: none; width: 20px"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 							<!-- END: Basic Info Area -->
 	
 						</tr>
-
 						<tr>
-							<td colspan="3" id="postbasics" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="1" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; outline: none; text-decoration: none" /></td>
+							<td colspan="3" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%"> </td>
 						</tr>
 
 						<tr>
 
 							<!-- BEGIN: Details Area -->
-							<td colspan="3" width="270" align="left" valign="top" id="details" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: 0 0 1.3em">
+							<td colspan="3" align="left" valign="top" id="details" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; padding: 0 0 1.3em; width: 100%">
 							
 								<!-- BEGIN: Calendar Button -->
-								<table width="270" border="0" cellpadding="0" cellspacing="0" class="calendarButton" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%">
+								<table border="0" cellpadding="0" cellspacing="0" class="calendarButton" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 100%; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 									<tr>
-										<td width="270" align="center" valign="top" bgcolor="#9BC787" class="calendarButton" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; padding: .3em .5em; width: 100%">
+										<td align="center" valign="top" bgcolor="#9BC787" class="calendarButton" style="color: #2e2e2f; font-family: Verdana; font-size: 13px; line-height: 130%; max-width: 100%; min-width: 100%; padding: .3em .5em; width: 308px">
 											<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 												<tr>
-													<td align="right" valign="middle" class="icon" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em .5em; text-align: left"><a href="#top" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: left; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CalendarIcon.gif" width="25" border="0" alt="" align="left" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 29px; outline: none; text-decoration: none; width: 25px" /></a></td>
-													<td align="left" valign="middle" class="text" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; padding: .3em .5em; text-align: left"><a href="#top" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: left; text-decoration: none">Add event to calendar (.ics)</a></td>
+													<td align="right" valign="middle" class="icon" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; line-height: 130%; padding: .3em .5em; text-align: left"><a href="#top" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: left; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/CalendarIcon.gif" width="25" border="0" alt="" align="left" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 29px; outline: none; text-decoration: none; width: 25px" /></a></td>
+													<td align="left" valign="middle" class="text" style="color: #2e2e2f; font-family: Verdana; font-size: .9em; line-height: 130%; padding: .3em .5em; text-align: left"><a href="#top" target="_blank" style="color: white; font-weight: bold; padding: 0; text-align: left; text-decoration: none">Add event to calendar (.ics)</a></td>
 												</tr>
 											</table>
 										</td>
@@ -453,22 +467,22 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 
 				</td>
 
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 			</tr>
 		</table>
 		<!-- END: Event Area -->
 		
 
-		<!-- Begin: Promo Area -->
+		<!-- BEGIN: Promo Area -->
 		<!-- END: Promo Area -->
 
 
 		<!-- BEGIN: Footer Area -->
-		<table width="600" bgcolor="#f1efe4" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="footerArea" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; line-height: 1.3em; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
+		<table width="600" bgcolor="#f1efe4" border="0" cellpadding="0" cellspacing="0" align="center" class="boundingTable" id="footerArea" style="border-collapse: collapse; border-spacing: 0; font-size: 13px; max-width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt">
 			<tr class="content">
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 
-				<td width="360" valign="top" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: .86em; padding: 2em 0 1.3em">
+				<td width="360" valign="top" class="column1" style="color: #2e2e2f; font-family: Verdana; font-size: .86em; line-height: 130%; padding: 2em 0 1.3em">
 				
 					Optional special instructions, disclaimers, and footnotes as needed in the footer. This can be multiple lines and multiple paragraphs.
 					<br /><br />
@@ -499,10 +513,10 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<a href="#" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">User Profile</a>
 				</td>
 
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 
-				<td width="180" valign="top" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: .86em; padding: 2em 0 1.3em">
-					<h3 style="color: #2e2e2f; font-size: 1.3em; font-weight: bold; line-height: 1.3em; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Connect with us</h3>
+				<td width="180" valign="top" class="column2" style="color: #2e2e2f; font-family: Verdana; font-size: .86em; line-height: 130%; padding: 2em 0 1.3em">
+					<h3 style="color: #2e2e2f; font-size: 1.3em; font-weight: bold; line-height: 130%; margin: 0 0 5px; mso-line-height-rule: exactly; mso-margin-bottom-alt: .3em; mso-margin-top-alt: 0em; padding: 0 0 .3em">Connect with us</h3>
 					
 					<a href="http://twitter.com/cardinalhealth" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/TwitterIcon.gif" width="42" border="0" alt="Twitter" class="icon" style="-ms-interpolation-mode: bicubic; border: none; display: inline-block; height: 42px; outline: none; text-decoration: none; width: 42px" /></a>
 					
@@ -521,7 +535,7 @@ border: none; outline: none; display: block; text-decoration: none; -ms-interpol
 					<a href="http://www.cardinalhealth.com/" target="_blank" style="color: #e41f35; padding: 0; text-decoration: none">Cardinalhealth.com</a>
 				</td>
 				
-				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 0px; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; outline: none; text-decoration: none; width: 1px" /></td>
+				<td width="20" nowrap="nowrap" class="gutter" style="color: #2e2e2f; font-family: Verdana; font-size: 0px; height: 1px; line-height: 130%; overflow: none; width: 3.33333%"><img src="http://image.email.cardinalhealth.com/lib/fe8712717c66037a7d/m/1/spacer.gif" width="20" height="2" border="0" alt="" style="-ms-interpolation-mode: bicubic; border: none; display: block; height: 1px; max-width: 100%; outline: none; text-decoration: none" /></td>
 			</tr>
 		</table>
 		<!-- END: Footer Area -->

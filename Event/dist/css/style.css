@@ -16,7 +16,7 @@
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 1.3em;
+  line-height: 130%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   mso-margin-top-alt: 0;
   mso-margin-bottom-alt: 0;
   mso-line-height-rule: exactly;
-  line-height: 1.3em;
+  line-height: 130%;
   font-weight: bold;
   margin: 0 0 5px 0;
   padding: 0 0 0 0;
@@ -57,7 +57,10 @@ body,
 
 .boundingTable {
   max-width: 600px;
-  line-height: 1.3em;
+}
+.boundingTable th,
+.boundingTable td {
+  line-height: 130%;
 }
 
 table {
@@ -143,13 +146,13 @@ img {
 .gutter {
   font-size: 0px;
   line-height: 0px;
-  height: 1px;
   overflow: none;
   width: 3.33333%;
+  height: 1px;
 }
 .gutter img {
   height: 1px;
-  width: 1px;
+  max-width: 100%;
 }
 
 #preHeaderTable td {
@@ -196,7 +199,7 @@ img {
 }
 .businessUnit span {
   font-size: .52em;
-  line-height: 1.3em;
+  line-height: 130%;
   color: #4d4d4d;
 }
 
@@ -283,9 +286,13 @@ img {
 }
 .tocArea a {
   font-weight: bold;
-  line-height: 1.3em;
+  line-height: 130%;
 }
 
+.event .column1,
+.event .column2 {
+  width: 48.2%;
+}
 .event h2 {
   font-size: 1.15em;
   padding: 0;
@@ -299,21 +306,21 @@ img {
 .event #description td,
 .event #speaker,
 .event #social,
-.event #postbasics,
-.event #details {
+.event #postBasics,
+.event #details,
+.event #sponsor {
   padding: 0 0 1.3em 0;
 }
 .event .inset {
+  width: 85.2%;
   padding: 1.3em 0;
-  width: 87%;
 }
 .event .inset strong {
   font-size: 1.15em;
 }
 .event .inset .datetime {
-  min-width: 173px;
-  max-width: 400px;
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 .event .inset .datetime th {
   padding: 0 0 .5em 1em;
@@ -326,11 +333,25 @@ img {
 .event .inset .datetime .cell1 {
   padding-left: 0;
 }
-.event #details table.calendarButton {
+.event .inset .datetime th.forceWidth {
+  min-width: 100%;
+  max-width: 100%;
+  width: 268px;
+  padding: 0;
+  height: 1px;
+  line-height: 1px;
+}
+.event #details {
   width: 100%;
 }
+.event #details table.calendarButton {
+  min-width: 100%;
+  max-width: 100%;
+}
 .event #details table.calendarButton td.calendarButton {
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  width: 308px;
   padding: .3em .5em;
 }
 .event #details table.calendarButton td.calendarButton table td {
@@ -360,29 +381,36 @@ img {
   max-width: 400px;
 }
 .event #sponsor {
-  min-width: 48.2%;
+  min-width: 100%;
   max-width: 100%;
-  width: auto;
+  width: 308px;
 }
 .event #sponsor img {
   display: inline;
 }
-.event table .gutter {
-  width: 6.5%;
+.event table.gutter {
+  width: 3.57%;
 }
-.event .imgFull td,
-.event .imgWrap td,
-.event .imgStack td {
+.event table .gutter {
+  max-width: 7.4%;
+  min-width: 7.4%;
+  width: 20px;
+}
+
+.imgFull td,
+.imgWrap td,
+.imgStack td {
   padding: .35em 0 1em 1em;
   line-height: .5em;
 }
-.event .imgFull img,
-.event .imgWrap img,
-.event .imgStack img {
+.imgFull img,
+.imgWrap img,
+.imgStack img {
   max-width: 100%;
   height: auto;
 }
-.event .imgFull td {
+
+.imgFull td {
   padding: 0 0 1em 0;
 }
 
@@ -412,6 +440,15 @@ img {
     width: 100% !important;
   }
 
+  .gutter {
+    height: 1px !important;
+    width: 3.33333% !important;
+  }
+  .gutter img {
+    height: 1px !important;
+    width: 1px !important;
+  }
+
   #introGraphic {
     width: 100% !important;
   }
@@ -436,7 +473,10 @@ img {
   }
   .event .column1 .gutter,
   .event .column2 .gutter {
-    width: 6.5%;
+    width: 7.4% !important;
+  }
+  .event .inset .datetime {
+    width: 100%;
   }
   .event #details,
   .event #speaker {
@@ -460,6 +500,8 @@ img {
     height: 29px !important;
   }
   .event #sponsor {
+    min-width: 100% !important;
+    max-width: 100% !important;
     width: 48.2% !important;
   }
 
@@ -539,6 +581,10 @@ img {
   }
   span[id="bodyBackground"] .event #basics {
     width: 93.5% !important;
+  }
+  span[id="bodyBackground"] .event table .gutter {
+    max-width: 3.57%;
+    min-width: 3.57%;
   }
   span[id="bodyBackground"] .imgStack {
     width: 100% !important;
