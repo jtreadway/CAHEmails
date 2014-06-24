@@ -16,7 +16,7 @@
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 130%;
+  line-height: 120%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   mso-margin-top-alt: 0;
   mso-margin-bottom-alt: 0;
   mso-line-height-rule: exactly;
-  line-height: 130%;
+  line-height: 120%;
   font-weight: bold;
   margin: 0 0 5px 0;
   padding: 0 0 0 0;
@@ -60,7 +60,7 @@ body,
 }
 .boundingTable th,
 .boundingTable td {
-  line-height: 130%;
+  line-height: 120%;
 }
 
 table {
@@ -91,7 +91,7 @@ a:hover,
 }
 
 h1 {
-  font-size: 1.55em;
+  font-size: 1.4em;
   color: #2e2e2f;
   mso-margin-bottom-alt: 5px;
 }
@@ -184,7 +184,7 @@ img {
   max-width: 177px;
 }
 .logoArea td {
-  padding: 9px 0;
+  padding: 8px 0;
 }
 .logoArea img {
   min-width: 125px;
@@ -198,8 +198,8 @@ img {
   max-width: 363px;
 }
 .businessUnit span {
-  font-size: .52em;
-  line-height: 130%;
+  font-size: .58em;
+  line-height: 120%;
   color: #4d4d4d;
 }
 
@@ -211,7 +211,7 @@ img {
 
 .intro h2 {
   color: #ffffff;
-  font-size: 1.15em;
+  font-size: 1.333em;
   padding: 2px 0;
   mso-margin-top-alt: 0;
 }
@@ -286,7 +286,7 @@ img {
 }
 .tocArea a {
   font-weight: bold;
-  line-height: 130%;
+  line-height: 120%;
 }
 
 .event .column1,
@@ -316,7 +316,7 @@ img {
   padding: 1.3em 0;
 }
 .event .inset strong {
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 .event .inset .datetime {
   min-width: 100%;
@@ -324,7 +324,7 @@ img {
 }
 .event .inset .datetime th {
   padding: 0 0 .5em 1em;
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 .event .inset .datetime td {
   padding: .5em 0 .5em 1em;
