@@ -18,7 +18,7 @@
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 130%;
+  line-height: 120%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   mso-margin-top-alt: 0;
   mso-margin-bottom-alt: 0;
   mso-line-height-rule: exactly;
-  line-height: 130%;
+  line-height: 120%;
   font-weight: bold;
   margin: 0 0 5px 0;
   padding: 0 0 0 0;
@@ -68,7 +68,7 @@ body,
 /* line 93, ../scss/style.scss */
 .boundingTable th,
 .boundingTable td {
-  line-height: 130%;
+  line-height: 120%;
 }
 
 /* line 97, ../scss/style.scss */
@@ -104,7 +104,7 @@ a:hover,
 
 /* line 120, ../scss/style.scss */
 h1 {
-  font-size: 1.55em;
+  font-size: 1.4em;
   color: #2e2e2f;
   mso-margin-bottom-alt: 5px;
 }
@@ -212,7 +212,7 @@ img {
 }
 /* line 209, ../scss/style.scss */
 .logoArea td {
-  padding: 9px 0;
+  padding: 8px 0;
 }
 /* line 212, ../scss/style.scss */
 .logoArea img {
@@ -229,8 +229,8 @@ img {
 }
 /* line 222, ../scss/style.scss */
 .businessUnit span {
-  font-size: .52em;
-  line-height: 130%;
+  font-size: .58em;
+  line-height: 120%;
   color: #4d4d4d;
 }
 
@@ -244,7 +244,7 @@ img {
 /* line 234, ../scss/style.scss */
 .intro h2 {
   color: #ffffff;
-  font-size: 1.15em;
+  font-size: 1.333em;
   padding: 2px 0;
   mso-margin-top-alt: 0;
 }
@@ -335,7 +335,7 @@ img {
 /* line 301, ../scss/style.scss */
 .tocArea a {
   font-weight: bold;
-  line-height: 130%;
+  line-height: 120%;
 }
 
 /* line 309, ../scss/style.scss */
@@ -371,7 +371,7 @@ img {
 }
 /* line 333, ../scss/style.scss */
 .event .inset strong {
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 /* line 336, ../scss/style.scss */
 .event .inset .datetime {
@@ -381,7 +381,7 @@ img {
 /* line 339, ../scss/style.scss */
 .event .inset .datetime th {
   padding: 0 0 .5em 1em;
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 /* line 343, ../scss/style.scss */
 .event .inset .datetime td {

@@ -17,7 +17,7 @@ $color-intro:$color-text-invert;
 $gutter:3.33333%;
 
 $font-size:13px;
-$line-height:120%;
+$line-height:130%;
 
 /* mixins */
 @mixin buttonBox() {
@@ -118,7 +118,7 @@ a,
 	}
 }
 h1 {
-	font-size:1.4em;
+	font-size:1.55em;
 	color:$color-title;
 	mso-margin-bottom-alt:5px;
 }
@@ -207,7 +207,7 @@ img {
 	min-width: 125px;
 	max-width: 177px;
 	td {
-		padding:8px 0;
+		padding:9px 0;
 	}
 	img {
 		min-width: 125px;
@@ -220,35 +220,31 @@ img {
 	min-width: 160px;
 	max-width: 363px;
 	span {
-		font-size: .58em;
+		font-size: .52em;
 		line-height:$line-height;
 		color:#4d4d4d;
 	}
 }
 
 .intro {
-	padding:1em 0 .7em 0;
-	color:$color-intro;
-	font-size:1.05em;
+	padding:20px 5% 0 5%;
+	color:$color-sweep2;
+	font-size:1.15em;
 }
 .intro h2 {
-	color:#ffffff;
-	font-size:1.333em;
-	padding:2px 0;
+	color:$color-sweep2;
+	font-size:1.9em;
+	line-height:120%;
+	padding: 0;
 	mso-margin-top-alt: 0; 
 }
-#introGraphic {
-	max-width: 600px;
-	width:600px;
-	td {
-		width:100%;
-	}
-	img {
-		min-width: 100%;
-		max-width: 600px;
-		width:100%;
-		height:auto;
-	}
+.intro2 {
+	padding:2% 5%;
+	color:$color-sweep2;
+	font-size:1.15em;
+	border-left: 1px #666666 solid;
+	border-bottom: 1px #666666 solid;
+	border-right: 1px #666666 solid;
 }
 
 .dateArea {
@@ -331,14 +327,14 @@ img {
 		width:85.2%;
 		padding: 1.3em 0;
 		strong {
-			font-size: 1.05em;
+			font-size: 1.15em;
 		}
 		.datetime {
 			min-width:100%;
 			max-width:100%;
 			th {
 				padding: 0 0 .5em 1em;
-				font-size: 1.05em;
+				font-size: 1.15em;
 			}
 			td {
 				padding: .5em 0 .5em 1em;

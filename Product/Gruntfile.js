@@ -178,7 +178,6 @@ module.exports = function (grunt) {
 						name: 'Curtis, Scott',
 						email: 'scurtis@cardinalsolutions.com'
 					},
-                    */
 					{
 						name: 'Stryker, Ryan',
 						email: 'rstryker@cardinalsolutions.com'
@@ -187,7 +186,9 @@ module.exports = function (grunt) {
 						name: 'Steinert, Caitlin',
 						email: 'csteinert@cardinalsolutions.com'
 					},
-					
+                    */
+                    
+                    
                     {
                         name: 'Litmus Test',
                         email: 'cardinalhealth2.cc94c8b.new@emailtests.com'
