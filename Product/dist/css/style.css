@@ -203,12 +203,17 @@ img {
   color: #4d4d4d;
 }
 
-.intro {
+#intro .gutter {
+  width: 17.5%;
+}
+
+#introMiddle {
   padding: 1.75em 3.33333% 0 3.33333%;
   color: #75c5b4;
+  width: 65%;
   border-right: 1px #eeeeee solid;
 }
-.intro h2 {
+#introMiddle h2 {
   color: #346170;
   font-size: 2.2em;
   line-height: 120%;
@@ -216,8 +221,9 @@ img {
   mso-margin-top-alt: 0;
 }
 
-.intro2 {
+#introBottom {
   padding: 0.5em 3.33333% 1.5em 3.33333%;
+  width: 65%;
   color: #75c5b4;
   font-size: 1.05em;
   border-right: 1px #eeeeee solid;
@@ -292,16 +298,26 @@ img {
   padding: 0;
   mso-margin-top-alt: 0;
 }
+.main #productImage,
 .main #description td,
+.main #download,
 .main #specials {
   padding: 0 0 1.3em 0;
 }
 .main .inset {
-  width: 85.2%;
   padding: 1.3em 0;
 }
+.main #productImage {
+  min-width: 100%;
+  max-width: 100%;
+  width: 308px;
+}
 .main #order {
-  width: 100%;
+  min-width: 85.2%;
+  max-width: 85.2%;
+}
+.main #order table.button td.button {
+  width: 268px;
 }
 .main #postOrder {
   border-top: 1px #75c5b4 solid;
@@ -313,8 +329,22 @@ img {
 .main #description td center img {
   max-width: 400px;
 }
+.main #brochure {
+  min-width: 85.2%;
+  max-width: 85.2%;
+  width: 228px;
+}
+.main #brochure img {
+  min-width: 100%;
+  max-width: 100%;
+  width: 228px;
+}
 .main #download {
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+.main #download table.button td.button {
+  width: 308px;
 }
 .main table.button {
   min-width: 100%;
@@ -324,10 +354,9 @@ img {
   font-size: .9em;
   text-align: center;
   padding: .45em 1em;
+  padding: 1em .5em;
   min-width: 100%;
   max-width: 100%;
-  width: 308px;
-  padding: 1em .5em;
 }
 .main table.button td.button a,
 .main table.button td.button #outlook a,
@@ -391,18 +420,13 @@ img {
 
   .gutter {
     height: 1px !important;
-    width: 3.33333% !important;
   }
   .gutter img {
     height: 1px !important;
     width: 1px !important;
   }
 
-  #introGraphic {
-    width: 100% !important;
-  }
-  #introGraphic img {
-    min-width: 100% !important;
+  #intro {
     width: 100% !important;
   }
 
@@ -426,12 +450,12 @@ img {
   }
   .main #productImage,
   .main #specials,
-  .main #download {
+  .main #brochure {
     width: 100% !important;
   }
   .main #productImage img,
   .main #specials img,
-  .main #download img {
+  .main #brochure img {
     width: 100% !important;
     height: auto !important;
   }
@@ -442,11 +466,6 @@ img {
     max-width: 400px !important;
     width: 100% !important;
     height: auto !important;
-  }
-  .main #download {
-    min-width: 100% !important;
-    max-width: 100% !important;
-    width: 48.2% !important;
   }
 
   .halfgutter {
@@ -495,20 +514,24 @@ img {
   span[id="bodyBackground"] .businessUnit h1 {
     font-size: 1.35em !important;
   }
-  span[id="bodyBackground"] .introTop img {
-    height: 20px !important;
-  }
-  span[id="bodyBackground"] .introSides {
+  span[id="bodyBackground"] #intro .gutter {
     width: 10% !important;
   }
-  span[id="bodyBackground"] .introSides img {
+  span[id="bodyBackground"] #intro .gutter img {
     width: 100% !important;
   }
-  span[id="bodyBackground"] .intro h2 {
-    font-size: 1.3em;
+  span[id="bodyBackground"] #introTop img {
+    height: 20px !important;
   }
-  span[id="bodyBackground"] .intro2 {
-    font-size: .9em;
+  span[id="bodyBackground"] #introMiddle {
+    width: 80% !important;
+  }
+  span[id="bodyBackground"] #introMiddle h2 {
+    font-size: 1.3em !important;
+  }
+  span[id="bodyBackground"] #introBottom {
+    width: 80% !important;
+    font-size: .9em !important;
   }
   span[id="bodyBackground"] .column1,
   span[id="bodyBackground"] .column2 {
@@ -538,12 +561,13 @@ img {
   span[id="bodyBackground"] .main .column2 .gutter {
     width: 3.25% !important;
   }
-  span[id="bodyBackground"] .main #order {
+  span[id="bodyBackground"] .main #order,
+  span[id="bodyBackground"] .main #brochure {
     width: 93.5% !important;
   }
   span[id="bodyBackground"] .main table .gutter {
-    max-width: 3.57%;
-    min-width: 3.57%;
+    max-width: 3.57% !important;
+    min-width: 3.57% !important;
   }
   span[id="bodyBackground"] .imgStack {
     width: 100% !important;
@@ -568,39 +592,45 @@ img {
 }
 /* Narrow devices */
 /* Testing/Coloring */
-x#bodyBackground .column1 {
+#bodyBackground .column1 {
   background-color: #ffdddd;
 }
-x#bodyBackground .column2 {
+#bodyBackground .column2 {
   background-color: #ddffdd;
 }
-x#bodyBackground .content {
+#bodyBackground .content {
   background-color: #99ffff;
 }
-x#bodyBackground .main {
+#bodyBackground .main {
   background-color: #ff99ff;
 }
-x#bodyBackground #download {
+#bodyBackground #download {
   background-color: #ffff99;
 }
-x#bodyBackground .gutter {
+#bodyBackground #productImage {
+  background-color: #ffff66;
+}
+#bodyBackground #basics {
+  background-color: #ff66ff;
+}
+#bodyBackground .gutter {
   background-color: #ddddff;
 }
-x#bodyBackground .halfgutter {
+#bodyBackground .halfgutter {
   background-color: #ffffdd;
 }
-x#bodyBackground h1 {
+#bodyBackground h1 {
   background-color: #33ffff;
 }
-x#bodyBackground h2 {
+#bodyBackground h2 {
   background-color: #ff33ff;
 }
-x#bodyBackground h3 {
+#bodyBackground h3 {
   background-color: #ffff33;
 }
-x#bodyBackground hr {
+#bodyBackground hr {
   background-color: #00ffff;
 }
-x#bodyBackground br {
+#bodyBackground br {
   background-color: #ff00ff;
 }

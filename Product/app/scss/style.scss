@@ -225,9 +225,15 @@ img {
 		color:#4d4d4d;
 	}
 }
-.intro {
+#intro {
+	.gutter {
+		width: 17.5%;	
+	}
+}
+#introMiddle {
 	padding:1.75em $gutter 0 $gutter;
 	color:$color-sweep2;
+	width:65%;
 	border-right: 1px $color-rule solid;
 	h2 {
 		color:$color-highlight;
@@ -237,8 +243,9 @@ img {
 		mso-margin-top-alt: 0; 
 	}
 }
-.intro2 {
+#introBottom {
 	padding:.5em $gutter 1.5em $gutter;
+	width:65%;
 	color:$color-sweep2;
 	font-size:1.05em;
 	border-right: 1px $color-rule solid;
@@ -308,16 +315,28 @@ img {
 		padding:0;
 		mso-margin-top-alt: 0;
 	}
+	#productImage,
 	#description td,
+	#download,
 	#specials {
 		padding: 0 0 1.3em 0;
 	}
 	.inset {
-		width:85.2%;
 		padding: 1.3em 0;
 	}
+	#productImage {
+		min-width:100%;
+		max-width:100%;
+		width:308px;
+	}
 	#order {
-		width:100%;
+		min-width:85.2%;
+		max-width:85.2%;
+		table.button {
+			td.button {
+				width:268px;
+			}
+		}
 	}
 	#postOrder {
 		border-top: 1px $color-sweep2 solid;
@@ -329,18 +348,33 @@ img {
 			max-width:400px;
 		}
 	}
+	#brochure {
+		min-width:85.2%;
+		max-width:85.2%;
+		width:228px;
+		img {
+			min-width:100%;
+			max-width:100%;
+			width:228px;
+		}
+	}
 	#download {
-		width:100%;
+		min-width:100%;
+		max-width:100%;
+		table.button {
+			td.button {
+				width:308px;
+			}
+		}
 	}
 	table.button {
 		min-width: 100%;
 		max-width: 100%;
 		td.button {
 			@include buttonBox();
+			padding:1em .5em;
 			min-width: 100%;
 			max-width: 100%;
-			width:308px;
-			padding:1em .5em;
 			a,
 			#outlook a,
 			.applelinks a {
@@ -404,18 +438,13 @@ img {
 	}
 	.gutter {
 		height:1px !important;
-		width:$gutter !important;
 		img {
 			height:1px !important;
 			width:1px !important;
 		}
 	}
-	#introGraphic {
+	#intro {
 		width:100% !important;
-		img {
-			min-width: 100% !important;
-			width:100% !important;
-		}
 	}
 	.businessUnit,
 	#footerArea .content .column1 {
@@ -435,7 +464,7 @@ img {
 		}
 		#productImage,
 		#specials,
-		#download {
+		#brochure {
 			width:100% !important;
 			img {
 				width:100% !important;
@@ -449,11 +478,6 @@ img {
 				width:100% !important;
 				height:auto !important;
 			}		
-		}
-		#download {
-			min-width:100% !important;
-			max-width:100% !important;
-			width:48.2% !important;
 		}
 	}
 	.halfgutter {
@@ -506,25 +530,30 @@ img {
 			}
 		}
 
-		.introTop {
+		 #intro {
+			.gutter {
+				width: 10% !important;
+				img {
+					width:100% !important;
+				}
+			}
+		}
+		#introTop {
 			img {
 				height: 20px !important;
 			}
 		}
- 		.introSides {
- 			width:10% !important;
- 			img {
-	 			width:100% !important;
- 			}
- 		}
- 		.intro {
+ 		#introMiddle {
+			width:80% !important;
  			h2 {
- 				font-size: 1.3em;
+ 				font-size: 1.3em !important;
  			}
  		}
- 		.intro2 {
- 			font-size: .9em;
+ 		#introBottom {
+			width:80% !important;
+ 			font-size: .9em !important;
  		}
+
 		.column1,
 		.column2 {
 			width:100% !important;
@@ -552,14 +581,13 @@ img {
 					width:3.25% !important;
 				}
 			}
-			#order {
+			#order,
+			#brochure {
 				width:93.5% !important;
-
-
 			}
 			table .gutter {
-				max-width:3.57%;
-				min-width:3.57%;
+				max-width:3.57% !important;
+				min-width:3.57% !important;
 			}
 		}
 		.imgStack {
@@ -609,6 +637,12 @@ x#bodyBackground {
 	}
 	#download {
 		background-color:#ffff99;		
+	}
+	#productImage {
+		background-color:#ffff66;		
+	}
+	#basics {
+		background-color:#ff66ff;		
 	}
 	.gutter {
 		background-color:#ddddff;
