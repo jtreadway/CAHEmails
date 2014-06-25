@@ -327,7 +327,10 @@ img {
 	#productImage {
 		min-width:100%;
 		max-width:100%;
-		width:308px;
+		img {
+			min-width:100%;
+			max-width:100%;
+		}
 	}
 	#order {
 		min-width:85.2%;
@@ -581,7 +584,10 @@ img {
 					width:3.25% !important;
 				}
 			}
-			#order,
+			#order {
+				min-width:93.5% !important;
+				max-width:93.5% !important;
+			}
 			#brochure {
 				width:93.5% !important;
 			}
