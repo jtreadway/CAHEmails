@@ -304,6 +304,29 @@ img {
 	}
 }
 
+#thoughtLeadershipHeader {
+	.headline {
+		margin-bottom: 2em;
+		td {
+			font-size: 3.1em;
+			font-weight: bold;
+			padding: 0 .5em .25em;
+			color: $color-text-invert;
+			&.callout {
+				padding: .1em .5em;
+				color: $color-text;
+			}
+		}
+	}
+	.visual {
+		margin: 1em;
+		td {
+			padding: 0 1em;
+		}
+	}
+}
+
+
 .event {
 	.column1,
 	.column2 {
