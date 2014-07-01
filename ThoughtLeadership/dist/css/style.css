@@ -289,6 +289,58 @@ img {
   line-height: 130%;
 }
 
+#thoughtLeadershipHeader #headline {
+  margin-bottom: 2em;
+}
+#thoughtLeadershipHeader #headline td {
+  font-size: 3.1em;
+  font-weight: bold;
+  padding: 0 .5em .25em;
+  color: white;
+}
+#thoughtLeadershipHeader #headline td.callout {
+  padding: .1em .5em;
+  color: #2e2e2f;
+}
+#thoughtLeadershipHeader #visual {
+  margin: 1em;
+}
+#thoughtLeadershipHeader #visual img {
+  max-width: 100%;
+  min-width: 100%;
+}
+#thoughtLeadershipHeader #featureButton {
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+}
+#thoughtLeadershipHeader #featureButton td {
+  padding: .5em 0;
+  font-size: 1.3em;
+}
+#thoughtLeadershipHeader #featureButton a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#thoughtLeadershipMessage .text {
+  padding: 0 75px;
+}
+#thoughtLeadershipMessage img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#brandedStatement {
+  margin: 3em 0;
+}
+#brandedStatement .text {
+  padding: 0 65px;
+}
+#brandedStatement img {
+  margin-bottom: 1em;
+}
+
 .event .column1,
 .event .column2 {
   width: 48.2%;
@@ -569,6 +621,15 @@ img {
   }
   span[id="bodyBackground"] .dateArea .date {
     text-align: center !important;
+  }
+  span[id="bodyBackground"] #thoughtLeadershipHeader #headline td {
+    font-size: 2em !important;
+  }
+  span[id="bodyBackground"] #featureButton td {
+    font-size: 1em !important;
+  }
+  span[id="bodyBackground"] #thoughtLeadershipMessage .text {
+    padding: 0 10px;
   }
   span[id="bodyBackground"] .event .column1,
   span[id="bodyBackground"] .event .column2 {
