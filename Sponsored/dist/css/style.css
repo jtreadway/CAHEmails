@@ -181,21 +181,19 @@ img {
 
 .logoArea {
   min-width: 125px;
-  max-width: 177px;
+  max-width: 270px;
 }
 .logoArea td {
   padding: 8px 0;
 }
 .logoArea img {
-  min-width: 125px;
-  max-width: 177px;
-  width: 100%;
+  width: 177px;
   height: auto;
 }
 
 .businessUnit {
   min-width: 160px;
-  max-width: 363px;
+  max-width: 270px;
 }
 .businessUnit h1 {
   font-size: 1.05em;
@@ -354,9 +352,19 @@ img {
     width: 1px !important;
   }
 
-  .businessUnit,
+  .logoArea,
   #footerArea .content .column1 {
     width: auto !important;
+  }
+
+  .logoArea img {
+    min-width: 125px;
+    max-width: 177px;
+    width: 100%;
+  }
+
+  .businessUnit {
+    width: 45% !important;
   }
 
   img.icon {
@@ -402,7 +410,7 @@ img {
     padding: .5em 1.3em !important;
     text-align: center !important;
   }
-  span[id="bodyBackground"] .logoArea {
+  span[id="bodyBackground"] .logoArea img {
     width: 125px !important;
   }
   span[id="bodyBackground"] .logoArea td {
