@@ -671,58 +671,58 @@ img {
 /* Narrow devices */
 /* Testing/Coloring */
 /* line 603, ../scss/style.scss */
-#bodyBackground .column1 {
+x#bodyBackground .column1 {
   background-color: #ffdddd;
 }
 /* line 606, ../scss/style.scss */
-#bodyBackground .column2 {
+x#bodyBackground .column2 {
   background-color: #ddffdd;
 }
 /* line 609, ../scss/style.scss */
-#bodyBackground .content {
+x#bodyBackground .content {
   background-color: #99ffff;
 }
 /* line 612, ../scss/style.scss */
-#bodyBackground .main {
+x#bodyBackground .main {
   background-color: #ff99ff;
 }
 /* line 615, ../scss/style.scss */
-#bodyBackground .imgStack {
+x#bodyBackground .imgStack {
   background-color: #ffff99;
 }
 /* line 618, ../scss/style.scss */
-#bodyBackground #productImage {
+x#bodyBackground #productImage {
   background-color: #ffff66;
 }
 /* line 621, ../scss/style.scss */
-#bodyBackground #basics {
+x#bodyBackground #basics {
   background-color: #ff66ff;
 }
 /* line 624, ../scss/style.scss */
-#bodyBackground .gutter {
+x#bodyBackground .gutter {
   background-color: #ddddff;
 }
 /* line 627, ../scss/style.scss */
-#bodyBackground .halfgutter {
+x#bodyBackground .halfgutter {
   background-color: #ffffdd;
 }
 /* line 630, ../scss/style.scss */
-#bodyBackground h1 {
+x#bodyBackground h1 {
   background-color: #33ffff;
 }
 /* line 633, ../scss/style.scss */
-#bodyBackground h2 {
+x#bodyBackground h2 {
   background-color: #ff33ff;
 }
 /* line 636, ../scss/style.scss */
-#bodyBackground h3 {
+x#bodyBackground h3 {
   background-color: #ffff33;
 }
 /* line 639, ../scss/style.scss */
-#bodyBackground hr {
+x#bodyBackground hr {
   background-color: #00ffff;
 }
 /* line 642, ../scss/style.scss */
-#bodyBackground br {
+x#bodyBackground br {
   background-color: #ff00ff;
 }
