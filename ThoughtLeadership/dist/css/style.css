@@ -295,28 +295,40 @@ img {
 #thoughtLeadershipHeader #headline td {
   font-size: 3.1em;
   font-weight: bold;
-  padding: 0 .5em .25em;
+  padding: .3em .5em;
+  margin: 0;
+  line-height: 100%;
   color: white;
 }
 #thoughtLeadershipHeader #headline td.callout {
-  padding: .1em .5em;
   color: #2e2e2f;
 }
 #thoughtLeadershipHeader #visual {
-  margin: 1em;
+  padding: 1em;
 }
-#thoughtLeadershipHeader #visual img {
+#thoughtLeadershipHeader #visual table {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+#thoughtLeadershipHeader #visual table img {
+  width: 100%;
   max-width: 100%;
   min-width: 100%;
 }
 #thoughtLeadershipHeader #featureButton {
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   margin-top: 1em;
   text-align: center;
 }
 #thoughtLeadershipHeader #featureButton td {
   padding: .5em 0;
   font-size: 1.3em;
+  width: 308px;
+  max-width: 100%;
+  min-width: 100%;
 }
 #thoughtLeadershipHeader #featureButton a {
   color: #ffffff;
@@ -326,9 +338,10 @@ img {
 #thoughtLeadershipMessage .text {
   padding: 0 75px;
 }
-#thoughtLeadershipMessage img {
+#thoughtLeadershipMessage .watermarkImage img {
   max-width: 100%;
   min-width: 100%;
+  width: 100%;
 }
 
 #brandedStatement {
