@@ -171,22 +171,26 @@ module.exports = function (grunt) {
 						email: 'robyn.skowronski@cardinalhealth.com'
 					},
 					{
+						name: 'Stryker, Ryan',
+						email: 'rstryker@cardinalsolutions.com'
+					},
+					{
 						name: 'Bruns, Phil',
 						email: 'pbruns@cardinalsolutions.com'
+					},
+                    */
+					{
+						name: 'Fricky, Kelly',
+						email: 'kfricky@cardinalsolutions.com'
 					},
 					{
 						name: 'Curtis, Scott',
 						email: 'scurtis@cardinalsolutions.com'
 					},
-					{
-						name: 'Stryker, Ryan',
-						email: 'rstryker@cardinalsolutions.com'
-					},
                     {
                         name: 'Steinert, Caitlin',
                         email: 'csteinert@cardinalsolutions.com'
                     },
-                    */
                     {
                         name: 'Joel Gmail',
                         email: 'joeltreadway@gmail.com'
@@ -198,11 +202,13 @@ module.exports = function (grunt) {
                     {
                         name: 'Joel Cardinal',
                         email: 'jtreadway@cardinalsolutions.com'
-                    },
+                    }
+                    /*,
                     {
                         name: 'Litmus Test',
                         email: 'cardinalhealth2.cc94c8b.new@emailtests.com'
                     }
+                    */
                 ]
             },
             dist: {
