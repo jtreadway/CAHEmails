@@ -16,7 +16,7 @@
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass div {
-  line-height: 130%;
+  line-height: 120%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   mso-margin-top-alt: 0;
   mso-margin-bottom-alt: 0;
   mso-line-height-rule: exactly;
-  line-height: 130%;
+  line-height: 120%;
   font-weight: bold;
   margin: 0 0 5px 0;
   padding: 0 0 0 0;
@@ -60,7 +60,7 @@ body,
 }
 .boundingTable th,
 .boundingTable td {
-  line-height: 130%;
+  line-height: 120%;
 }
 
 table {
@@ -199,35 +199,8 @@ img {
 }
 .businessUnit span {
   font-size: .52em;
-  line-height: 130%;
+  line-height: 120%;
   color: #4d4d4d;
-}
-
-.intro {
-  padding: 1em 0 .7em 0;
-  color: white;
-  font-size: 1.05em;
-}
-
-.intro h2 {
-  color: #ffffff;
-  font-size: 1.15em;
-  padding: 2px 0;
-  mso-margin-top-alt: 0;
-}
-
-#introGraphic {
-  max-width: 600px;
-  width: 600px;
-}
-#introGraphic td {
-  width: 100%;
-}
-#introGraphic img {
-  min-width: 100%;
-  max-width: 600px;
-  width: 100%;
-  height: auto;
 }
 
 .dateArea {
@@ -286,180 +259,84 @@ img {
 }
 .tocArea a {
   font-weight: bold;
-  line-height: 130%;
+  line-height: 120%;
 }
 
-#thoughtLeadershipHeader #headline {
-  margin-bottom: 2em;
+#intro {
+  padding: 2.9em 0 4em 0;
 }
-#thoughtLeadershipHeader #headline td {
-  font-size: 3.1em;
+#intro > table {
+  max-width: 420px;
+  min-width: 75%;
+  width: 75%;
+}
+#intro .headline td {
+  font-size: 3.05em;
   font-weight: bold;
-  padding: .3em .5em;
+  padding: .2em 13px;
   margin: 0;
   line-height: 100%;
   color: white;
 }
-#thoughtLeadershipHeader #headline td.callout {
+#intro .headline td.callout {
   color: #2e2e2f;
 }
-#thoughtLeadershipHeader #visual {
-  padding: 1em;
+#intro .visual td {
+  padding: 10px;
 }
-#thoughtLeadershipHeader #visual table {
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
+#intro .cta td {
+  padding: 0 10px 10px 10px;
 }
-#thoughtLeadershipHeader #visual table img {
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
-}
-#thoughtLeadershipHeader #featureButton {
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
-  margin-top: 1em;
-  text-align: center;
-}
-#thoughtLeadershipHeader #featureButton td {
-  padding: .5em 0;
-  font-size: 1.3em;
-  width: 308px;
-  max-width: 100%;
-  min-width: 100%;
-}
-#thoughtLeadershipHeader #featureButton a {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#thoughtLeadershipMessage .text {
-  padding: 0 75px;
-}
-#thoughtLeadershipMessage .watermarkImage img {
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-}
-
-#brandedStatement {
-  margin: 3em 0;
-}
-#brandedStatement .text {
-  padding: 0 65px;
-}
-#brandedStatement img {
-  margin-bottom: 1em;
-}
-
-.event .column1,
-.event .column2 {
-  width: 48.2%;
-}
-.event h2 {
-  font-size: 1.15em;
-  padding: 0;
-  mso-margin-top-alt: 0;
-}
-.event h3 {
-  mso-margin-top-alt: 10px;
-  mso-margin-bottom-alt: 10px;
-  padding: 10px 0 5px 0;
-}
-.event #description td,
-.event #speaker,
-.event #social,
-.event #postBasics,
-.event #details,
-.event #sponsor {
-  padding: 0 0 1.3em 0;
-}
-.event .inset {
-  width: 85.2%;
-  padding: 1.3em 0;
-}
-.event .inset strong {
-  font-size: 1.15em;
-}
-.event .inset .datetime {
+#intro .cta table.button {
   min-width: 100%;
   max-width: 100%;
+  width: 400px;
 }
-.event .inset .datetime th {
-  padding: 0 0 .5em 1em;
-  font-size: 1.15em;
-}
-.event .inset .datetime td {
-  padding: .5em 0 .5em 1em;
-  border-bottom: 1px #C8C8D2 solid;
-}
-.event .inset .datetime .cell1 {
-  padding-left: 0;
-}
-.event .inset .datetime th.forceWidth {
-  min-width: 100%;
-  max-width: 100%;
-  width: 268px;
-  padding: 0;
-  height: 1px;
-  line-height: 1px;
-}
-.event #details {
-  width: 100%;
-}
-.event #details table.calendarButton {
-  min-width: 100%;
-  max-width: 100%;
-}
-.event #details table.calendarButton td.calendarButton {
-  min-width: 100%;
-  max-width: 100%;
-  width: 308px;
-  padding: .3em .5em;
-}
-.event #details table.calendarButton td.calendarButton table td {
+#intro .cta table.button td.button {
   font-size: .9em;
-  text-align: left;
-  padding: .3em .5em;
+  text-align: center;
+  padding: .45em 1em;
+  border: none;
+  padding: .65em 0;
+  min-width: 100%;
+  max-width: 100%;
+  width: 400px;
+  font-size: 1.35em;
 }
-.event #details table.calendarButton td.calendarButton table td img {
-  width: 25px;
-  height: 29px;
-}
-.event #details table.calendarButton td.calendarButton table td a,
-.event #details table.calendarButton td.calendarButton table td #outlook a,
-.event #details table.calendarButton td.calendarButton table td .applelinks a {
+#intro .cta table.button td.button a,
+#intro .cta table.button td.button #outlook a,
+#intro .cta table.button td.button .applelinks a {
+  width: 100%;
   color: white;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
-.event #social table td {
-  padding: 0 .5em .3em 0;
-}
-.event #description td {
-  clear: both;
-  width: 93.33333%;
-}
-.event #description td center img {
-  max-width: 400px;
-}
-.event #sponsor {
-  min-width: 100%;
+
+#watermark img {
   max-width: 100%;
-  width: 308px;
+  min-width: 100%;
+  width: 100%;
 }
-.event #sponsor img {
-  display: inline;
+
+#messsage {
+  padding: 0 0 3em 0;
 }
-.event table.gutter {
-  width: 3.57%;
+#messsage > table {
+  max-width: 420px;
+  min-width: 75%;
+  width: 75%;
 }
-.event table .gutter {
-  max-width: 7.4%;
-  min-width: 7.4%;
-  width: 20px;
+
+#statement {
+  padding: 3em 0;
+}
+#statement > table {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+#statement .text {
+  padding: 0 65px;
 }
 
 .imgFull td,
@@ -514,14 +391,6 @@ img {
     width: 1px !important;
   }
 
-  #introGraphic {
-    width: 100% !important;
-  }
-  #introGraphic img {
-    min-width: 100% !important;
-    width: 100% !important;
-  }
-
   .businessUnit,
   #footerArea .content .column1 {
     width: auto !important;
@@ -530,44 +399,6 @@ img {
   img.icon {
     width: 42px !important;
     height: 42px !important;
-  }
-
-  .event .column1,
-  .event .column2 {
-    width: 48.2% !important;
-  }
-  .event .column1 .gutter,
-  .event .column2 .gutter {
-    width: 7.4% !important;
-  }
-  .event .inset .datetime {
-    width: 100%;
-  }
-  .event #details,
-  .event #speaker {
-    width: 100% !important;
-  }
-  .event #details img,
-  .event #speaker img {
-    width: 100% !important;
-    height: auto !important;
-  }
-  .event #description td {
-    width: 93.33333% !important;
-  }
-  .event #description td img {
-    max-width: 400px !important;
-    width: 100% !important;
-    height: auto !important;
-  }
-  .event #details .calendarButton img {
-    width: 25px !important;
-    height: 29px !important;
-  }
-  .event #sponsor {
-    min-width: 100% !important;
-    max-width: 100% !important;
-    width: 48.2% !important;
   }
 
   .halfgutter {
@@ -580,7 +411,7 @@ img {
 /* Narrow windows and devices */
 @media only screen and (max-width: 480px) {
   span[id="bodyBackground"] #preHeaderTable {
-    background-color: #ffffff !important;
+    background-color: #346170 !important;
   }
   span[id="bodyBackground"] #preHeaderTable .webVersionTop {
     display: none !important;
@@ -635,30 +466,37 @@ img {
   span[id="bodyBackground"] .dateArea .date {
     text-align: center !important;
   }
-  span[id="bodyBackground"] #thoughtLeadershipHeader #headline td {
-    font-size: 2em !important;
+  span[id="bodyBackground"] #intro .headline td {
+    font-size: 1.5em !important;
+    padding: .42em 20px !important;
   }
-  span[id="bodyBackground"] #featureButton td {
-    font-size: 1em !important;
+  span[id="bodyBackground"] #intro .visual td {
+    padding: 6px !important;
   }
-  span[id="bodyBackground"] #thoughtLeadershipMessage .text {
-    padding: 0 10px;
-  }
-  span[id="bodyBackground"] .event .column1,
-  span[id="bodyBackground"] .event .column2 {
+  span[id="bodyBackground"] #intro .visual img {
     width: 100% !important;
-    padding: 0 0 1.3em 0 !important;
+    height: auto !important;
   }
-  span[id="bodyBackground"] .event .column1 .gutter,
-  span[id="bodyBackground"] .event .column2 .gutter {
-    width: 3.25% !important;
+  span[id="bodyBackground"] #intro .cta td {
+    padding: 0 6px 6px 6px !important;
   }
-  span[id="bodyBackground"] .event #basics {
-    width: 93.5% !important;
+  span[id="bodyBackground"] #intro .cta table.button {
+    width: 100% !important;
   }
-  span[id="bodyBackground"] .event table .gutter {
-    max-width: 3.57%;
-    min-width: 3.57%;
+  span[id="bodyBackground"] #intro .cta table.button td.button {
+    width: 100% !important;
+    font-size: .86em !important;
+    padding: .65em 0 !important;
+  }
+  span[id="bodyBackground"] #messsage > table {
+    width: 100% !important;
+  }
+  span[id="bodyBackground"] #statement .logo img {
+    width: 210px !important;
+    height: auto !important;
+  }
+  span[id="bodyBackground"] #statement .text {
+    padding: 0 0 0 51px !important;
   }
   span[id="bodyBackground"] .imgStack {
     width: 100% !important;
@@ -692,11 +530,14 @@ x#bodyBackground .column2 {
 x#bodyBackground .content {
   background-color: #99ffff;
 }
-x#bodyBackground .event {
+x#bodyBackground #intro {
   background-color: #ff99ff;
 }
-x#bodyBackground #sponsor {
+x#bodyBackground #message {
   background-color: #ffff99;
+}
+x#bodyBackground #message {
+  background-color: #66ffff;
 }
 x#bodyBackground .gutter {
   background-color: #ddddff;
