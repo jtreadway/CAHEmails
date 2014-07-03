@@ -368,11 +368,11 @@ img {
 /* line 329, ../scss/style.scss */
 .main #orderTable .imgStack td img {
   max-width: 115px;
-  width: 100%;
-  height: auto;
 }
-/* line 338, ../scss/style.scss */
+/* line 336, ../scss/style.scss */
 .main #totals table {
+  min-width: 100%;
+  max-width: 100%;
   width: 100%;
 }
 /* line 340, ../scss/style.scss */
@@ -635,32 +635,39 @@ img {
     padding-left: 0 !important;
     width: 100% !important;
   }
-  /* line 563, ../scss/style.scss */
+  /* line 562, ../scss/style.scss */
+  span[id="bodyBackground"] .imgFull td img,
+  span[id="bodyBackground"] .imgStack td img {
+    max-width: 115px;
+    width: 100%;
+    height: auto;
+  }
+  /* line 568, ../scss/style.scss */
   span[id="bodyBackground"] .halfgutter {
     width: 3.33333% !important;
   }
-  /* line 567, ../scss/style.scss */
+  /* line 572, ../scss/style.scss */
   span[id="bodyBackground"] #promoContents table {
     width: 100% !important;
   }
-  /* line 569, ../scss/style.scss */
+  /* line 574, ../scss/style.scss */
   span[id="bodyBackground"] #promoContents table td {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  /* line 573, ../scss/style.scss */
+  /* line 578, ../scss/style.scss */
   span[id="bodyBackground"] #promoContents table table {
     width: auto !important;
   }
-  /* line 575, ../scss/style.scss */
+  /* line 580, ../scss/style.scss */
   span[id="bodyBackground"] #promoContents table table td {
     padding: .5em 1em !important;
   }
-  /* line 582, ../scss/style.scss */
+  /* line 587, ../scss/style.scss */
   span[id="bodyBackground"] #footerArea .content {
     display: block !important;
   }
-  /* line 585, ../scss/style.scss */
+  /* line 590, ../scss/style.scss */
   span[id="bodyBackground"] #footerArea .content .column1,
   span[id="bodyBackground"] #footerArea .content .column2 {
     width: 93.333336% !important;
@@ -670,59 +677,59 @@ img {
 }
 /* Narrow devices */
 /* Testing/Coloring */
-/* line 603, ../scss/style.scss */
+/* line 608, ../scss/style.scss */
 x#bodyBackground .column1 {
   background-color: #ffdddd;
 }
-/* line 606, ../scss/style.scss */
+/* line 611, ../scss/style.scss */
 x#bodyBackground .column2 {
   background-color: #ddffdd;
 }
-/* line 609, ../scss/style.scss */
+/* line 614, ../scss/style.scss */
 x#bodyBackground .content {
   background-color: #99ffff;
 }
-/* line 612, ../scss/style.scss */
+/* line 617, ../scss/style.scss */
 x#bodyBackground .main {
   background-color: #ff99ff;
 }
-/* line 615, ../scss/style.scss */
+/* line 620, ../scss/style.scss */
 x#bodyBackground .imgStack {
   background-color: #ffff99;
 }
-/* line 618, ../scss/style.scss */
+/* line 623, ../scss/style.scss */
 x#bodyBackground #productImage {
   background-color: #ffff66;
 }
-/* line 621, ../scss/style.scss */
+/* line 626, ../scss/style.scss */
 x#bodyBackground #basics {
   background-color: #ff66ff;
 }
-/* line 624, ../scss/style.scss */
+/* line 629, ../scss/style.scss */
 x#bodyBackground .gutter {
   background-color: #ddddff;
 }
-/* line 627, ../scss/style.scss */
+/* line 632, ../scss/style.scss */
 x#bodyBackground .halfgutter {
   background-color: #ffffdd;
 }
-/* line 630, ../scss/style.scss */
+/* line 635, ../scss/style.scss */
 x#bodyBackground h1 {
   background-color: #33ffff;
 }
-/* line 633, ../scss/style.scss */
+/* line 638, ../scss/style.scss */
 x#bodyBackground h2 {
   background-color: #ff33ff;
 }
-/* line 636, ../scss/style.scss */
+/* line 641, ../scss/style.scss */
 x#bodyBackground h3 {
   background-color: #ffff33;
 }
-/* line 639, ../scss/style.scss */
+/* line 644, ../scss/style.scss */
 x#bodyBackground hr {
   background-color: #00ffff;
 }
-/* line 642, ../scss/style.scss */
+/* line 647, ../scss/style.scss */
 x#bodyBackground br {
   background-color: #ff00ff;
 }

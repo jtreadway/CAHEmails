@@ -311,10 +311,10 @@ img {
 }
 .main #orderTable .imgStack td img {
   max-width: 115px;
-  width: 100%;
-  height: auto;
 }
 .main #totals table {
+  min-width: 100%;
+  max-width: 100%;
   width: 100%;
 }
 .main #totals table td {
@@ -530,6 +530,12 @@ img {
     padding-left: 0 !important;
     width: 100% !important;
   }
+  span[id="bodyBackground"] .imgFull td img,
+  span[id="bodyBackground"] .imgStack td img {
+    max-width: 115px;
+    width: 100%;
+    height: auto;
+  }
   span[id="bodyBackground"] .halfgutter {
     width: 3.33333% !important;
   }
@@ -558,45 +564,45 @@ img {
 }
 /* Narrow devices */
 /* Testing/Coloring */
-#bodyBackground .column1 {
+x#bodyBackground .column1 {
   background-color: #ffdddd;
 }
-#bodyBackground .column2 {
+x#bodyBackground .column2 {
   background-color: #ddffdd;
 }
-#bodyBackground .content {
+x#bodyBackground .content {
   background-color: #99ffff;
 }
-#bodyBackground .main {
+x#bodyBackground .main {
   background-color: #ff99ff;
 }
-#bodyBackground .imgStack {
+x#bodyBackground .imgStack {
   background-color: #ffff99;
 }
-#bodyBackground #productImage {
+x#bodyBackground #productImage {
   background-color: #ffff66;
 }
-#bodyBackground #basics {
+x#bodyBackground #basics {
   background-color: #ff66ff;
 }
-#bodyBackground .gutter {
+x#bodyBackground .gutter {
   background-color: #ddddff;
 }
-#bodyBackground .halfgutter {
+x#bodyBackground .halfgutter {
   background-color: #ffffdd;
 }
-#bodyBackground h1 {
+x#bodyBackground h1 {
   background-color: #33ffff;
 }
-#bodyBackground h2 {
+x#bodyBackground h2 {
   background-color: #ff33ff;
 }
-#bodyBackground h3 {
+x#bodyBackground h3 {
   background-color: #ffff33;
 }
-#bodyBackground hr {
+x#bodyBackground hr {
   background-color: #00ffff;
 }
-#bodyBackground br {
+x#bodyBackground br {
   background-color: #ff00ff;
 }
