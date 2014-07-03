@@ -178,7 +178,6 @@ module.exports = function (grunt) {
 						name: 'Bruns, Phil',
 						email: 'pbruns@cardinalsolutions.com'
 					},
-                    */
 					{
 						name: 'Fricky, Kelly',
 						email: 'kfricky@cardinalsolutions.com'
@@ -191,6 +190,7 @@ module.exports = function (grunt) {
                         name: 'Steinert, Caitlin',
                         email: 'csteinert@cardinalsolutions.com'
                     },
+                    */
                     {
                         name: 'Joel Gmail',
                         email: 'joeltreadway@gmail.com'
@@ -202,13 +202,11 @@ module.exports = function (grunt) {
                     {
                         name: 'Joel Cardinal',
                         email: 'jtreadway@cardinalsolutions.com'
-                    }
-                    /*,
+                    },
                     {
                         name: 'Litmus Test',
                         email: 'cardinalhealth2.cc94c8b.new@emailtests.com'
                     }
-                    */
                 ]
             },
             dist: {
